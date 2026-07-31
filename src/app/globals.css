@@ -445,3 +445,14 @@ button {
     filter: hue-rotate(0deg);
   }
 }
+
+/* Ensure top route progress bar loader is always above fixed navbar */
+#nprogress {
+  pointer-events: none;
+  position: relative;
+  z-index: 999999 !important;
+}
+
+#nprogress .bar {
+  z-index: 999999 !important;
+}

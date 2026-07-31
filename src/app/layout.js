@@ -151,7 +151,7 @@ export default function RootLayout({ children }) {
 
         {/* Global Route Change Progress Bar */}
         <NextTopLoader
-          color="#d41124" // brand-accent red
+          color="#1251a0" // brand-blue for maximum visibility over red banner and white pages
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}
@@ -159,7 +159,7 @@ export default function RootLayout({ children }) {
           showSpinner={false}
           easing="ease"
           speed={200}
-          shadow="0 0 10px #d41124,0 0 5px #d41124"
+          zIndex={999999}
         />
 
         <ScrollToTop />

@@ -63,7 +63,7 @@ export default function AmfahChatbot() {
             {/* Chatbot Iframe Window */}
             <div className="w-[344px] md:w-[430px] h-[554px] md:h-[660px] max-w-[calc(100vw-32px)] max-h-[calc(100vh-100px)] overflow-hidden rounded-[20px] shadow-2xl relative bg-white border border-slate-200/50">
               <iframe
-                src="https://amfah-chatbot.vercel.app"
+                src="https://amfahchatbot.vercel.app"
                 title="Amfah Expert Chatbot"
                 className="w-[354px] md:w-[442px] h-[556px] md:h-[652px] absolute -top-[8px] -left-[8px] border-none max-w-none max-h-none"
                 allow="autoplay"
