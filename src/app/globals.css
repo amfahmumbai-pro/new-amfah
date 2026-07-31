@@ -1,0 +1,447 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #1251a0;
+  --color-brand-navy-light: #0e3f7c;
+  --color-brand-blue: #1251a0;
+  --color-brand-blue-light: #ebf3fc;
+  --color-brand-accent: #d41124;
+  --color-brand-gray-dark: #334155;
+  --color-brand-gray-medium: #64748b;
+  --color-brand-gray-light: #f8fafc;
+  --color-brand-gray-bg: #f1f5f9;
+  --color-brand-border: #e2e8f0;
+
+  --font-display: var(--font-outfit), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #334155;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #334155;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility scrollbar styling for premium industrial look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Selection colors */
+::selection {
+  background-color: #ebf3fc;
+  color: #1251a0;
+}
+
+/* Failsafe high-contrast light theme overrides (preventing browser dark-mode inversions) */
+html,
+body {
+  background-color: #ffffff;
+  color: #334155;
+}
+
+.text-brand-navy {
+  color: #1251a0 !important;
+}
+
+.bg-brand-navy {
+  background-color: #1251a0 !important;
+}
+
+.text-brand-navy-light {
+  color: #0e3f7c !important;
+}
+
+.bg-brand-navy-light {
+  background-color: #0e3f7c !important;
+}
+
+.text-brand-blue {
+  color: #1251a0 !important;
+}
+
+.bg-brand-blue {
+  background-color: #1251a0 !important;
+}
+
+.text-brand-blue-light {
+  color: #ebf3fc !important;
+}
+
+.bg-brand-blue-light {
+  background-color: #ebf3fc !important;
+}
+
+.text-brand-accent {
+  color: #d41124 !important;
+}
+
+.bg-brand-accent {
+  background-color: #d41124 !important;
+}
+
+.text-brand-gray-dark {
+  color: #334155 !important;
+}
+
+.bg-brand-gray-dark {
+  background-color: #334155 !important;
+}
+
+.text-brand-gray-medium {
+  color: #64748b !important;
+}
+
+.bg-brand-gray-medium {
+  background-color: #64748b !important;
+}
+
+.text-brand-gray-light {
+  color: #f8fafc !important;
+}
+
+.bg-brand-gray-light {
+  background-color: #f8fafc !important;
+}
+
+.bg-gray-bg {
+  background-color: #e7e7e7 !important;
+}
+
+.text-brand-gray-bg {
+  color: #f1f5f9 !important;
+}
+
+.bg-brand-gray-bg {
+  background-color: #f1f5f9 !important;
+}
+
+.border-brand-border {
+  border-color: #e2e8f0 !important;
+}
+
+.border-brand-border\/60 {
+  border-color: rgba(226, 232, 240, 0.6) !important;
+}
+
+.border-brand-border\/40 {
+  border-color: rgba(226, 232, 240, 0.4) !important;
+}
+
+.border-brand-border\/15 {
+  border-color: rgba(226, 232, 240, 0.15) !important;
+}
+
+.border-brand-blue\/15 {
+  border-color: rgba(18, 81, 160, 0.15) !important;
+}
+
+.border-brand-blue\/10 {
+  border-color: rgba(18, 81, 160, 0.1) !important;
+}
+
+.border-brand-blue\/20 {
+  border-color: rgba(18, 81, 160, 0.2) !important;
+}
+
+.border-brand-blue\/30 {
+  border-color: rgba(18, 81, 160, 0.3) !important;
+}
+
+/* Clean dark professional text color for general headers, so we can apply brand blue/red classes specifically */
+span,
+Link,
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Infinite Horizontal Scroll Marquee Animations */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 15s linear infinite;
+}
+
+.animate-marquee-clientele {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-clientele-reverse {
+  animation: marquee-reverse 60s linear infinite;
+}
+
+@media (max-w: 768px) {
+  .animate-marquee {
+    animation-duration: 8s !important;
+  }
+
+  .animate-marquee-reverse {
+    animation-duration: 8s !important;
+  }
+
+  .animate-marquee-clientele {
+    animation-duration: 30s !important;
+  }
+
+  .animate-marquee-clientele-reverse {
+    animation-duration: 30s !important;
+  }
+}
+
+.hover-pause:hover *,
+.hover-pause:hover .animate-marquee,
+.hover-pause:hover .animate-marquee-reverse,
+.hover-pause:hover .animate-marquee-clientele,
+.hover-pause:hover .animate-marquee-clientele-reverse {
+  animation-play-state: paused !important;
+  -webkit-animation-play-state: paused !important;
+}
+
+/* Utility to hide scrollbars on carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* --- Preloader custom Uiverse styling matching AMFAH brand --- */
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s;
+}
+
+.preloader-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* From Uiverse.io by andrew-manzyk — themed to AMFAH brand colors */
+.loader {
+  --color-one: #1251a0;        /* brand-navy / brand-blue */
+  --color-two: #d41124;        /* brand-accent red */
+  --color-three: #1251a080;    /* brand-navy 50% opacity */
+  --color-four: #d4112480;     /* brand-accent 50% opacity */
+  --color-five: #1251a040;     /* brand-navy 25% opacity */
+  --time-animation: 2s;
+  --size: 1; /* You can change the size */
+  position: relative;
+  border-radius: 50%;
+  transform: scale(var(--size));
+  box-shadow:
+    0 0 25px 0 var(--color-three),
+    0 20px 50px 0 var(--color-four);
+  animation: colorize calc(var(--time-animation) * 3) ease-in-out infinite;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: solid 1px var(--color-one);
+  border-bottom: solid 1px var(--color-two);
+  background: linear-gradient(180deg, var(--color-five), var(--color-four));
+  box-shadow:
+    inset 0 10px 10px 0 var(--color-three),
+    inset 0 -10px 10px 0 var(--color-four);
+}
+
+.loader .box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(180deg,
+      var(--color-one) 30%,
+      var(--color-two) 70%);
+  mask: url(#clipping);
+  -webkit-mask: url(#clipping);
+}
+
+.loader svg {
+  position: absolute;
+}
+
+.loader svg #clipping {
+  filter: contrast(15);
+  animation: roundness calc(var(--time-animation) / 2) linear infinite;
+}
+
+.loader svg #clipping polygon {
+  filter: blur(7px);
+}
+
+.loader svg #clipping polygon:nth-child(1) {
+  transform-origin: 75% 25%;
+  transform: rotate(90deg);
+}
+
+.loader svg #clipping polygon:nth-child(2) {
+  transform-origin: 50% 50%;
+  animation: rotation var(--time-animation) linear infinite reverse;
+}
+
+.loader svg #clipping polygon:nth-child(3) {
+  transform-origin: 50% 60%;
+  animation: rotation var(--time-animation) linear infinite;
+  animation-delay: calc(var(--time-animation) / -3);
+}
+
+.loader svg #clipping polygon:nth-child(4) {
+  transform-origin: 40% 40%;
+  animation: rotation var(--time-animation) linear infinite reverse;
+}
+
+.loader svg #clipping polygon:nth-child(5) {
+  transform-origin: 40% 40%;
+  animation: rotation var(--time-animation) linear infinite reverse;
+  animation-delay: calc(var(--time-animation) / -2);
+}
+
+.loader svg #clipping polygon:nth-child(6) {
+  transform-origin: 60% 40%;
+  animation: rotation var(--time-animation) linear infinite;
+}
+
+.loader svg #clipping polygon:nth-child(7) {
+  transform-origin: 60% 40%;
+  animation: rotation var(--time-animation) linear infinite;
+  animation-delay: calc(var(--time-animation) / -1.5);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes roundness {
+  0% {
+    filter: contrast(15);
+  }
+
+  20% {
+    filter: contrast(3);
+  }
+
+  40% {
+    filter: contrast(3);
+  }
+
+  60% {
+    filter: contrast(15);
+  }
+
+  100% {
+    filter: contrast(15);
+  }
+}
+
+@keyframes colorize {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  20% {
+    filter: hue-rotate(-30deg);
+  }
+
+  40% {
+    filter: hue-rotate(-60deg);
+  }
+
+  60% {
+    filter: hue-rotate(-90deg);
+  }
+
+  80% {
+    filter: hue-rotate(-45deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}

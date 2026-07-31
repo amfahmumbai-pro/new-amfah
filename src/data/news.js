@@ -1,0 +1,144 @@
+export const news = [
+  {
+    slug: "amfah-india-patented-humidity-air-quality-solutions",
+    title: "India's Only Patented Brand for Air Quality & Humidity Solutions",
+    summary: "AMFAH India, established in 2008, stands as the nation's only brand holding a designated patent licence for relative humidity and air quality control systems. Operating in strategic collaboration with top-tier international technology partners and listed as a preferred GeM portal supplier, AMFAH engineers customized, high-precision industrial systems that regulate humidity within the vital 40%–60% RH range, protecting critical cleanrooms, laboratories, and large-scale manufacturing facilities.",
+    date: "June 24, 2026",
+    image: "/blogs/amfah-blog.jpeg",
+    author: "Mr. Mansoor Ali",
+    readTime: "5 min read",
+    category: "Corporate Insights",
+    tags: ["Patented Tech", "40-60% RH Sweet Spot", "GeM Preferred Vendor"],
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">In the modern industrial and commercial landscape, maintaining optimal indoor air quality and humidity control is no longer a luxury—it is a critical necessity. Leading this charge in India is AMFAH India, the country's only brand holding a patent licence specifically for air quality and humidity solutions.</p>
+      
+      <p class="mb-4">Founded in 2008, AMFAH India has spent nearly two decades refining indoor living and working environments. As a proud group company of <strong>AMFAH General Trading LLC, Dubai</strong>, and a highly preferred brand on the Government e-Marketplace (GeM) Portal, AMFAH brings global standards of engineering and technology directly to Indian industries, research labs, healthcare facilities, and homes.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Collaborative Excellence: Leading Global Partnerships</h3>
+      <p class="mb-4">At the core of AMFAH's success is a simple mission: <em>\"We make air quality & humidity control easy.\"</em> This is achieved through active collaborations with leading technology partners worldwide. By leveraging cutting-edge international innovations, AMFAH tailors high-performance, turnkey systems engineered to perform reliably under the unique climatic demands of the Indian subcontinent.</p>
+
+      <div class="my-8 rounded-xl overflow-hidden shadow-md max-w-3xl">
+        <img src="/blogs/amfah-blog2.jpeg" alt="AMFAH India Air Quality and Humidity Solutions" class="w-full h-auto object-cover max-h-[400px]" />
+      </div>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Importance of the 40%–60% RH Sweet Spot</h3>
+      <p class="mb-4">Scientific consensus dictates that maintaining relative humidity (RH) levels between <strong>40% and 60%</strong> is optimal for health, product safety, and comfort. Within this envelope:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Pathogen Minimization:</strong> Airborne viruses and bacteria are less stable and transmission rates drop significantly.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Formulation Safety:</strong> Moisture-sensitive materials, pharmaceutical ingredients, and powders remain stable and free-flowing.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Structural Preservation:</strong> Corrugated boxes, packaging adhesives, and delicate artifacts are protected against warping and collapse.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Research Partnership & Global Advocacy for Human Health</h3>
+      <p class="mb-4">AMFAH is proud to be the official research partner of <a href="https://40to60rh.com/" target="_blank" rel="noopener noreferrer" class="text-brand-navy hover:text-brand-accent underline font-bold transition-colors">40to60rh.com</a>, a global advocacy platform spearheaded by leading health experts. Dr. Stephanie Taylor, Harvard Medical School alumna and infection control expert, has discussed why maintaining a relative humidity range of 40% to 60% is vital for humans:</p>
+
+      <blockquote class="bg-[#FAF7F2] border-l-4 border-brand-accent p-6 rounded-r-xl italic text-brand-navy my-8 font-sans">
+        "There is now overwhelming scientific evidence that a mid-range air humidity has significant benefits for human health. It is very possible for us to be managing the indoor air quality of our public buildings in line with this evidence. The time has come for regulations on indoor air quality to include a humidity level of 40-60%RH. This is the optimal level for our respiratory immune system, and will reduce the spread of seasonal respiratory illnesses and their burden on society. <br/><br/>
+        I am calling on the World Health Organization to review the scientific evidence on humidity and health, and recommend a minimum lower limit of indoor humidity in public buildings to reduce respiratory infections."
+        <cite class="block mt-4 text-xs font-bold uppercase tracking-wider text-brand-gray-medium font-display not-italic">— Dr. Stephanie Taylor</cite>
+      </blockquote>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Diverse Product Portfolio for Every Need</h3>
+      <p class="mb-4">AMFAH India offers customized, turnkey products designed for specific spatial requirements:</p>
+      
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-6 mb-2">1. Ceiling Dehumidifiers</h4>
+      <p class="mb-4">Space-saving, ductable dehumidifiers installed flush with the ceiling, ideal for luxury apartments, server rooms, and medical clinics.</p>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-6 mb-2">2. Air Purifiers</h4>
+      <p class="mb-4">Multi-stage filtration systems designed to strip the air of particulate matter, allergens, volatile organic compounds (VOCs), and airborne pathogens.</p>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-6 mb-2">3. Portable / Mobile AC + Dehumidifiers</h4>
+      <p class="mb-4">Versatile dual-action mobile systems that provide temporary spot cooling alongside effective moisture control.</p>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-6 mb-2">4. Domestic, Commercial & Industrial Dehumidifiers</h4>
+      <p class="mb-4">From elegant quiet units for residential bedrooms to massive high-capacity industrial machines capable of handling extreme moisture loads in warehouses and heavy manufacturing lines.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Widely Trusted Across Key Industries</h3>
+      <p class="mb-4">AMFAH's patented systems are deployed in high-stakes environments where precision is non-negotiable:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Healthcare & Labs:</strong> Ensuring sterile and dry conditions in critical operation theaters, testing laboratories, and pharmaceutical cleanrooms.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Warehousing & Packing:</strong> Preserving food, electronics, and packages from moisture degradation and structural failures.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Heritage Protection:</strong> Preventing deterioration in prestigious art galleries, archives, and libraries.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Hospitality:</strong> Maintaining luxury comfort and musty-free environments in premium hotels and dining halls.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Get in Touch with AMFAH India</h3>
+      <p class="mb-4">If you are looking to secure your facility or home with India's only patented air quality and humidity control technology, reach out to AMFAH's senior consultants:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Emails:</strong> info.india@amfah.com</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Hotlines:</strong> +91 9321991812 / +91 9004663226 / +91 9324516326</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Mumbai Office:</strong> AMFAH INDIA, C-153, Oshiwara Industrial Centre, Goregaon West, Mumbai 400 104</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Delhi Office:</strong> AMFAH, H. No. 1147, Block No. 111/9, Khasra No. 1674, Kishan Garh, Vasant Kunj, New Delhi 110 070</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Dubai HQ:</strong> AMFAH GENERAL TRADING LLC. Umm Ramool - Al Rashidiya, Dubai, UAE.</li>
+      </ul>
+    `
+  },
+  {
+    slug: "amfah-india-dehumidifiers-covid-19-hospitals-bmc",
+    title: "AMFAH India Contributes Dehumidifiers to COVID-19 Hospitals & BMC",
+    summary: "In response to the unprecedented challenges of the COVID-19 pandemic in Mumbai, AMFAH India contributed industrial-grade dehumidifiers to major municipal hospitals and BMC emergency war rooms. By deploying these units in high-risk zones—including ICUs, police stations, and family shelters near Kasturba and KEM Hospitals—AMFAH helped regulate indoor air humidity, lowering viral transmission risks and providing crucial support to frontline medical personnel.",
+    date: "May 18, 2020",
+    image: "/news/covid-contribution.jpeg",
+    author: "Express HealthCare",
+    readTime: "3 min read",
+    category: "Corporate Insights",
+    tags: ["COVID-19 Relief", "BMC War Rooms", "Healthcare Ventilation"],
+    officialLink: "https://www.expresshealthcare.in/news/amfah-india-contributes-dehumidifiers-to-covid-19-hospitals-bmc/420559/",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">In a major effort to support frontline medical teams, AMFAH India has contributed high-performance dehumidifiers to COVID-19 hospitals and the Brihanmumbai Municipal Corporation (BMC) in Mumbai.</p>
+
+      <p class="mb-4">This specialized air treatment equipment will help improve humidity conditions at Intensive Care Units (ICUs), emergency war rooms, and backup control rooms, contributing to safer indoor environments for doctors, patients, and administrators during the pandemic.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Supporting Frontline Fighters</h3>
+      <p class="mb-4">Speaking on the initiative, <strong>Mansoor Ali</strong>, Founder of AMFAH India, expressed gratitude to the frontline healthcare workforce:</p>
+
+      <blockquote class="bg-[#FAF7F2] border-l-4 border-brand-accent p-6 rounded-r-xl italic text-brand-navy my-8 font-sans">
+        "We wish to salute frontline fighters against the COVID-19 crisis like doctors, nurses, and police officers. So, we've collaborated with government offices and hospitals like KEM Hospital, Kasturba Hospital, Sion Hospital, Nair Hospital, ENT Hospital (Churchgate), and ESI Hospital (Kandivali). We've also installed them at the Shivaji Nagar police station and Oshiwara police station."
+      </blockquote>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Humidity: A Key Weapon Against Viral Transmission</h3>
+      <p class="mb-4">Throughout the pandemic, AMFAH has campaigned about the critical need to regulate indoor air quality and humidity. Both the World Health Organization (WHO) and global study groups have highlighted that maintaining relative humidity in a balanced range (40%–60% RH) plays a pivotal role in reducing the viability of airborne pathogens.</p>
+
+      <p class="mb-4">As a tropical region, India deals with varying seasonal and geographical humidity extremes. Regulating relative humidity in cleanrooms and ICUs is a highly effective, non-pharmaceutical intervention to lower virus transmission rates.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Simple Tribute to Mumbaikars</h3>
+      <p class="mb-4">In addition to hospitals, AMFAH extended support to shelters housing patient relatives. "We’ve also set up a device at Savali, a shelter run by Sanyog Trust, which is offering living space to relatives of COVID-19 patients near KEM hospital," Ali added.</p>
+
+      <p class="mb-4">"Coronavirus has claimed thousands of lives, shaken governments, and pummeled the market. It has, however, failed to crush the indomitable spirit of a few brave Mumbaikars who have been working inhuman hours, in conditions of extreme risk, to keep us safe. Our move is a simple salute to their immense contribution to our lives."</p>
+    `
+  },
+  {
+    slug: "control-humidity-dental-clinic-covid-19-spread",
+    title: "Control Humidity inside Your Clinic to Minimize COVID-19 Spread: Mansoor Ali",
+    summary: "In an exclusive talk with Dental Tribune India, air quality analyst and AMFAH Founder Mansoor Ali highlights why maintaining relative humidity (RH) between 40% and 60% in dental clinics accelerates droplet settlement, reducing airborne aerosol exposure and protecting clinical personnel and dental patients.",
+    date: "May 11, 2020",
+    image: "/news/dental-tribune.jpg",
+    author: "Dental Tribune India",
+    readTime: "4 min read",
+    category: "Expert Interviews",
+    tags: ["Dental Clinics", "Aerosol Control", "Relative Humidity"],
+    officialLink: "https://in.dental-tribune.com/news/control-humidity-inside-your-clinic-to-minimize-covid-19-spread-mansoor-ali-air-quality-expert/",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">As dental practices confront aerosol-transmission challenges, managing clinical relative humidity (RH) has emerged as an essential non-pharmaceutical control barrier. Air quality specialist Mansoor Ali details why maintaining the 40%–60% RH range decreases viral suspension times inside clinics.</p>
+
+      <p class="mb-4">Dental clinics are highly specialized healthcare environments where aerosol-generating procedures (AGPs)—such as high-speed drilling and scaling—are routine. Since airborne respiratory pathogens like SARS-CoV-2 can remain viable in suspended micro-droplets for hours, managing clinic air parameters is critical to lower dental practitioner exposure.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Aerosol Dynamics: The Mechanics of Droplet Settlement</h3>
+      <p class="mb-4">Mansoor Ali explains how ambient clinic humidity directly influences the physical state of released dental aerosols:</p>
+      <blockquote class="bg-[#FAF7F2] border-l-4 border-brand-accent p-6 rounded-r-xl italic text-brand-navy my-8 font-sans">
+        "When procedural aerosols are generated, the surrounding air quality determines their suspension rate. In clinics with dry air (relative humidity below 40%), droplets evaporate rapidly, leaving behind tiny, lightweight 'droplet nuclei' that remain suspended for long periods. If we keep the clinic humidity at the optimal 40%–60% RH sweet spot, the droplets absorb moisture, become heavier, and fall out of the air quickly to settle on floor surfaces where they can be disinfected."
+      </blockquote>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Optimizing Dental Clinic Air Configurations</h3>
+      <p class="mb-4">To establish safe environmental conditions, Ali advises dentists to implement strict indoor air controls:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Relative Humidity:</strong> Keep relative humidity strictly within the 40%–60% RH envelope using industrial-grade dehumidification.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Temperature Envelope:</strong> Stabilize clinic room temperature between 24°C and 27°C.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Continuous Diagnostics:</strong> Install digital hygrometers to track relative humidity fluctuations independently of air conditioning settings.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Multi-Layered Preventative Framework</h3>
+      <p class="mb-4">Environmental humidity control represents one component of a broader, integrated clean-air protocol. Dental operators are encouraged to pair active dehumidifiers alongside medical-grade HEPA filters, high-volume evacuation (HVE) suction, and routine surface sanitization to protect medical personnel and clinic visitors.</p>
+    `
+  }
+];
