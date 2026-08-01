@@ -8,28 +8,31 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    title: "INDUSTRIAL DEHUMIDIFIERS",
-    subtitle: "Protect Products, Equipment, and Processes from Excess Moisture",
-    image: "/banner/14-removebg-preview.png",
+    title: "HOME DEHUMIDIFIERS",
+    specification: "Amfah Domestic Dehumidifier + Air\nPurification With Triple Layer Hepa Filter",
+    subtitle: "Protect Your Family from Excess Humidity and Indoor Air Discomfort",
+    image: "/products/amf-50d-a (3).png",
     buttonText: "know more",
-    buttonLink: "/industrial-dehumidifiers",
-    align: "right", // Image left, Text right
+    buttonLink: "/home-dehumidifiers",
+    align: "left", // Text left, Image right
   },
   {
     title: "COMMERCIAL DEHUMIDIFIER",
+    specification: "Amfah Commercial Dehumidifier With Air\nPurification - Italian Series",
     subtitle: "Control Humidity and Keep Your Business Running at Its Best",
-    image: "/banner/banner1.png",
+    image: "/products/seccoprof-30p(4).png",
     buttonText: "know more",
     buttonLink: "/commercial-dehumidifiers",
     align: "left", // Text left, Image right
   },
   {
-    title: "SMART HOME DEHUMIDIFIERS",
-    subtitle: "Protect Your Family from Excess Humidity and Indoor Air Discomfort",
-    image: "/banner/home-dehumidifier.png",
+    title: "INDUSTRIAL DEHUMIDIFIERS",
+    specification: "Amfah Industrial Dehumidifier With Air\nPurification - Premium Series",
+    subtitle: "Protect Products, Equipment, and Processes from Excess Moisture",
+    image: "/products/amf-138dmp (2).png",
     buttonText: "know more",
-    buttonLink: "/home-dehumidifiers",
-    align: "left", // Text left, Image right
+    buttonLink: "/industrial-dehumidifiers",
+    align: "right", // Image left, Text right
   },
   {
     title: "CEILING DEHUMIDIFIER",
@@ -110,29 +113,37 @@ export default function NewHero() {
         {/* Hidden preloader for all slide images to prevent late popping */}
         <div className="hidden" aria-hidden="true">
           {slides.map((slide, idx) => (
-            <Image 
-              key={`preload-static-${idx}`} 
-              src={slide.type === "advocacy" ? slide.bgImage : slide.image} 
-              alt="preload" 
-              width={10} 
-              height={10} 
-              priority 
+            <Image
+              key={`preload-static-${idx}`}
+              src={slide.type === "advocacy" ? slide.bgImage : slide.image}
+              alt="preload"
+              width={10}
+              height={10}
+              priority
             />
           ))}
         </div>
         <div className="max-w-8xl px-4 md:px-6 lg:px-8 xl:px-12 pt-14 py-6 md:py-8 mx-auto relative min-h-[280px] sm:min-h-[360px] md:min-h-[440px] lg:min-h-[500px] flex items-center">
           <div className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center">
-            <div 
-              className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${
-                slides[0].align === "right" 
-                  ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2" 
-                  : "lg:col-span-5 lg:order-1 order-1 pl-4"
-              }`}
+            <div
+              className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${slides[0].align === "right"
+                ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2"
+                : "lg:col-span-5 lg:order-1 order-1 pl-4"
+                }`}
             >
               <h2 className="font-display font-bold text-xl sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
                 {slides[0].title}
               </h2>
-              <p className="font-sans italic text-xs sm:text-base md:text-xl lg:text-2xl text-[#475569]/90 select-none">
+              {slides[0].specification && (
+                <p className="font-sans font-bold text-xs sm:text-sm md:text-xl lg:text-2xl text-[#d41124] leading-snug select-none">
+                  {slides[0].specification.split("\n").map((line, idx) => (
+                    <span key={idx} className="inline md:block">
+                      {idx > 0 ? <><span className="md:hidden"> </span>{line.trim()}</> : line}
+                    </span>
+                  ))}
+                </p>
+              )}
+              <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none">
                 {slides[0].subtitle}
               </p>
               <div className="pt-1 sm:pt-2">
@@ -145,20 +156,19 @@ export default function NewHero() {
                 </Link>
               </div>
             </div>
-            <div 
-              className={`col-span-5 flex items-center w-full ${
-                slides[0].align === "right" 
-                  ? "lg:col-span-5 lg:order-1 order-1 justify-start" 
-                  : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
-              }`}
+            <div
+              className={`col-span-5 flex items-center w-full ${slides[0].align === "right"
+                ? "lg:col-span-5 lg:order-1 order-1 justify-start"
+                : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
+                }`}
             >
-              <div className="relative w-full max-w-[170px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
+              <div className="relative w-full max-w-[260px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-square sm:aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
                 <Image
                   src={slides[0].image}
                   alt={slides[0].title}
                   fill
                   priority
-                  className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
+                  className="object-contain scale-125 sm:scale-100 drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
                   sizes="(max-width: 768px) 100vw, 600px"
                 />
               </div>
@@ -194,7 +204,7 @@ export default function NewHero() {
   };
 
   return (
-    <section 
+    <section
       className="relative w-full overflow-hidden bg-brand-gray-light border-b border-brand-border/40 "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -202,13 +212,13 @@ export default function NewHero() {
       {/* Hidden preloader for all slide images to prevent late popping */}
       <div className="hidden" aria-hidden="true">
         {slides.map((slide, idx) => (
-          <Image 
-            key={`preload-${idx}`} 
-            src={slide.type === "advocacy" ? slide.bgImage : slide.image} 
-            alt="preload" 
-            width={10} 
-            height={10} 
-            priority 
+          <Image
+            key={`preload-${idx}`}
+            src={slide.type === "advocacy" ? slide.bgImage : slide.image}
+            alt="preload"
+            width={10}
+            height={10}
+            priority
           />
         ))}
       </div>
@@ -224,7 +234,7 @@ export default function NewHero() {
               exit="exit"
               className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center relative"
             >
-              <div 
+              <div
                 className="absolute z-0 pointer-events-none select-none w-screen lg:w-[78vw]"
                 style={{
                   left: "calc(-50vw + 50%)",
@@ -271,10 +281,10 @@ export default function NewHero() {
                     <span className="text-[9px] sm:text-[10px] uppercase font-extrabold tracking-widest text-[#475569]/90 font-display mb-0 md:mb-1.5">
                       Research Partner
                     </span>
-                    <a 
-                      href="https://40to60rh.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href="https://40to60rh.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="relative block hover:scale-105 active:scale-98 transition-all duration-300 pointer-events-auto w-[70px] sm:w-[170px] h-[30px] sm:h-[70px]"
                     >
                       <Image
@@ -288,7 +298,7 @@ export default function NewHero() {
                 </div>
 
                 {/* Desktop Right: Partners Panel Box Container (Full Height & Edge-to-Edge) */}
-                <div 
+                <div
                   className="hidden lg:flex absolute z-10 bg-slate-50 border-l border-slate-200/80 p-6 flex-col justify-start items-center"
                   style={{
                     width: "22vw",
@@ -350,21 +360,30 @@ export default function NewHero() {
               className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center"
             >
               {/* Left-aligned Text Layout or Right-aligned Image Layout */}
-              <div 
-                className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${
-                  slides[currentIndex].align === "right" 
-                    ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2" 
-                    : "lg:col-span-5 lg:order-1 order-1 pl-4"
-                }`}
+              <div
+                className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${slides[currentIndex].align === "right"
+                  ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2"
+                  : "lg:col-span-5 lg:order-1 order-1 pl-4"
+                  }`}
               >
                 <h2 className="font-display font-bold text-xl sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
                   {slides[currentIndex].title}
                 </h2>
-                
-                <p className="font-sans italic text-xs sm:text-base md:text-xl lg:text-2xl text-[#475569]/90 select-none">
+
+                {slides[currentIndex].specification && (
+                  <p className="font-sans font-bold text-xs sm:text-sm md:text-xl lg:text-2xl text-[#d41124] leading-snug select-none">
+                    {slides[currentIndex].specification.split("\n").map((line, idx) => (
+                      <span key={idx} className="inline md:block">
+                        {idx > 0 ? <><span className="md:hidden"> </span>{line.trim()}</> : line}
+                      </span>
+                    ))}
+                  </p>
+                )}
+
+                <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none">
                   {slides[currentIndex].subtitle}
                 </p>
-                
+
                 <div className="pt-1 sm:pt-2">
                   <Link
                     href={slides[currentIndex].buttonLink}
@@ -377,20 +396,19 @@ export default function NewHero() {
               </div>
 
               {/* Image Showcase Layout */}
-              <div 
-                className={`col-span-5 flex items-center w-full ${
-                  slides[currentIndex].align === "right" 
-                    ? "lg:col-span-5 lg:order-1 order-1 justify-start" 
-                    : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
-                }`}
+              <div
+                className={`col-span-5 flex items-center w-full ${slides[currentIndex].align === "right"
+                  ? "lg:col-span-5 lg:order-1 order-1 justify-start"
+                  : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
+                  }`}
               >
-                <div className="relative w-full max-w-[170px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
+                <div className="relative w-full max-w-[260px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-square sm:aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
                   <Image
                     src={slides[currentIndex].image}
                     alt={slides[currentIndex].title}
                     fill
                     priority
-                    className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
+                    className="object-contain scale-125 sm:scale-100 drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
                     sizes="(max-width: 768px) 100vw, 600px"
                   />
                 </div>
@@ -422,11 +440,10 @@ export default function NewHero() {
           <button
             key={index}
             onClick={() => handleManualDotClick(index)}
-            className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 cursor-pointer ${
-              currentIndex === index
-                ? "w-4 sm:w-6 bg-[#1251a0]" // Active darker dot
-                : "w-1.5 sm:w-2 bg-[#1251a0]/25 hover:bg-[#1251a0]/40" // Inactive lighter dots
-            }`}
+            className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 cursor-pointer ${currentIndex === index
+              ? "w-4 sm:w-6 bg-[#1251a0]" // Active darker dot
+              : "w-1.5 sm:w-2 bg-[#1251a0]/25 hover:bg-[#1251a0]/40" // Inactive lighter dots
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

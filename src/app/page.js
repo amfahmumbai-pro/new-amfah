@@ -650,15 +650,15 @@ export default function Home() {
             </div>
 
             {/* Right Image Column (Transparent PNG) */}
-            <div className="hidden md:block lg:col-span-5 relative flex justify-end items-start w-full">
+            <div className="hidden md:block lg:col-span-5 relative flex justify-end w-full">
               <ScrollReveal delay={0.3} scale={0.96} className="w-full flex justify-end">
-                <div className="relative w-full max-w-[420px] aspect-[4/3] group flex items-center justify-end">
+                <div className="relative w-full max-w-[580px] h-[380px] lg:h-[450px] group flex items-start justify-end -mt-8 -mr-6 lg:-mt-14 lg:-mr-15">
                   <Image
-                    src="/banner/banner1.png"
+                    src="/products/amf-45dm1.png"
                     alt="AMFAH Dehumidification Technology"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-contain object-right group-hover:scale-[1.03] transition-transform duration-500 ease-out"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain object-top object-right group-hover:scale-[1.03] transition-transform duration-500 ease-out drop-shadow-xl"
                   />
                 </div>
               </ScrollReveal>

@@ -13,7 +13,7 @@ const CITIES = {
     target: "45-50%",
     status: "Critical Dampness",
     desc: "Monsoon moisture causes severe indoor dampness and airborne mold across NCR.",
-    image: "/images/Delhi.webp",
+    image: "/images/Delhi.png",
   },
   "MUMBAI": {
     name: "MUMBAI",
@@ -24,7 +24,7 @@ const CITIES = {
     target: "45-50%",
     status: "Extreme Moisture",
     desc: "Coastal proximity keeps humidity above 80% RH year-round, damaging luxury spaces.",
-    image: "/images/Mumbai.webp",
+    image: "/images/Mumbai.png",
   },
   "HYDERABAD": {
     name: "HYDERABAD",
@@ -35,7 +35,7 @@ const CITIES = {
     target: "45-50%",
     status: "High Dampness",
     desc: "Seasonal monsoon shifts lead to sticky indoor air, affecting electronics and wooden interiors.",
-    image: "/images/Hyderabad.webp",
+    image: "/images/Hyderabad.png",
   },
   "PUNE": {
     name: "PUNE",
@@ -46,7 +46,7 @@ const CITIES = {
     target: "45-50%",
     status: "High Humidity",
     desc: "Deccan plateau rains create heavy indoor air stagnation and wall condensation.",
-    image: "/images/Pune.webp",
+    image: "/images/Pune.png",
   },
   "BANGALORE": {
     name: "BANGALORE",
@@ -57,7 +57,7 @@ const CITIES = {
     target: "45-50%",
     status: "Elevated Moisture",
     desc: "Frequent showers and high elevation lead to continuous moisture trapped in homes and offices.",
-    image: "/images/Bangalore.webp",
+    image: "/images/Bangalore.png",
   },
   "CHENNAI": {
     name: "CHENNAI",
@@ -68,7 +68,7 @@ const CITIES = {
     target: "45-50%",
     status: "Severe Moisture",
     desc: "Tropical coastal humidity promotes rust, equipment damage, and musty odors.",
-    image: "/images/Chennai.webp",
+    image: "/images/Chennai.png",
   },
 };
 

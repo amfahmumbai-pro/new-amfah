@@ -131,7 +131,7 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
     "aquaria-s1-20p": { price: 32500, date: new Date("2026-04-10"), sales: 480, relevance: 99, featured: 5 },
     "aquaria-s1-24p": { price: 36999, date: new Date("2026-04-18"), sales: 410, relevance: 98, featured: 6 },
     "amf-18dm": { price: 12999, date: new Date("2026-02-10"), sales: 210, relevance: 91, featured: 7 },
-    "amf-30dm": { price: 16500, date: new Date("2026-03-05"), sales: 190, relevance: 93, featured: 8 },
+    // "amf-30dm": { price: 16500, date: new Date("2026-03-05"), sales: 190, relevance: 93, featured: 8 },
     "amf-20pd": { price: 12999, date: new Date("2026-02-18"), sales: 165, relevance: 93, featured: 9.5 },
     "amf-25pd": { price: 14999, date: new Date("2026-02-20"), sales: 170, relevance: 94, featured: 10 },
     "amf-30pd": { price: 16999, date: new Date("2026-02-25"), sales: 160, relevance: 92, featured: 11 },

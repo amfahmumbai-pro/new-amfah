@@ -569,6 +569,7 @@ export const products = [
     },
     image: "/products/amf-18dm.png"
   },
+  /*
   {
     slug: "amf-30dm",
     brochure: "/pdf/AMF-30DM.pdf",
@@ -617,6 +618,7 @@ export const products = [
     },
     image: "/products/amf-30dm1.png"
   },
+  */
   {
     slug: "amf-aqua-50",
     brochure: "/pdf/AMF-AQUA-50.pdf",
@@ -673,18 +675,18 @@ export const products = [
     categoryId: "residential",
     subtitle: "Premium Portable Dehumidifier (20 L/D) With Air Purification",
     extraction: "20 Liters / Day",
-    airflow: "180 m³/h",
-    coverage: "Up to 250 Sq feet",
+    airflow: "230 m³/h",
+    coverage: "250 - 300 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with high-performance 20L/day dehumidification, child lock, real-time digital humidity monitoring, and clothes drying function in a sleek residential build.",
     features: [
-      "20L/Day Dehumidification Capacity",
+      "20L/Day High Dehumidification Capacity",
+      "2.5L Water Tank Capacity",
       "Digital Display with Humidity Monitoring",
-      "Child Lock & Auto Shutoff Safety Features",
+      "Child Lock & Auto Shutoff",
       "Low-Temperature Defrost Mode",
-      "Silent Operation (48 dB)",
-      "Dedicated Clothes Dryer Function",
-      "2.5L Removable Water Tank",
-      "Sleek Portable Design with Easy-Roll Casters"
+      "Two Adjustable Wind Speeds",
+      "Clothes Dryer Function",
+      "Portable Design"
     ],
     applications: [
       "Medium Sized Bedrooms",
@@ -693,19 +695,21 @@ export const products = [
       "Private Study Rooms"
     ],
     specifications: {
-      "Brand": "AMFAH",
-      "Model Name": "AMF-20PD",
-      "Area Coverage": "250 Square Feet",
-      "Air Flow": "230 m³/h",
-      "Colour": "White",
-      "Special Feature": "Current - 1.9 A, Refrigerant - R290",
-      "Capacity": "20 L/day",
-      "Tank Volume": "2.5 Litres",
-      "Product Dimensions": "22D x 32W x 49H Centimeters",
-      "Number of Speeds": "2",
-      "Recommended Uses For Product": "Residential",
-      "Included Components": "Dehumidifier",
-      "Warranty": "1 Year"
+      "Model": "AMF 20 PD",
+      "Coverage Area": "250 - 300 Sq. Ft.",
+      "Dehumidifier Capacity": "20 L / Day",
+      "Compressor": "Rotary",
+      "Refrigeration": "R290 / 0.075 kg",
+      "Voltage / Frequency": "220-240V ~ 50Hz",
+      "Electric Current": "1.9 A",
+      "Power Input (30°C/80%RH)": "345W",
+      "Material (Body)": "ABS",
+      "Water Tank Capacity": "2.5 Litres",
+      "Air Volume": "230 m³ /h",
+      "Product Dimensions (W x D x H)": "13 x 9 x 20 inches",
+      "Noise Level": "48 dB",
+      "Weight": "13 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-25pd.png"
   },
@@ -717,18 +721,18 @@ export const products = [
     categoryId: "residential",
     subtitle: "Premium Portable Dehumidifier (25 L/D) With Air Purification",
     extraction: "25 Liters / Day",
-    airflow: "180 m³/h",
-    coverage: "Up to 300 Sq feet",
+    airflow: "230 m³/h",
+    coverage: "300 - 350 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with high-performance 25L/day dehumidification, child lock, real-time digital humidity monitoring, and clothes drying function in a sleek residential build.",
     features: [
-      "25L/Day Dehumidification Capacity",
+      "25L/Day High Dehumidification Capacity",
+      "2.5L Water Tank Capacity",
       "Digital Display with Humidity Monitoring",
-      "Child Lock & Auto Shutoff Safety Features",
+      "Child Lock & Auto Shutoff",
       "Low-Temperature Defrost Mode",
-      "Silent Operation (48 dB)",
-      "Dedicated Clothes Dryer Function",
-      "2.5L Removable Water Tank",
-      "Sleek Portable Design with Easy-Roll Casters"
+      "Two Adjustable Wind Speeds",
+      "Clothes Dryer Function",
+      "Portable Design"
     ],
     applications: [
       "Medium Sized Bedrooms",
@@ -737,20 +741,21 @@ export const products = [
       "Private Study Rooms"
     ],
     specifications: {
-      "Model Name": "AMF 25 PD",
-      "Brand": "AMFAH",
-      "Area Coverage": "300 sq.ft.",
-      "Color": "White",
-      "Special Feature": "Refrigerant R290, Current 1.9 A",
-      "Dehumidification Capacity": "25 Litres",
-      "Water Tank Capacity": "2.5 Liters",
-      "Dimensions (D x W x H)": "22 x 32 x 49 cm",
-      "Number of Fan Speeds": "2",
-      "Recommended Use": "Residential",
-      "Included Components": "Dehumidifier",
-      "Digital Display": "Real-time humidity monitoring",
+      "Model": "AMF 25 PD",
+      "Coverage Area": "300 - 350 Sq. Ft.",
+      "Dehumidifier Capacity": "25 L / Day",
+      "Compressor": "Rotary",
+      "Refrigeration": "R290 / 0.075 kg",
+      "Voltage / Frequency": "220-240V ~ 50Hz",
+      "Electric Current": "1.9 A",
+      "Power Input (30°C/80%RH)": "345W",
+      "Material (Body)": "ABS",
+      "Water Tank Capacity": "2.5 Litres",
+      "Air Volume": "230 m³ /h",
+      "Product Dimensions (W x D x H)": "13 x 9 x 20 inches",
       "Noise Level": "48 dB",
-      "Warranty": "1 Year"
+      "Weight": "13 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-25pd.png"
   },
@@ -857,17 +862,15 @@ export const products = [
     categoryId: "residential",
     subtitle: "Portable Dehumidifier (45 L/D) With Air Purification",
     extraction: "45 Liters / Day",
-    airflow: "173 m³/h",
+    airflow: "200 m³/h",
     coverage: "Up to 500 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with high-capacity 45L/day dehumidification, quiet energy-efficient operation, multi-stage air purification, and negative ion technology in a durable, reliable build.",
     features: [
-      "Tank Capacity 9 Litres",
-      "Removes up to 45 liters of moisture daily for large spaces and commercial use.",
-      "Large tank capacity with hose support for uninterrupted dehumidification.",
-      "Anti-bacterial filter improves air quality by trapping dust and allergens.",
-      "Suitable for both residential and commercial environments.",
-      "Operates at just 48 dB for quieter performance and comfort.",
-      "Smart humidity management optimizes power consumption."
+      "High Capacity 45L/Day Dehumidification Effectively removes",
+      "9L Tank Or Continuous Drainage",
+      "Silent & Energy Efficient Operation Operating at ≤ 45 dB",
+      "Air Purification / The anti-bacterial A++ Filter",
+      "Coverage Area Upto 450 Sq. Ft."
     ],
     applications: [
       "Large Living Spaces & Basements",
@@ -877,17 +880,20 @@ export const products = [
     ],
     specifications: {
       "Model Name": "AMF 45 DM",
-      "Dehumidifier Capacity": "45 Liters per Day",
-      "Water Tank Capacity": "9 Litres",
-      "Area Coverage": "500 Square Feet",
-      "Air Flow Capacity": "173 Cubic Meters Per Hour",
-      "Refrigerant": "R290",
-      "Noise Level": "≤ 43 dB",
-      "Current": "0.083333",
-      "Color": "White",
-      "Dimensions (W x D x H)": "14.5 x 11.8 x 23.2 inches",
-      "Material": "ABS",
-      "Weight": "17 kg"
+      "Dehumidification Capacity": "45 Liters per Day",
+      "Water Tank Capacity": "9 litres",
+      "Coverage Area": "500 Sq. Ft.",
+      "Compressor": "Rotary",
+      "Power Supply": "220-240V ~ 50-60Hz",
+      "Power": "360W (27°C 60%)",
+      "Product Dimensions(W x D x H)": "428W x 358D x 665H (mm)",
+      "Material (Body)": "ABS",
+      "Amount of Air Flow": "200 m³/h",
+      "Refrigerant": "R290 / 95g",
+      "Noise Level": "≤ 45 dB",
+      "Weight": "17 kg",
+      "Operating Temperature": "5°C - 35°C",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-45dm1.png"
   }, 
@@ -1037,14 +1043,15 @@ export const products = [
     subtitle: "Premium Domestic Dehumidifier (30L/Day) With Auto Drainage And Air Purification",
     extraction: "30 Liters / Day",
     airflow: "180 m³/h",
-    coverage: "350 - 450 Sq feet",
+    coverage: "400 - 500 Sq feet",
     tech: "High-efficiency rotary compressor, smart touch LED interface, auto-defrost system, continuous drainage support, whisper-quiet operation.",
     features: [
+      "Water Tank Capacity 6 Liters",
+      "Coverage Area - 400 - 500 Sq.Ft.",
       "Smart LED Touch Control Console",
-      "Auto Hot-Gas Defrost System",
-      "Continuous Gravity Drain Port",
       "Eco-Friendly R290 Refrigerant",
-      "Best Selling Premium Model"
+      "Best Selling Premium Model",
+      "Two ways to treat Wastewater: Water tank or direct drainage through a hose."
     ],
     applications: [
       "Large Master Bedrooms",
@@ -1054,8 +1061,11 @@ export const products = [
     ],
     specifications: {
       "Model Name": "AMF-JYDH-30",
-      "Coverage Area": "350 - 450 SQFT",
+      "Coverage Area": "400 - 500 Sq.Ft.",
       "Moisture Removal (30°C, RH80%)": "30 L/Day",
+      "Water Tank Capacity": "6 Liters",
+      "Compressor": "Rotary",
+      "Material (Body)": "ABS",
       "Voltage / Frequency": "220V~ / 50Hz",
       "Phase": "1 Ph",
       "Power": "310 W",
@@ -1067,9 +1077,9 @@ export const products = [
       "Maximum Operating Pressure High": "1.3 Mpa",
       "Maximum Allowable Pressure": "2.5 Mpa",
       "Ambient Temperature": "5 ~ 32 °C",
-      "Water Tank Capacity": "6 Liters",
-      "Dimensions (W x D x H)": "350 x 260 x 560 mm",
-      "Weight": "14.0 kg"
+      "Dimensions (W x D x H)": "13 x 10 x 23.5 inches",
+      "Weight": "14 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/dehumidifier.png"
   },
@@ -1082,7 +1092,7 @@ export const products = [
     subtitle: "Heavy Duty Industrial Dehumidifier (120 L/D) With Air Purification",
     extraction: "120 Liters / Day",
     airflow: "1300 m³/h",
-    coverage: "1400-2000 SQFT",
+    coverage: "1400 - 1800 Sq.Ft.",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with powerful 120L/day dehumidification, automatic defrosting logic, digital controller, and high airflow centrifugal blower in a heavy-duty portable design.",
     features: [
       "120L/Day High Dehumidification Capacity",
@@ -1091,8 +1101,7 @@ export const products = [
       "Continuous Drainage Option with Hose Ready",
       "Automatic Defrosting Logic for low-temperature operations",
       "Digital Humidity Control Console",
-      "Heavy-Duty Castor Wheels & Side Handles for easy mobility",
-      "A++ Filter & Air Purification capability"
+      "Heavy-Duty Castor Wheels & Side Handles for easy mobility"
     ],
     applications: [
       "Industrial Cleanrooms",
@@ -1102,9 +1111,11 @@ export const products = [
     ],
     specifications: {
       "Model Name": "AMF-120DM",
-      "Coverage Area": "1400 - 2000 SQFT",
+      "Coverage Area": "1400 - 1800 Sq.Ft.",
       "Dehumidifier Capacity": "120 L/day (30°C, 80% RH)",
       "Power Supply": "220V–240V / 50Hz / 1P",
+      "Material (Body)": "Metal",
+      "Compressor": "Rotary",
       "Power Consumption": "1680 Watts",
       "Electric Current": "7.6 A",
       "Amount of Air Flow": "1300 m³/h",
@@ -1113,7 +1124,9 @@ export const products = [
       "Water Tank Capacity": "8 Liters",
       "Operating Temperature": "5°C – 38°C",
       "Operating Humidity RH%": "10% RH – 90% RH",
-      "Dimensions (W x D x H)": "540 x 440 x 980 mm"
+      "Dimensions (W x D x H)": "18 x 17 x 38.5 Inches",
+      "Weight": "60 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-120dm.png"
   },
@@ -1221,18 +1234,14 @@ export const products = [
     subtitle: "Premium Industrial Dehumidifier With Air Purification",
     extraction: "138 Liters / Day",
     airflow: "1100 m³/h",
-    coverage: "1500-2200 SQFT",
-    tech: "Premium Diamond Series rotary compressor, smart LCD touch controller, high airflow blower.",
+    coverage: "Up to 14,000 cu. ft. (397 cu. mt.)",
+    tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with powerful 138L/day extraction, ductable focused drying option, smart LED display controls, and integrated high-lift condensate pump in a high-efficiency industrial design.",
     features: [
-      "High-Capacity Extraction: Up to 138 Liters/Day",
-      "Portable Plug & Play Dehumidifier",
-      "Wide Coverage Area",
-      "Power Efficiency",
-      "Anti-Corrosive Body",
-      "Smart Controls",
-      "Focused Drying",
-      "Integrated Condensate Pump",
-      "High Airflow Design"
+      "High-Capacity Extraction: Up to 138 Liters/Day (at 35°C / 90% RH) and 100 Liters/Day at high temperatures",
+      "Wide Coverage Area: Recommended for spaces up to 14,000 cu. ft. (397 cu. mt.)",
+      "Focused Drying: Ductable option allows the air outlet to be connected to ducting for targeted drying",
+      "Smart Controls: LED Display and electronic controls for precise humidity management",
+      "Integrated Condensate Pump: High-lift water pump dispenses condensate vertically/horizontally up to 15 feet"
     ],
     applications: [
       "Large Storage Warehouses",
@@ -1241,7 +1250,7 @@ export const products = [
       "Server and Data Rooms"
     ],
     specifications: {
-      "Model Name": "AMF-138DMP",
+      "Model Name": "AMF 138 DMP",
       "Rated Voltage / Frequency": "220V / 50Hz",
       "Normal Dehumidification Capacity (27°C/60%RH)": "2.5 kg/h",
       "High Temp. Dehumidification Capacity": "100 L/d",
@@ -1250,14 +1259,17 @@ export const products = [
       "Power (30°C/80%RH)": "1550 W",
       "Max Power (35°C/90%RH)": "1800 W",
       "Max Current (35°C/90%RH)": "8.5 A",
+      "Material (Body)": "Metal",
+      "Compressor": "Rotary",
       "Air Volume": "1100 m³/h",
       "Refrigerant / Injection Amount": "R410A / 730 g",
-      "Body Size (L x W x H)": "480 x 435 x 940 mm",
+      "Dimension": "480 x 435 x 940 mm",
       "Weight": "48 kg",
-      "Water Tank": "14 L",
-      "Noise Level (Low / High)": "62 dB / 68 dB"
+      "Water Tank Capacity": "14 L",
+      "Noise Level (Low / High)": "62 dB / 68 dB",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
-    image: "/products/dehumidifier.png"
+    image: "/products/amf-138dmp.png"
   },
   {
     slug: "amf-ss-120l",
@@ -1361,14 +1373,15 @@ export const products = [
     subtitle: "Premium Commercial Dehumidifier (60L/Day) With Air Purification",
     extraction: "60 Liters / Day",
     airflow: "430 m³/h",
-    coverage: "450 - 650 Sq feet",
+    coverage: "600 - 700 Sq feet",
     tech: "High-efficiency rotary compressor, smart LED touch interface, auto hot-gas defrost, continuous drain port, eco-friendly R410A refrigerant for commercial environments.",
     features: [
+      "Water Tank Capacity 7.2 Liters",
+      "Coverage Area - 600 - 700 Sq.Ft.",
       "Smart LED Touch Control Console",
-      "Auto Hot-Gas Defrost System",
-      "Continuous Gravity Drain Port",
       "Eco-Friendly R410A Refrigerant",
-      "Best Selling Commercial Model"
+      "Best Selling Premium Model",
+      "Two ways to treat Wastewater: Water tank or direct drainage through a hose."
     ],
     applications: [
       "Commercial Showrooms & Boutiques",
@@ -1377,9 +1390,12 @@ export const products = [
       "Hotels & Hospitality Spaces"
     ],
     specifications: {
-      "Model Name": "AMF-JYDH-60",
-      "Coverage Area": "450 - 650 SQFT",
+      "Brand": "AMFAH",
+      "Model Name": "AMF JYDH 60",
+      "Coverage Area": "600 - 700 Sq.Ft.",
       "Moisture Removal (30°C, RH80%)": "60 L/Day",
+      "Compressor": "Rotary",
+      "Material (Body)": "ABS",
       "Voltage / Frequency": "220V~ / 50Hz",
       "Phase": "1 Ph",
       "Power": "665 W",
@@ -1392,9 +1408,9 @@ export const products = [
       "Maximum Allowable Pressure": "4.2 Mpa",
       "Ambient Temperature": "5 ~ 32 °C",
       "Water Tank Capacity": "7.2 Liters",
-      "Dimensions (W x D x H)": "420 x 300 x 650 mm",
+      "Dimensions (W x D x H)": "15 x 11.5 x 25 inches",
       "Weight": "23.5 kg",
-      "Best Selling": "Yes"
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-jydh-60.png"
   },
@@ -1407,17 +1423,14 @@ export const products = [
     subtitle: "Premium Commercial Dehumidifier (100 L/D) With Air Purification",
     extraction: "100 Liters / Day",
     airflow: "530 m³/h",
-    coverage: "700 - 1500 Sq feet",
+    coverage: "900 - 1200 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with high-performance 100L/day dehumidification capacity, child lock, real-time digital humidity monitoring, and clothes drying function in a sleek portable design with caster wheels.",
     features: [
       "100L/Day Dehumidification Capacity",
+      "7.5L Water Tank Capacity",
+      "Coverage Area 900 - 1200 Sq.Ft.",
       "Digital Display with Humidity Monitoring",
-      "Child Lock & Auto Shutoff",
-      "Low-Temperature Defrost Mode",
-      "Silent Operation",
-      "Clothes Dryer Function",
-      "7.5L Water Tank",
-      "Portable Design"
+      "Two ways to treat Wastewater: Water tank or direct drainage through a hose."
     ],
     applications: [
       "Manufacturing Plants & Factories",
@@ -1426,10 +1439,12 @@ export const products = [
       "Large Commercial Basements"
     ],
     specifications: {
-      "Model Name": "AMF-NDF-100L-E",
       "Brand": "AMFAH",
-      "Coverage Area": "700 - 1500 SQFT",
+      "Model Name": "AMF NDF 100L E",
+      "Coverage Area": "900 - 1200 Sq.Ft",
       "Moisture Removal (35°C, RH90%)": "100 L/Day",
+      "Compressor": "Rotary",
+      "Material (Body)": "ABS",
       "Voltage / Frequency": "220V~ / 50Hz",
       "Phase": "1 Ph",
       "Power": "800 W",
@@ -1442,8 +1457,10 @@ export const products = [
       "Maximum Allowable Pressure": "4.2 Mpa",
       "Adjustable Humidity Range": "RH 10 ~ 95 %",
       "Ambient Temperature": "5 ~ 38 °C",
+      "Dimensions (W x D x H)": "23 x 18 x 35 Inches",
       "Water Tank Capacity": "7.5 Liters",
-      "Weight": "49.5 kg"
+      "Weight": "50 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-ndf-100l-e.png"
   },
