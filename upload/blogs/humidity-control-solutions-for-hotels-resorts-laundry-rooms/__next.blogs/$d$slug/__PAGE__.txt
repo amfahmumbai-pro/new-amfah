@@ -1,0 +1,201 @@
+1:"$Sreact.fragment"
+2:I[1839,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3744","static/chunks/app/blogs/%5Bslug%5D/page-437808fe277a63e0.js"],"default"]
+7:I[3549,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3744","static/chunks/app/blogs/%5Bslug%5D/page-437808fe277a63e0.js"],""]
+11:I[8240,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3744","static/chunks/app/blogs/%5Bslug%5D/page-437808fe277a63e0.js"],"default"]
+12:I[8937,[],"OutletBoundary"]
+13:"$Sreact.suspense"
+:HL["/blogs/luxury_hotel_suite.jpg","image"]
+3:T3a6e,
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        When guests walk into a hotel, they notice the little things. The room smells fresh. The towels feel crisp. The bed linen is clean and dry. The bathroom doesn't feel damp. These details may seem small, but together they shape the entire guest experience.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Great Guest Experience Starts Long Before Check-in</h3>
+      <p class="mb-4">What many guests don't realize is that behind this comfort is careful environmental control including proper humidity management.</p>
+      <p class="mb-4">Hotels and resorts deal with moisture every single day. Without controlling humidity, even the most luxurious property can face problems that affect guest satisfaction, maintenance costs, and the lifespan of valuable assets.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Hotels Naturally Have High Humidity</h3>
+      <p class="mb-4">Hotels generate moisture from almost every area of the property.</p>
+      <p class="mb-4">Think about everything happening throughout the day:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Hundreds of hot showers</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Indoor swimming pools</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Spa and wellness areas</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Commercial kitchens</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Laundry operations</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Air conditioning systems</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Guests opening windows during humid weather</li>
+      </ul>
+      <p class="mb-4">All of these release moisture into the air.</p>
+      <p class="mb-4">If that moisture isn't removed, humidity gradually builds throughout the building.</p>
+      <p class="mb-4">According to the U.S. Environmental Protection Agency (EPA), excess indoor moisture creates favorable conditions for mold growth and poor indoor air quality.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Guest Rooms Are the First Place Humidity Is Noticed</h3>
+      <p class="mb-4">Guests may not know the humidity level. But they can certainly feel it.</p>
+      <p class="mb-4">A humid room often feels:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Sticky</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Uncomfortable</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Less cool even when the AC is running</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Musty</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Less luxurious</li>
+      </ul>
+      <p class="mb-4">Even freshly washed bed sheets can feel slightly damp when indoor humidity remains high.</p>
+      <p class="mb-4">Luxury hotels work hard to create a premium experience, and balanced humidity plays an important role in achieving that.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Bathrooms Stay Damp Longer Than Expected</h3>
+      <p class="mb-4">Hotel bathrooms are used constantly. Each shower fills the room with warm water vapor.</p>
+      <p class="mb-4">Without proper humidity control, moisture settles on:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Mirrors</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Tiles</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Ceilings</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Towels</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Bathroom cabinets</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Silicone joints</li>
+      </ul>
+      <p class="mb-4">Over time this can encourage mold, mildew, unpleasant odors, and discoloration.</p>
+      <p class="mb-4">Keeping bathrooms dry improves both cleanliness and guest comfort.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Laundry Rooms Face Even Bigger Challenges</h3>
+      <p class="mb-4">Commercial laundry rooms are one of the most humid areas in any hotel.</p>
+      <p class="mb-4">Large washing machines and industrial dryers continuously release moisture into the air.</p>
+      <p class="mb-4">Without humidity control, laundry staff may experience:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Slower linen drying</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Damp folded towels</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Longer drying cycles</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Condensation on equipment</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Uncomfortable working conditions</li>
+      </ul>
+      <p class="mb-4">High humidity can also reduce the efficiency of drying operations, increasing energy consumption.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Fresh Towels Should Feel Fresh</h3>
+      <p class="mb-4">Guests expect hotel towels to be:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Soft</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Dry</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Odor-free</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Comfortable</li>
+      </ul>
+      <p class="mb-4">When humidity remains high, towels can stay damp for longer after washing.</p>
+      <p class="mb-4">That lingering moisture may lead to musty odors before the towels even reach the guest room.</p>
+      <p class="mb-4">Humidity control helps towels stay fresh from the laundry room to the bathroom.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Luxury Interiors Also Need Protection</h3>
+      <p class="mb-4">Hotels invest heavily in interior design.</p>
+      <p class="mb-4">Humidity can slowly affect:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Wooden furniture</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Decorative wall panels</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Carpets</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Curtains</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Leather furniture</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Artwork</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Premium flooring</li>
+      </ul>
+      <p class="mb-4">Moisture-related damage often develops gradually, making it expensive to repair later.</p>
+      <p class="mb-4">Protecting interiors helps preserve the property's long-term value.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Indoor Pools and Spa Areas Require Special Attention</h3>
+      <p class="mb-4">Many luxury hotels include:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Indoor swimming pools</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Spa facilities</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Steam rooms</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Wellness centers</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Jacuzzis</li>
+      </ul>
+      <p class="mb-4">These spaces naturally generate large amounts of moisture.</p>
+      <p class="mb-4">Without humidity control, nearby walls, ceilings, windows, and HVAC systems can suffer from continuous condensation.</p>
+      <p class="mb-4">Guests also feel more comfortable when humidity is balanced rather than excessively high.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Restaurants and Banquet Areas Benefit Too</h3>
+      <p class="mb-4">Large banquet halls often host hundreds of guests.</p>
+      <p class="mb-4">Combined with catering operations and air conditioning, humidity levels can fluctuate throughout the day.</p>
+      <p class="mb-4">Balanced humidity helps create a more comfortable environment for:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Weddings</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Conferences</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Business meetings</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Fine dining</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Corporate events</li>
+      </ul>
+      <p class="mb-4">Comfortable guests tend to stay longer and enjoy their experience more.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Common Signs Your Hotel Has a Humidity Problem</h3>
+      <p class="mb-4">Many hotels don't realize humidity has become an issue until visible damage appears.</p>
+      <p class="mb-4">Some warning signs include:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Musty smells in guest rooms</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Damp towels</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Mold around bathroom ceilings</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Condensation on windows</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Peeling wallpaper</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Warped wooden furniture</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Carpets that never seem completely dry</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Increased complaints about room freshness</li>
+      </ul>
+      <p class="mb-4">Early humidity control helps prevent these issues before they become costly.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Air Conditioners Can't Solve Everything</h3>
+      <p class="mb-4">Many hotel owners assume their HVAC system controls humidity completely.</p>
+      <p class="mb-4">Air conditioners remove some moisture while cooling the air.</p>
+      <p class="mb-4">However, during the monsoon or in coastal regions, humidity can remain high even when the room temperature feels comfortable.</p>
+      <p class="mb-4">That's because an air conditioner is primarily designed to cool—not continuously maintain the ideal humidity level throughout different hotel areas.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Benefits of Dedicated Humidity Control</h3>
+      <p class="mb-4">Installing dedicated dehumidification systems helps hotels create a consistently comfortable indoor environment.</p>
+      <p class="mb-4">Benefits include:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Fresher guest rooms</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Faster towel drying</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Better linen storage</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Reduced mold risk</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Protection for furniture and interiors</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Improved laundry efficiency</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Better indoor air quality</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Lower maintenance costs over time</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Choosing the Right Areas for Dehumidification</h3>
+      <p class="mb-4">Not every space has the same humidity requirements.</p>
+      <p class="mb-4">Hotels often benefit from humidity control in:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Guest rooms</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Laundry rooms</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Linen storage</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Spa facilities</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Indoor pools</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Conference halls</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Storage rooms</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Housekeeping departments</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Basement storage</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Fitness centers</li>
+      </ul>
+      <p class="mb-4">A properly planned humidity control strategy protects the entire property—not just one room.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Leading Hotels Invest in Humidity Control</h3>
+      <p class="mb-4">Luxury hospitality is built on consistency.</p>
+      <p class="mb-4">Guests expect every room to feel clean, fresh, and comfortable every time they visit.</p>
+      <p class="mb-4">Proper humidity control helps hotels deliver that experience while protecting expensive interiors, reducing maintenance, and improving operational efficiency.</p>
+      <p class="mb-4">It's an investment in both guest satisfaction and long-term property value.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Keep Every Guest Comfortable Throughout the Year</h3>
+      <p class="mb-4">Humidity is invisible, but its impact is everywhere.</p>
+      <p class="mb-4">From guest rooms and bathrooms to laundry operations and storage areas, controlling moisture helps hotels operate more efficiently while delivering a premium experience.</p>
+      <p class="mb-4">AMFAH <a href="/products" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px]">commercial dehumidifiers</a> are designed to help hotels, resorts, and hospitality businesses maintain balanced indoor humidity, protect valuable interiors, keep linens and towels fresh, reduce mold risks, and create a healthier, more comfortable environment for guests and staff throughout the year.</p>
+    0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex flex-col bg-white min-h-screen font-sans","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Humidity Control Solutions for Hotels, Resorts & Laundry Rooms\",\"description\":\"Discover why hotels, resorts, and commercial laundry rooms need humidity control. Learn how dehumidifiers protect linens, improve guest comfort, and prevent mold.\",\"datePublished\":\"June 16, 2026\",\"author\":{\"@type\":\"Person\",\"name\":\"AMFAH India\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"AMFAH Dehumidifiers\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://amfah.com/logo.png\"}}}"}}],["$","main",null,{"className":"flex-grow pb-10","children":[["$","section",null,{"className":"w-full relative min-h-[350px] sm:min-h-[450px] md:min-h-[630px] flex items-center overflow-hidden","children":[["$","div",null,{"className":"absolute inset-0 z-0","children":[["$","img",null,{"src":"/blogs/luxury_hotel_suite.jpg","alt":"Humidity Control Solutions for Hotels, Resorts & Laundry Rooms","className":"w-full h-full object-cover blur-[2px] scale-105"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-900/40 to-slate-950/20"}]]}],["$","div",null,{"className":"max-w-5xl mx-auto px-6 md:px-8 relative z-10 w-full py-8 md:py-8 space-y-5 text-white","children":[["$","$L2",null,{"delay":0.1,"y":15,"children":["$","div",null,{"className":"flex items-center gap-3","children":[["$","span",null,{"className":"bg-white/10 backdrop-blur-md border border-white/20 px-2.5 py-1 rounded font-display text-[9px] md:text-xs font-bold uppercase tracking-wider text-white shadow-sm","children":"Commercial Solutions"}],["$","span",null,{"className":"text-xs md:text-sm text-slate-200 font-medium","children":"June 16, 2026"}]]}]}],["$","$L2",null,{"delay":0.2,"y":20,"children":["$","h1",null,{"className":"font-display font-extrabold text-xl md:text-5xl lg:text-[55px] leading-[1.15] text-white tracking-tight [text-shadow:_0_2px_4px_rgba(0,0,0,0.4)]","children":"Humidity Control Solutions for Hotels, Resorts & Laundry Rooms"}]}],["$","$L2",null,{"delay":0.3,"y":20,"children":["$","p",null,{"className":"text-slate-100 text-sm md:text-xl max-w-3xl leading-relaxed font-sans font-medium [text-shadow:_0_1px_2px_rgba(0,0,0,0.3)]","children":"Discover why hotels, resorts, and commercial laundry rooms need humidity control. Learn how dehumidifiers protect linens, improve guest comfort, and prevent mold."}]}],["$","$L2",null,{"delay":0.4,"y":15,"children":["$","div",null,{"className":"flex items-center gap-2 pt-1 font-display text-xs text-slate-200 font-bold uppercase tracking-wider","children":["$","span",null,{"className":"text-xs md:text-sm","children":"6 min read"}]}]}]]}]]}],["$","section",null,{"className":"max-w-7xl mx-auto px-6 md:px-8 pt-12 md:pt-16","children":["$","$L2",null,{"delay":0.1,"children":["$","div",null,{"className":"text-brand-gray-dark/95 text-base sm:text-[18px] leading-[1.65] space-y-7 font-sans   [&_p]:leading-[1.65] [&_p]:mb-5 [&_p]:text-justify   [&_p.lead]:text-lg sm:[&_p.lead]:text-xl [&_p.lead]:font-medium [&_p.lead]:text-brand-navy [&_p.lead]:border-l-4 [&_p.lead]:border-brand-accent [&_p.lead]:pl-5 [&_p.lead]:my-8 [&_p.lead]:leading-relaxed   [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-2xl sm:[&_h3]:text-3xl [&_h3]:text-brand-navy [&_h3]:mt-12 [&_h3]:mb-4 [&_h3]:tracking-tight   [&_ul]:list-none [&_ul]:pl-6 [&_ul]:my-6 [&_ul]:space-y-2.5   [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:my-6 [&_ol]:space-y-2.5   [&_li]:leading-relaxed [&_li]:text-brand-gray-dark/90   [&_blockquote]:bg-[#FAF7F2] [&_blockquote]:border-l-4 [&_blockquote]:border-brand-accent [&_blockquote]:p-6 [&_blockquote]:rounded-r-xl [&_blockquote]:italic [&_blockquote]:text-brand-navy [&_blockquote]:my-8 [&_blockquote]:font-sans","dangerouslySetInnerHTML":{"__html":"$3"}}]}]}],"$L4"]}],"$L5"]}],null,"$L6"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"nBcIMe288e0PC5h5UJJow"}
+4:["$","section",null,{"className":"max-w-7xl px-4 mx-auto mt-6 md:mt-10 pt-6 md:pt-10 border-t border-brand-border/60","children":["$","div",null,{"className":"space-y-3 md:space-y-8","children":[["$","div",null,{"className":"space-y-2","children":[["$","span",null,{"className":"text-[10px] font-bold text-brand-gray-medium uppercase tracking-widest font-display block","children":"More Insights"}],["$","h2",null,{"className":"font-display font-extrabold text-2xl text-brand-navy","children":"Suggested Publications"}]]}],["$","div",null,{"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12","children":[["$","article","what-is-a-portable-air-conditioner-benefits-uses-how-it-works",{"className":"group flex flex-col h-full bg-transparent","children":[["$","$L7",null,{"prefetch":false,"href":"/blogs/what-is-a-portable-air-conditioner-benefits-uses-how-it-works","className":"block overflow-hidden rounded-2xl aspect-[16/10] relative bg-brand-blue-light/35 shadow-sm","children":["$","img",null,{"src":"/blogs/portable-ac.jpg","alt":"What is a Portable Air Conditioner? Benefits, Uses & How It Works","className":"w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]","loading":"lazy"}]}],["$","div",null,{"className":"pt-5 flex-grow flex flex-col justify-between space-y-4","children":[["$","div",null,{"className":"space-y-2.5","children":[["$","div",null,{"className":"flex items-center gap-2 text-[10px] sm:text-[11px] font-bold text-brand-gray-medium uppercase tracking-widest font-display","children":[["$","span",null,{"children":"Buying Guides"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"children":"August 1, 2026"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"className":"text-brand-navy/80","children":"5 min read"}]]}],["$","h3",null,{"className":"font-display font-extrabold text-lg sm:text-xl text-brand-navy group-hover:text-brand-accent transition-colors duration-300 leading-snug","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/what-is-a-portable-air-conditioner-benefits-uses-how-it-works","className":"focus:outline-none","children":"What is a Portable Air Conditioner? Benefits, Uses & How It Works"}]}],["$","p",null,{"className":"text-sm leading-relaxed text-brand-gray-dark/80 line-clamp-3 font-sans","children":"Learn what a portable air conditioner is, how it works, its benefits, where it can be used, and how it compares with a split AC for homes, offices, and commercial spaces."}]]}],["$","div",null,{"className":"pt-2","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/what-is-a-portable-air-conditioner-benefits-uses-how-it-works","className":"inline-block text-[11px] font-bold text-brand-navy uppercase tracking-wider border-b border-brand-navy/40 pb-0.5 group-hover:text-brand-accent group-hover:border-brand-accent transition-all duration-300","children":"Read Article"}]}]]}]]}],["$","article","best-portable-dehumidifiers-india-buying-guide",{"className":"group flex flex-col h-full bg-transparent","children":[["$","$L7",null,{"prefetch":false,"href":"/blogs/best-portable-dehumidifiers-india-buying-guide","className":"block overflow-hidden rounded-2xl aspect-[16/10] relative bg-brand-blue-light/35 shadow-sm","children":["$","img",null,{"src":"/blogs/portable-dehumidifier.jpg","alt":"Best Portable Dehumidifiers in India: Buying Guide","className":"w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]","loading":"lazy"}]}],["$","div",null,{"className":"pt-5 flex-grow flex flex-col justify-between space-y-4","children":[["$","div",null,{"className":"space-y-2.5","children":[["$","div",null,{"className":"flex items-center gap-2 text-[10px] sm:text-[11px] font-bold text-brand-gray-medium uppercase tracking-widest font-display","children":["$L8","$L9","$La","$Lb","$Lc"]}],"$Ld","$Le"]}],"$Lf"]}]]}],"$L10"]}]]}]}]
+5:["$","section",null,{"className":"py-20 bg-brand-navy text-white text-center relative overflow-hidden","children":[["$","div",null,{"className":"absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none"}],["$","div",null,{"className":"absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-blue-light/5 rounded-full blur-[100px] pointer-events-none"}],["$","$L2",null,{"delay":0.1,"className":"max-w-2xl mx-auto space-y-6 px-6 relative z-10","children":[["$","$L11",null,{"iconNode":[["path",{"d":"M12 7v14","key":"1akyts"}],["path",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z","key":"ruj8y"}]],"className":"lucide-book-open h-12 w-12 text-brand-blue-light mx-auto animate-pulse"}],["$","h3",null,{"className":"font-display font-extrabold text-2xl sm:text-3xl md:text-4xl leading-tight","children":"Need Expert Humidity Design Documentation?"}],["$","p",null,{"className":"text-sm text-slate-300 leading-relaxed max-w-xl mx-auto font-sans","children":"Our Senior indoor air consultants are online to draft complete thermodynamic calculations for industrial cleanrooms, warehouses, data grids, or residential spaces."}],["$","div",null,{"className":"pt-4 flex flex-col sm:flex-row items-center justify-center gap-4","children":[["$","$L7",null,{"prefetch":false,"href":"/contact","className":"inline-flex items-center justify-center font-display font-medium rounded-lg transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 cursor-pointer disabled:cursor-not-allowed disabled:opacity-60 transform hover:scale-[1.02] active:scale-[0.98] bg-brand-accent text-white hover:bg-brand-navy shadow-md shadow-brand-accent/10 hover:shadow-lg hover:shadow-brand-accent/15 px-6 py-3 text-base group font-bold uppercase tracking-wider text-xs w-full sm:w-auto","children":["$undefined","Book Engineering Audit","$undefined"]}],["$","$L7",null,{"prefetch":false,"href":"/blogs","className":"text-xs font-bold uppercase tracking-widest text-white hover:text-brand-blue-light border-b border-white/30 hover:border-brand-blue-light pb-0.5 transition-colors font-display","children":"Back to All Insights"}]]}]]}]]}]
+6:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+8:["$","span",null,{"children":"Buying Guides"}]
+9:["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}]
+a:["$","span",null,{"children":"August 1, 2026"}]
+b:["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}]
+c:["$","span",null,{"className":"text-brand-navy/80","children":"5 min read"}]
+d:["$","h3",null,{"className":"font-display font-extrabold text-lg sm:text-xl text-brand-navy group-hover:text-brand-accent transition-colors duration-300 leading-snug","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/best-portable-dehumidifiers-india-buying-guide","className":"focus:outline-none","children":"Best Portable Dehumidifiers in India: Buying Guide"}]}]
+e:["$","p",null,{"className":"text-sm leading-relaxed text-brand-gray-dark/80 line-clamp-3 font-sans","children":"A simple buying guide to help you choose the best portable dehumidifier in India, covering capacity, features, room size, and what really matters."}]
+f:["$","div",null,{"className":"pt-2","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/best-portable-dehumidifiers-india-buying-guide","className":"inline-block text-[11px] font-bold text-brand-navy uppercase tracking-wider border-b border-brand-navy/40 pb-0.5 group-hover:text-brand-accent group-hover:border-brand-accent transition-all duration-300","children":"Read Article"}]}]
+10:["$","article","dehumidifier-vs-humidifier-key-differences",{"className":"group flex flex-col h-full bg-transparent","children":[["$","$L7",null,{"prefetch":false,"href":"/blogs/dehumidifier-vs-humidifier-key-differences","className":"block overflow-hidden rounded-2xl aspect-[16/10] relative bg-brand-blue-light/35 shadow-sm","children":["$","img",null,{"src":"/blogs/dehumidifier-vs-humidifier.jpg","alt":"Dehumidifier vs Humidifier: Key Differences Explained","className":"w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]","loading":"lazy"}]}],["$","div",null,{"className":"pt-5 flex-grow flex flex-col justify-between space-y-4","children":[["$","div",null,{"className":"space-y-2.5","children":[["$","div",null,{"className":"flex items-center gap-2 text-[10px] sm:text-[11px] font-bold text-brand-gray-medium uppercase tracking-widest font-display","children":[["$","span",null,{"children":"Buying Guides"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"children":"July 29, 2026"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"className":"text-brand-navy/80","children":"5 min read"}]]}],["$","h3",null,{"className":"font-display font-extrabold text-lg sm:text-xl text-brand-navy group-hover:text-brand-accent transition-colors duration-300 leading-snug","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/dehumidifier-vs-humidifier-key-differences","className":"focus:outline-none","children":"Dehumidifier vs Humidifier: Key Differences Explained"}]}],["$","p",null,{"className":"text-sm leading-relaxed text-brand-gray-dark/80 line-clamp-3 font-sans","children":"Confused between a dehumidifier and a humidifier? Here's a simple breakdown of what each device does, how they work, and which one you actually need."}]]}],["$","div",null,{"className":"pt-2","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/dehumidifier-vs-humidifier-key-differences","className":"inline-block text-[11px] font-bold text-brand-navy uppercase tracking-wider border-b border-brand-navy/40 pb-0.5 group-hover:text-brand-accent group-hover:border-brand-accent transition-all duration-300","children":"Read Article"}]}]]}]]}]
+14:null

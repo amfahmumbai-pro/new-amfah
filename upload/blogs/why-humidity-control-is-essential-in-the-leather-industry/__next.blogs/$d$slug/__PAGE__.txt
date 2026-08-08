@@ -1,0 +1,211 @@
+1:"$Sreact.fragment"
+2:I[1839,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3744","static/chunks/app/blogs/%5Bslug%5D/page-437808fe277a63e0.js"],"default"]
+7:I[3549,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3744","static/chunks/app/blogs/%5Bslug%5D/page-437808fe277a63e0.js"],""]
+11:I[8240,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3744","static/chunks/app/blogs/%5Bslug%5D/page-437808fe277a63e0.js"],"default"]
+12:I[8937,[],"OutletBoundary"]
+13:"$Sreact.suspense"
+:HL["/blogs/leather-industry2.jpeg","image"]
+3:T3d2e,
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6"><a href="/industrial-uses/leather-industry" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px]">Leather</a> is one of the most valuable and durable natural materials used across industries. From premium handbags and luxury footwear to automotive interiors, furniture, jackets, belts, and industrial gloves, leather products are expected to last for years while maintaining their appearance and strength.</p>
+
+      <p class="mb-4">Leather products can be affected by something you cannot see. Humidity can really reduce how good leather products are and how long they last. Leather is different from man made materials because it is from nature. Leather is always changing because of the air, around it. When the air is humid the leather gets too much moisture. This makes it easy for mold to grow for bad smells to happen for the color to change and for the leather to get damaged.</p>
+
+      <p class="mb-4">In India when it is monsoon season these problems happen more. This affects the people who make leather the people who sell leather to countries, the people who store leather the people who sell leather and the people who buy leather. So now people who work with leather have to control the humidity.</p>
+
+      <p class="mb-4">By keeping the air just right businesses can keep their leather products good they can reduce the things that go wrong and they can keep their leather products valuable.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Makes Leather Sensitive to Humidity?</h3>
+
+      <p class="mb-4">Leather is made from animal hide. It has lots of natural fibers. These fibers absorb moisture from the air. Release it when the air gets dry.</p>
+
+      <p class="mb-4">This is what makes leather flexible and comfortable. It also means leather can be affected by the environment.</p>
+
+      <p class="mb-4">When it gets humid inside leather starts to absorb too much moisture. You might not notice anything at first. After a while the leather starts to change. It can get sticky or soft. It might even smell bad and Get mold on it.</p>
+
+      <p class="mb-4">If it gets too dry for long leather loses its natural moisture. Then it can get stiff or brittle. It might even crack.</p>
+
+      <p class="mb-4">So it is really important to keep the humidity right for leather. This is important, for the life of a leather product. Leather products need humidity from when they are made to when they are stored and sold in a store. Leather needs this to stay in condition.</p>
+
+      <div class="my-8 rounded-2xl overflow-hidden shadow-md max-w-3xl">
+      <img src="/blogs/leather-industry.jpeg" alt="Leather Industry and Dehumidifier" class="w-full h-auto object-cover max-h-[400px]" />
+    </div>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">How India's Monsoon Affects the Leather Industry</h3>
+
+      <p class="mb-4">India has a long and humid monsoon season. In a lot of cities the air outside is humid for weeks on end. It stays above 80 percent humidity for a time.</p>
+
+      <p class="mb-4">This is a problem for people who make leather things and for <a href="/industrial-uses/warehouse-storage" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px]">warehouses</a> that store leather.</p>
+
+      <p class="mb-4">Every time someone opens the door to the warehouse. When fresh air gets in moisture comes in too. If the air inside the warehouse is not taken care of the humidity gets really high fast. This affects the leather that is being made and the leather that is already made.</p>
+
+      <p class="mb-4">This happens a lot in cities near the ocean, like Mumbai, Chennai, Kochi, Visakhapatnam and Kolkata. These cities are already really humid most of the year.</p>
+
+      <p class="mb-4">If the humidity is not controlled leather products can get damaged before they even get to the customer. The leather products can deteriorate long before they reach the customer.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Common Problems Caused by High Humidity</h3>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Mold and Mildew Growth</h4>
+
+      <p class="mb-4">Excessive humidity is a problem. One of the signs that you have too much humidity is mold. Mold is not good for your leather things. Tiny fungal spores are everywhere in the air. They are always floating around.</p>
+
+      <p class="mb-4">When the humidity gets too high these spores start to grow on leather. They especially like to grow on leather that's inside boxes or in your wardrobe or on storage racks or even, in shipping cartons.</p>
+
+      <p class="mb-4">Mold is bad because it can ruin how your leather looks. It can also leave stains on your leather that you cannot get rid of. Mold makes a strong musty smell that is really hard to get rid of.</p>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Unpleasant Odors</h4>
+
+      <p class="mb-4">Have you ever opened a leather bag after the rainy season and noticed a damp smell?</p>
+
+      <p class="mb-4">This happens because moisture trapped inside the leather creates the perfect environment for bacteria and fungi.</p>
+
+      <p class="mb-4">For retailers, unpleasant odors often lead to customer complaints and product returns.</p>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Discoloration and Surface Damage</h4>
+
+      <p class="mb-4">Excess moisture can affect dyes, finishes, and protective coatings.</p>
+
+      <p class="mb-4">Premium leather products may develop:</p>
+
+      <ul class="list-none pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Uneven color</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">White patches</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Dark spots</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Surface stains</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Loss of natural shine</li>
+      </ul>
+
+      <p class="mb-4">For luxury brands, even minor defects can make products unsellable.</p>
+
+      <h4 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Reduced Product Life</h4>
+
+      <p class="mb-4">Humidity doesn't just affect appearance.</p>
+
+      <p class="mb-4">Over time, it weakens the internal fiber structure of leather.</p>
+
+      <p class="mb-4">This can result in:</p>
+
+      <ul class="list-none pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Loss of flexibility</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Warping</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Peeling</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Cracking</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Reduced durability</li>
+      </ul>
+
+      <p class="mb-4">For manufacturers, this means higher rejection rates and increased production costs.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Leather Manufacturers Need Humidity Control</h3>
+
+      <p class="mb-4">Every stage of making leather needs an environment to work properly.</p>
+
+      <p class="mb-4">The leather production process has steps like tanning and finishing, drying, polishing and <a href="/industrial-uses/packing-industry" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px]">packaging</a>. If the air is too humid it can be a problem, for the leather. It can affect how good the leather is and if it is the same every time.</p>
+
+      <p class="mb-4">For instance if it is too moist it takes longer for the leather to dry. It can also stop the glue from working and it can change the way the finish looks on the leather goods.</p>
+
+      <p class="mb-4">By maintaining stable humidity, manufacturers can improve product quality, reduce waste, and achieve more consistent results across production batches.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Humidity Challenges in Leather Warehouses</h3>
+
+      <p class="mb-4">Warehouses often store thousands of leather products for weeks or even months before distribution.</p>
+
+      <p class="mb-4">Without <a href="/products" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px]">humidity control</a>, moisture gradually accumulates inside the storage area.</p>
+
+      <p class="mb-4">The result can include:</p>
+
+      <ul class="list-none pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Mold on stored inventory</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Damaged packaging</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Moisture stains</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Product returns</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Financial losses</li>
+      </ul>
+
+      <p class="mb-4">A controlled warehouse environment helps ensure products reach customers in the same condition they left the factory.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Retail Stores Should Also Control Humidity</h3>
+
+      <p class="mb-4">Leather doesn't stop reacting to humidity once it reaches a showroom.</p>
+
+      <p class="mb-4">Retail stores with poor ventilation may notice handbags, jackets, shoes, belts, and wallets developing mold or losing their finish during the rainy season.</p>
+
+      <p class="mb-4">Customers expect premium products to look perfect. Even a slight musty smell or visible stain can influence a purchase decision.</p>
+
+      <p class="mb-4">Maintaining the right indoor humidity helps protect display products and enhances the shopping experience.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Is the Ideal Humidity Level for Leather?</h3>
+
+      <p class="mb-4">For most leather manufacturing, storage, and retail environments, maintaining indoor relative humidity between 45% and 55% provides a good balance.</p>
+
+      <p class="mb-4">Within this range:</p>
+
+      <ul class="list-none pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Leather remains stable.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Mold growth is less likely.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Surface finishes last longer.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Product quality remains consistent.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Storage conditions improve.</li>
+      </ul>
+
+      <p class="mb-4">Monitoring humidity with a digital hygrometer helps businesses respond before problems develop.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Traditional Moisture Control Methods Are Not Enough</h3>
+
+      <p class="mb-4">Many businesses still rely on simple methods such as opening windows, using ceiling fans, or placing silica gel packets inside storage boxes.</p>
+
+      <p class="mb-4">While these solutions may help in small enclosed spaces, they cannot control the humidity of an entire factory, warehouse, or showroom.</p>
+
+      <p class="mb-4">Air conditioners also remove some moisture while cooling, but they are designed primarily to regulate temperature—not maintain precise humidity levels.</p>
+
+      <p class="mb-4">For commercial leather operations, dedicated humidity control is a much more reliable approach.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Commercial Dehumidifiers Are the Best Solution</h3>
+
+      <p class="mb-4">A <a href="/industrial-dehumidifiers" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px]">commercial dehumidifier</a> continuously removes excess moisture from the air and helps maintain a stable indoor environment.</p>
+
+      <p class="mb-4">Instead of reacting after mold appears or products become damaged, businesses can prevent humidity-related issues before they occur.</p>
+
+      <p class="mb-4">Installing a commercial dehumidifier offers several long-term benefits:</p>
+
+      <ul class="list-none pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Protects leather products from moisture damage.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Reduces mold and mildew growth.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Preserves product appearance and finish.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Improves warehouse storage conditions.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Helps maintain consistent manufacturing quality.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Reduces product rejection and returns.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Creates a healthier working environment.</li>
+      </ul>
+
+      <p class="mb-4">For industries that handle valuable leather goods every day, humidity control is not just an operational improvement it is an investment in product quality.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Choose AMFAH Dehumidifiers?</h3>
+
+      <p class="mb-4">At AMFAH, we understand the challenges that India's climate creates for leather manufacturers, exporters, retailers, and warehouse operators.</p>
+
+      <p class="mb-4">Our commercial and industrial dehumidifiers are designed to deliver reliable humidity control in demanding environments, helping businesses protect valuable inventory, improve indoor air quality, and maintain consistent product quality throughout the year.</p>
+
+      <p class="mb-4">Whether you're operating a leather manufacturing unit, a storage warehouse, a retail showroom, or an export facility, AMFAH provides humidity control solutions tailored to your requirements.</p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Conclusion</h3>
+
+      <p class="mb-4">Leather is a premium material but it gets damaged easily when it is too humidity. If you do not keep the air dry you can get mold on the leather, it can get ruined, it will smell bad and discoloration. You will lose a lot of money.</p>
+
+      <p class="mb-4">As India's monsoon brings prolonged periods of high humidity, maintaining the right indoor environment becomes more important than ever.</p>
+
+      <p class="mb-4">Rather than relying on temporary fixes, investing in proper humidity control helps protect inventory, improve manufacturing quality, and extend the life of valuable leather products.</p>
+
+      <p class="mb-4">For businesses that value quality and long-term reliability, controlling humidity isn't just a maintenance task it's an essential part of protecting both products and reputation.</p>
+    0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex flex-col bg-white min-h-screen font-sans","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Why Humidity Control Is Essential in the Leather Industry\",\"description\":\"Leather is a premium natural material highly sensitive to environmental changes. Discover why maintaining optimal humidity levels is crucial for protecting leather products from mold, mildew, and structural damage during the monsoon.\",\"datePublished\":\"April 6, 2026\",\"author\":{\"@type\":\"Person\",\"name\":\"AMFAH India\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"AMFAH Dehumidifiers\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://amfah.com/logo.png\"}}}"}}],["$","main",null,{"className":"flex-grow pb-10","children":[["$","section",null,{"className":"w-full relative min-h-[350px] sm:min-h-[450px] md:min-h-[630px] flex items-center overflow-hidden","children":[["$","div",null,{"className":"absolute inset-0 z-0","children":[["$","img",null,{"src":"/blogs/leather-industry2.jpeg","alt":"Why Humidity Control Is Essential in the Leather Industry","className":"w-full h-full object-cover blur-[2px] scale-105"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-900/40 to-slate-950/20"}]]}],["$","div",null,{"className":"max-w-5xl mx-auto px-6 md:px-8 relative z-10 w-full py-8 md:py-8 space-y-5 text-white","children":[["$","$L2",null,{"delay":0.1,"y":15,"children":["$","div",null,{"className":"flex items-center gap-3","children":[["$","span",null,{"className":"bg-white/10 backdrop-blur-md border border-white/20 px-2.5 py-1 rounded font-display text-[9px] md:text-xs font-bold uppercase tracking-wider text-white shadow-sm","children":"Industrial Solutions"}],["$","span",null,{"className":"text-xs md:text-sm text-slate-200 font-medium","children":"April 6, 2026"}]]}]}],["$","$L2",null,{"delay":0.2,"y":20,"children":["$","h1",null,{"className":"font-display font-extrabold text-xl md:text-5xl lg:text-[55px] leading-[1.15] text-white tracking-tight [text-shadow:_0_2px_4px_rgba(0,0,0,0.4)]","children":"Why Humidity Control Is Essential in the Leather Industry"}]}],["$","$L2",null,{"delay":0.3,"y":20,"children":["$","p",null,{"className":"text-slate-100 text-sm md:text-xl max-w-3xl leading-relaxed font-sans font-medium [text-shadow:_0_1px_2px_rgba(0,0,0,0.3)]","children":"Leather is a premium natural material highly sensitive to environmental changes. Discover why maintaining optimal humidity levels is crucial for protecting leather products from mold, mildew, and structural damage during the monsoon."}]}],["$","$L2",null,{"delay":0.4,"y":15,"children":["$","div",null,{"className":"flex items-center gap-2 pt-1 font-display text-xs text-slate-200 font-bold uppercase tracking-wider","children":["$","span",null,{"className":"text-xs md:text-sm","children":"5 min read"}]}]}]]}]]}],["$","section",null,{"className":"max-w-7xl mx-auto px-6 md:px-8 pt-12 md:pt-16","children":["$","$L2",null,{"delay":0.1,"children":["$","div",null,{"className":"text-brand-gray-dark/95 text-base sm:text-[18px] leading-[1.65] space-y-7 font-sans   [&_p]:leading-[1.65] [&_p]:mb-5 [&_p]:text-justify   [&_p.lead]:text-lg sm:[&_p.lead]:text-xl [&_p.lead]:font-medium [&_p.lead]:text-brand-navy [&_p.lead]:border-l-4 [&_p.lead]:border-brand-accent [&_p.lead]:pl-5 [&_p.lead]:my-8 [&_p.lead]:leading-relaxed   [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-2xl sm:[&_h3]:text-3xl [&_h3]:text-brand-navy [&_h3]:mt-12 [&_h3]:mb-4 [&_h3]:tracking-tight   [&_ul]:list-none [&_ul]:pl-6 [&_ul]:my-6 [&_ul]:space-y-2.5   [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:my-6 [&_ol]:space-y-2.5   [&_li]:leading-relaxed [&_li]:text-brand-gray-dark/90   [&_blockquote]:bg-[#FAF7F2] [&_blockquote]:border-l-4 [&_blockquote]:border-brand-accent [&_blockquote]:p-6 [&_blockquote]:rounded-r-xl [&_blockquote]:italic [&_blockquote]:text-brand-navy [&_blockquote]:my-8 [&_blockquote]:font-sans","dangerouslySetInnerHTML":{"__html":"$3"}}]}]}],"$L4"]}],"$L5"]}],null,"$L6"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"nBcIMe288e0PC5h5UJJow"}
+4:["$","section",null,{"className":"max-w-7xl px-4 mx-auto mt-6 md:mt-10 pt-6 md:pt-10 border-t border-brand-border/60","children":["$","div",null,{"className":"space-y-3 md:space-y-8","children":[["$","div",null,{"className":"space-y-2","children":[["$","span",null,{"className":"text-[10px] font-bold text-brand-gray-medium uppercase tracking-widest font-display block","children":"More Insights"}],["$","h2",null,{"className":"font-display font-extrabold text-2xl text-brand-navy","children":"Suggested Publications"}]]}],["$","div",null,{"className":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12","children":[["$","article","what-is-a-portable-air-conditioner-benefits-uses-how-it-works",{"className":"group flex flex-col h-full bg-transparent","children":[["$","$L7",null,{"prefetch":false,"href":"/blogs/what-is-a-portable-air-conditioner-benefits-uses-how-it-works","className":"block overflow-hidden rounded-2xl aspect-[16/10] relative bg-brand-blue-light/35 shadow-sm","children":["$","img",null,{"src":"/blogs/portable-ac.jpg","alt":"What is a Portable Air Conditioner? Benefits, Uses & How It Works","className":"w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]","loading":"lazy"}]}],["$","div",null,{"className":"pt-5 flex-grow flex flex-col justify-between space-y-4","children":[["$","div",null,{"className":"space-y-2.5","children":[["$","div",null,{"className":"flex items-center gap-2 text-[10px] sm:text-[11px] font-bold text-brand-gray-medium uppercase tracking-widest font-display","children":[["$","span",null,{"children":"Buying Guides"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"children":"August 1, 2026"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"className":"text-brand-navy/80","children":"5 min read"}]]}],["$","h3",null,{"className":"font-display font-extrabold text-lg sm:text-xl text-brand-navy group-hover:text-brand-accent transition-colors duration-300 leading-snug","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/what-is-a-portable-air-conditioner-benefits-uses-how-it-works","className":"focus:outline-none","children":"What is a Portable Air Conditioner? Benefits, Uses & How It Works"}]}],["$","p",null,{"className":"text-sm leading-relaxed text-brand-gray-dark/80 line-clamp-3 font-sans","children":"Learn what a portable air conditioner is, how it works, its benefits, where it can be used, and how it compares with a split AC for homes, offices, and commercial spaces."}]]}],["$","div",null,{"className":"pt-2","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/what-is-a-portable-air-conditioner-benefits-uses-how-it-works","className":"inline-block text-[11px] font-bold text-brand-navy uppercase tracking-wider border-b border-brand-navy/40 pb-0.5 group-hover:text-brand-accent group-hover:border-brand-accent transition-all duration-300","children":"Read Article"}]}]]}]]}],["$","article","best-portable-dehumidifiers-india-buying-guide",{"className":"group flex flex-col h-full bg-transparent","children":[["$","$L7",null,{"prefetch":false,"href":"/blogs/best-portable-dehumidifiers-india-buying-guide","className":"block overflow-hidden rounded-2xl aspect-[16/10] relative bg-brand-blue-light/35 shadow-sm","children":["$","img",null,{"src":"/blogs/portable-dehumidifier.jpg","alt":"Best Portable Dehumidifiers in India: Buying Guide","className":"w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]","loading":"lazy"}]}],["$","div",null,{"className":"pt-5 flex-grow flex flex-col justify-between space-y-4","children":[["$","div",null,{"className":"space-y-2.5","children":[["$","div",null,{"className":"flex items-center gap-2 text-[10px] sm:text-[11px] font-bold text-brand-gray-medium uppercase tracking-widest font-display","children":["$L8","$L9","$La","$Lb","$Lc"]}],"$Ld","$Le"]}],"$Lf"]}]]}],"$L10"]}]]}]}]
+5:["$","section",null,{"className":"py-20 bg-brand-navy text-white text-center relative overflow-hidden","children":[["$","div",null,{"className":"absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none"}],["$","div",null,{"className":"absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-blue-light/5 rounded-full blur-[100px] pointer-events-none"}],["$","$L2",null,{"delay":0.1,"className":"max-w-2xl mx-auto space-y-6 px-6 relative z-10","children":[["$","$L11",null,{"iconNode":[["path",{"d":"M12 7v14","key":"1akyts"}],["path",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z","key":"ruj8y"}]],"className":"lucide-book-open h-12 w-12 text-brand-blue-light mx-auto animate-pulse"}],["$","h3",null,{"className":"font-display font-extrabold text-2xl sm:text-3xl md:text-4xl leading-tight","children":"Need Expert Humidity Design Documentation?"}],["$","p",null,{"className":"text-sm text-slate-300 leading-relaxed max-w-xl mx-auto font-sans","children":"Our Senior indoor air consultants are online to draft complete thermodynamic calculations for industrial cleanrooms, warehouses, data grids, or residential spaces."}],["$","div",null,{"className":"pt-4 flex flex-col sm:flex-row items-center justify-center gap-4","children":[["$","$L7",null,{"prefetch":false,"href":"/contact","className":"inline-flex items-center justify-center font-display font-medium rounded-lg transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] focus:outline-none focus:ring-2 focus:ring-brand-blue/20 cursor-pointer disabled:cursor-not-allowed disabled:opacity-60 transform hover:scale-[1.02] active:scale-[0.98] bg-brand-accent text-white hover:bg-brand-navy shadow-md shadow-brand-accent/10 hover:shadow-lg hover:shadow-brand-accent/15 px-6 py-3 text-base group font-bold uppercase tracking-wider text-xs w-full sm:w-auto","children":["$undefined","Book Engineering Audit","$undefined"]}],["$","$L7",null,{"prefetch":false,"href":"/blogs","className":"text-xs font-bold uppercase tracking-widest text-white hover:text-brand-blue-light border-b border-white/30 hover:border-brand-blue-light pb-0.5 transition-colors font-display","children":"Back to All Insights"}]]}]]}]]}]
+6:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+8:["$","span",null,{"children":"Buying Guides"}]
+9:["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}]
+a:["$","span",null,{"children":"August 1, 2026"}]
+b:["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}]
+c:["$","span",null,{"className":"text-brand-navy/80","children":"5 min read"}]
+d:["$","h3",null,{"className":"font-display font-extrabold text-lg sm:text-xl text-brand-navy group-hover:text-brand-accent transition-colors duration-300 leading-snug","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/best-portable-dehumidifiers-india-buying-guide","className":"focus:outline-none","children":"Best Portable Dehumidifiers in India: Buying Guide"}]}]
+e:["$","p",null,{"className":"text-sm leading-relaxed text-brand-gray-dark/80 line-clamp-3 font-sans","children":"A simple buying guide to help you choose the best portable dehumidifier in India, covering capacity, features, room size, and what really matters."}]
+f:["$","div",null,{"className":"pt-2","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/best-portable-dehumidifiers-india-buying-guide","className":"inline-block text-[11px] font-bold text-brand-navy uppercase tracking-wider border-b border-brand-navy/40 pb-0.5 group-hover:text-brand-accent group-hover:border-brand-accent transition-all duration-300","children":"Read Article"}]}]
+10:["$","article","dehumidifier-vs-humidifier-key-differences",{"className":"group flex flex-col h-full bg-transparent","children":[["$","$L7",null,{"prefetch":false,"href":"/blogs/dehumidifier-vs-humidifier-key-differences","className":"block overflow-hidden rounded-2xl aspect-[16/10] relative bg-brand-blue-light/35 shadow-sm","children":["$","img",null,{"src":"/blogs/dehumidifier-vs-humidifier.jpg","alt":"Dehumidifier vs Humidifier: Key Differences Explained","className":"w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]","loading":"lazy"}]}],["$","div",null,{"className":"pt-5 flex-grow flex flex-col justify-between space-y-4","children":[["$","div",null,{"className":"space-y-2.5","children":[["$","div",null,{"className":"flex items-center gap-2 text-[10px] sm:text-[11px] font-bold text-brand-gray-medium uppercase tracking-widest font-display","children":[["$","span",null,{"children":"Buying Guides"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"children":"July 29, 2026"}],["$","span",null,{"className":"h-1.5 w-1.5 rounded-full bg-brand-border/80"}],["$","span",null,{"className":"text-brand-navy/80","children":"5 min read"}]]}],["$","h3",null,{"className":"font-display font-extrabold text-lg sm:text-xl text-brand-navy group-hover:text-brand-accent transition-colors duration-300 leading-snug","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/dehumidifier-vs-humidifier-key-differences","className":"focus:outline-none","children":"Dehumidifier vs Humidifier: Key Differences Explained"}]}],["$","p",null,{"className":"text-sm leading-relaxed text-brand-gray-dark/80 line-clamp-3 font-sans","children":"Confused between a dehumidifier and a humidifier? Here's a simple breakdown of what each device does, how they work, and which one you actually need."}]]}],["$","div",null,{"className":"pt-2","children":["$","$L7",null,{"prefetch":false,"href":"/blogs/dehumidifier-vs-humidifier-key-differences","className":"inline-block text-[11px] font-bold text-brand-navy uppercase tracking-wider border-b border-brand-navy/40 pb-0.5 group-hover:text-brand-accent group-hover:border-brand-accent transition-all duration-300","children":"Read Article"}]}]]}]]}]
+14:null

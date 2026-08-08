@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const CITIES = {
@@ -180,9 +181,9 @@ export default function HumidityTrackerCard() {
   };
 
   return (
-    <div className="space-y-6">
-      {/* Top Header outside card */}
-      <div className="space-y-2">
+    <div className="space-y-6 flex flex-col justify-between h-full w-full">
+      {/* Top Header outside card matching DehumidifierBuyingGuide layout */}
+      <div className="space-y-2 sm:min-h-[96px] flex flex-col justify-end">
         <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-navy tracking-tight leading-tight">
           If it's not in the dehumidifier,{" "}
           <span className="text-[#D41124] block sm:inline">it's in your room.</span>
@@ -193,23 +194,23 @@ export default function HumidityTrackerCard() {
       </div>
 
       {/* Main Interactive Card */}
-      <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 relative overflow-hidden font-sans">
+      <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 relative overflow-hidden font-sans shadow-sm flex-1 flex flex-col justify-between">
         {/* Subtle background gradient glow */}
         <div className="absolute -bottom-16 -right-16 w-72 h-72 bg-gradient-to-tl from-red-500/5 via-amber-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />
 
         {/* Top Header Row inside Card: Text + City Selector Tabs */}
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4">
-          <p className="text-xs sm:text-sm text-slate-600 max-w-xs sm:max-w-sm leading-relaxed shrink-0">
-            Humidity across India's top cities and coastal regions is in high double-digits for the majority of the year. Ideal indoor RH is{" "}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-100/80">
+          <p className="text-xs sm:text-sm text-slate-600 max-w-xs leading-relaxed shrink-0">
+            India's city humidity averages in double-digits. Target RH is{" "}
             <strong className="text-slate-900 font-bold">45&ndash;50%</strong>.
           </p>
 
           {/* City Selection Tabs - Continuous Forward Scroll Bar */}
           <div
             ref={containerRef}
-            className="w-full lg:w-auto min-w-0 flex-1 overflow-x-auto no-scrollbar scroll-smooth py-1 relative text-gray-500"
+            className="w-full sm:w-auto min-w-0 flex-1 overflow-x-auto no-scrollbar scroll-smooth py-1 relative text-gray-500"
           >
-            <div className="flex items-center gap-2 whitespace-nowrap px-[35%] sm:px-[40%] md:px-[45%] py-1">
+            <div className="flex items-center gap-1.5 whitespace-nowrap px-1 py-0.5">
               {INFINITE_CITY_KEYS.map((cityKey, idx) => {
                 const isActive = idx === virtualIndex;
                 return (
@@ -217,7 +218,7 @@ export default function HumidityTrackerCard() {
                     key={`${cityKey}-${idx}`}
                     ref={(el) => (tabRefs.current[idx] = el)}
                     onClick={() => handleCityClick(idx)}
-                    className={`relative px-3 py-1 rounded-full text-xs font-bold tracking-wider font-display transition-colors duration-300 cursor-pointer flex items-center justify-center gap-2 shrink-0 select-none ${isActive
+                    className={`relative px-2.5 py-1 rounded-full text-xs font-bold tracking-wider font-display transition-colors duration-300 cursor-pointer flex items-center justify-center gap-1.5 shrink-0 select-none ${isActive
                       ? "text-[#1D4ED8]"
                       : "text-slate-500 hover:text-slate-800 hover:bg-slate-100/60"
                       }`}
@@ -245,13 +246,13 @@ export default function HumidityTrackerCard() {
         </div>
 
         {/* Content Body: Stats (Left) + 3D Monument Graphic (Right) */}
-        <div className="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-6 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center flex-1 pt-4">
 
           {/* Left Stats Section */}
-          <div className="sm:col-span-6 space-y-2 sm:space-y-4 flex flex-col justify-start min-h-0 sm:min-h-[260px] md:min-h-[280px]">
+          <div className="sm:col-span-6 space-y-6 flex flex-col justify-center">
 
             {/* Target RH & Temp Indicators */}
-            <div className="flex items-center gap-8 text-xs py-2 sm:py-4 shrink-0">
+            <div className="flex items-center gap-6 text-xs py-1 shrink-0">
               <div>
                 <span className="block text-slate-400 font-semibold uppercase tracking-wider text-[10px]">
                   Target RH
@@ -260,18 +261,17 @@ export default function HumidityTrackerCard() {
                   {currentCity.target}
                 </span>
               </div>
-              <div className="border-l border-slate-200 pl-8">
+              <div className="border-l border-slate-200 pl-6">
                 <span className="block text-slate-400 font-semibold uppercase tracking-wider text-[10px]">
                   Avg Temp
                 </span>
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentCity.name}
-                    initial={{ opacity: 0, y: 8 }}
+                    initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.3 }}
-                    className="space-y-1"
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.2 }}
                   >
                     <span className="text-base sm:text-lg font-bold text-slate-800 font-display">
                       {currentCity.temp}
@@ -282,42 +282,40 @@ export default function HumidityTrackerCard() {
             </div>
 
             {/* Big Live Humidity Number & Status */}
-            <div className="space-y-1 flex-1 flex flex-col justify-start">
+            <div className="space-y-1">
               <div className="flex items-center gap-2 mb-0.5">
-                <span className="text-xs md:text-sm font-bold text-slate-500 uppercase tracking-wider">
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                   Live Humidity
                 </span>
                 <span className="relative flex h-2.5 w-2.5">
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D41124]"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D41124] animate-pulse"></span>
                 </span>
               </div>
 
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentCity.name}
-                  initial={{ opacity: 0, y: 8 }}
+                  initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-0.5"
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.2 }}
                 >
-                  <div className="text-5xl sm:text-7xl md:text-8xl font-extrabold text-[#D41124] font-display tracking-tight leading-none my-0.5">
+                  <div className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-[#D41124] font-display tracking-tight leading-none my-0.5">
                     {currentCity.rh}%
                   </div>
-
                 </motion.div>
               </AnimatePresence>
-              <div className="text-sm text-slate-500 font-medium pt-1">
+
+              <div className="text-xs text-slate-500 font-medium pt-4">
                 Status
               </div>
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentCity.name}
-                  initial={{ opacity: 0, y: 8 }}
+                  initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-1"
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.2 }}
                 >
                   <div className="text-base sm:text-lg font-extrabold text-[#D41124] font-display tracking-tight">
                     {currentCity.status}
@@ -329,19 +327,26 @@ export default function HumidityTrackerCard() {
           </div>
 
           {/* Right 3D Landmark Graphic Container */}
-          <div className="sm:col-span-6 flex items-center justify-center sm:justify-end relative mt-2 sm:mt-0">
-            <div className="relative w-full max-w-[300px] sm:max-w-[380px] md:max-w-[450px] h-[200px] sm:h-[280px] md:h-[320px] flex items-center justify-center overflow-hidden">
+          <div className="sm:col-span-6 flex items-center justify-center relative min-h-[200px] sm:min-h-[240px]">
+            <div className="relative w-full max-w-[280px] sm:max-w-[340px] h-[200px] sm:h-[240px] flex items-center justify-center overflow-hidden">
               <AnimatePresence mode="wait">
-                <motion.img
+                <motion.div
                   key={currentCity.name}
-                  src={currentCity.image}
-                  alt={`3D ${currentCity.name} Landmark`}
-                  initial={{ opacity: 0, scale: 0.90 }}
+                  initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 1 }}
-                  transition={{ duration: 0, ease: "easeOut" }}
-                  className="w-full h-full max-h-full max-w-full object-contain filter transition-transform duration-300"
-                />
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative w-full h-full"
+                >
+                  <Image
+                    src={currentCity.image}
+                    alt={`3D ${currentCity.name} Landmark`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 35vw"
+                    className="object-contain filter drop-shadow-md"
+                    priority
+                  />
+                </motion.div>
               </AnimatePresence>
             </div>
           </div>
@@ -352,6 +357,3 @@ export default function HumidityTrackerCard() {
     </div>
   );
 }
-
-
-

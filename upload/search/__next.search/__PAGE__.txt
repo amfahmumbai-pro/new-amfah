@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:"$Sreact.suspense"
+3:I[8240,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3675","static/chunks/3675-1f40cc0ef6b5a4ea.js","4754","static/chunks/4754-5c43b661321b1912.js","3113","static/chunks/3113-7e7ddfdd8a564882.js","2959","static/chunks/app/search/page-d602667b10143562.js"],"default"]
+4:I[5971,["3549","static/chunks/3549-4f8a113affd08b06.js","7393","static/chunks/7393-f20983c982cc6951.js","3675","static/chunks/3675-1f40cc0ef6b5a4ea.js","4754","static/chunks/4754-5c43b661321b1912.js","3113","static/chunks/3113-7e7ddfdd8a564882.js","2959","static/chunks/app/search/page-d602667b10143562.js"],"default"]
+5:I[8937,[],"OutletBoundary"]
+0:{"rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"flex flex-col items-center justify-center min-h-[60vh] bg-white text-center px-6","children":[["$","$L3",null,{"iconNode":[["path",{"d":"M21 12a9 9 0 1 1-6.219-8.56","key":"13zald"}]],"className":"lucide-loader-circle h-12 w-12 text-brand-blue animate-spin mb-4"}],["$","h2",null,{"className":"font-display font-bold text-xl text-brand-navy","children":"Initializing Catalog Search..."}],["$","p",null,{"className":"text-sm text-brand-gray-medium mt-1","children":"Gathering premium moisture extraction specifications..."}]]}],"children":["$","$L4",null,{}]}],null,["$","$L5",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"nBcIMe288e0PC5h5UJJow"}
+6:null

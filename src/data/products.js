@@ -91,7 +91,7 @@ export const products = [
       "Humidity Range (T 32-35°C)": "30% - 70% RH",
       "Dimensions (W x H x D)": "560 x 800 x 520 mm",
       "Weight": "48 kg"
-      
+
     },
     image: "/products/fral-fdnp-62.png"
   },
@@ -854,7 +854,7 @@ export const products = [
   //   },
   //   image: "/products/amf-35dm1.png"
   // },
- {
+  {
     slug: "amf-45dm",
     brochure: "/pdf/AMF-45DM.pdf",
     name: "AMFAH AMF-45 DM",
@@ -896,7 +896,7 @@ export const products = [
       "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-45dm1.png"
-  }, 
+  },
   // {
   //   slug: "amf-50dm",
   //   brochure: "/pdf/AMF-50DM.pdf",
@@ -1366,7 +1366,7 @@ export const products = [
   },
   {
     slug: "amf-jydh-60",
-     brochure: "/pdf/AMF-JYDH60.pdf",
+    brochure: "/pdf/AMF-JYDH60.pdf",
     name: "AMFAH AMF-JYDH-60",
     category: "Commercial/Industrial Dehumidifier",
     categoryId: "industrial",
@@ -1444,7 +1444,7 @@ export const products = [
       "Coverage Area": "900 - 1200 Sq.Ft",
       "Moisture Removal (35°C, RH90%)": "100 L/Day",
       "Compressor": "Rotary",
-      "Material (Body)": "ABS",
+      "Material (Body)": "Metal",
       "Voltage / Frequency": "220V~ / 50Hz",
       "Phase": "1 Ph",
       "Power": "800 W",
@@ -2064,6 +2064,7 @@ export const products = [
     coverage: "100-120 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. A premium 3-in-1 portable air conditioner, fan, and dehumidifier. Features thermostatic cut-off, auto diagnosis, overheating protection, and an anti-bacterial water tank, ideal for spot cooling where window/split AC is not feasible.",
     features: [
+      "1.5 Ton Portable AC",
       "3-in-1 Operation: Air Conditioner, Fan, and Dehumidifier",
       "Thermostatic Cut-Off for Automatic Temperature Control & Safety",
       "Auto Shut-Off Mode to Prevent System Damage",
@@ -2081,24 +2082,25 @@ export const products = [
       "Hospital Consult Rooms"
     ],
     specifications: {
-      "Model Name": "AMF-PDAC-18",
-      "Coverage Area": "100 - 120 SQFT",
+      "Model Name": "AMF PDAC 18",
+      "Capacity": "1.5 Ton",
+      "Coverage Area": "100 - 120 Sq.Ft.",
       "Product Type": "Portable AC",
       "Rated Voltage": "220-240V~",
       "Rated Frequency": "50Hz",
+      "Material (Body)": "ABS",
       "Rated Cooling Power": "1540W",
       "Cooling Current": "6.9A",
-      "Permissible Excessive Operating Pressure": "Suction: 1.2 MPa / Discharge: 4.2 MPa",
+      "Permissible Excessive / Operating Pressure": "Discharge: 4.2 MPa / Suction: 1.2 MPa",
       "Max Allowable Pressure": "4.2 MPa",
       "Refrigerant / Charge": "R410A / 630g",
       "Compressor": "Rotary",
       "Airflow Volume": "460 m³/h",
-      "Cooling Capacity": "1.5 Ton",
       "Noise Level": "55 dB",
       "Fan Speed": "3",
       "Net Weight": "31 kg",
-      "Dimensions (W x D x H)": "415 x 418 x 790 mm",
-      "Warranty": "1 Year"
+      "Dimensions (W x D x H)": "16.3 × 16.4 × 31.1 inches",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-pdac18.png"
   },

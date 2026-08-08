@@ -1,5 +1,207 @@
 export const blogs = [
   {
+    slug: "how-to-protect-silk-clothes-during-monsoon",
+    title: "How to Protect Silk Clothes During Monsoon",
+    metaTitle: "Silk Clothes in Rainy Season | How to Protect Silk Clothes During Monsoon",
+    metaDescription: "Learn how to protect silk clothes during the rainy season. Discover simple tips to prevent moisture, mold, bad odor, and fabric damage while keeping your silk garments fresh and beautiful.",
+    summary: "Learn how to protect silk clothes during the rainy season. Discover simple tips to prevent moisture, mold, bad odor, and fabric damage while keeping your silk garments fresh and beautiful.",
+    date: "August 8, 2026",
+    image: "/blogs/silk-clothes.jpg",
+    readTime: "5 min read",
+    category: "Home & Care",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        Learn how to protect silk clothes during the rainy season. Discover simple tips to prevent moisture, mold, bad odor, and fabric damage while keeping your silk garments fresh and beautiful.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Rainy Season Is Beautiful… But Not for Silk Clothes</h3>
+      <p class="mb-4">
+        The first rain of the season often brings relief from the summer heat. The weather becomes pleasant, the trees look greener, and the air feels fresh.
+      </p>
+      <p class="mb-4">
+        But while we enjoy the monsoon, our wardrobes quietly face a different challenge. Silk clothes, especially expensive sarees, wedding lehengas, designer dresses, and traditional outfits, spend most of their time inside cupboards. They may stay untouched for weeks or even months.
+      </p>
+      <p class="mb-4">
+        When you finally open the wardrobe for a wedding, festival, or family function, you're excited to wear your favorite silk outfit. Instead, you're welcomed by a musty smell. Sometimes there are small mold spots. Sometimes the fabric feels slightly damp. And in some cases, the shine that made the outfit special doesn't look the same anymore.
+      </p>
+      <p class="mb-4">
+        Many people think this happens because the clothes weren't cleaned properly. In reality, the biggest reason is often high humidity during the monsoon.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Does Monsoon Affect Silk Clothes?</h3>
+      <p class="mb-4">
+        Silk is a natural fabric. Unlike synthetic materials, it reacts more easily to changes in the environment. During the rainy season, the amount of moisture in the air increases significantly.
+      </p>
+      <p class="mb-4">
+        Even if your wardrobe stays closed, humid air slowly finds its way inside. When this moisture remains trapped for days or weeks, silk fabrics stay exposed to damp conditions for a long time. The damage doesn't happen overnight. It develops gradually, making it easy to miss until you take the clothes out again.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Signs That Humidity Is Affecting Your Silk Clothes</h3>
+      <p class="mb-4">
+        Most people don't notice the problem immediately. Instead, they begin seeing small changes over time.
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Your silk saree may develop a musty smell that doesn't disappear easily.</li>
+        <li>The fabric may feel slightly damp even though it hasn't been washed recently.</li>
+        <li>Small white fungus or mold spots can appear on folded areas.</li>
+        <li>Bright colours may start looking dull, and delicate embroidery can lose its original beauty.</li>
+      </ul>
+      <p class="mb-4">
+        If expensive silk garments remain in these conditions for several months, restoring them can become difficult.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Wardrobe Is Often the Real Problem</h3>
+      <p class="mb-4">
+        People usually blame the clothes. Very few think about the wardrobe itself. A closed wardrobe becomes a small enclosed space where air circulation is very limited.
+      </p>
+      <p class="mb-4">
+        During the monsoon, moisture enters every time the doors are opened. Once trapped inside, that moisture has nowhere to escape. Day after day, humidity builds up inside the cupboard.
+      </p>
+      <p class="mb-4">
+        This creates the perfect environment for damp smells, mold growth, and moisture damage. Even brand-new wardrobes can face the same problem if humidity remains high.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Simple Ways to Protect Silk Clothes During the Monsoon</h3>
+      <p class="mb-4">
+        The good news is that protecting silk clothes doesn't require complicated maintenance. A few simple habits can make a big difference:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Always make sure your silk clothes are completely clean and dry before storing them. Even small amounts of moisture left after wearing or ironing can become a problem when the clothes remain folded for a long time.</li>
+        <li>Instead of tightly packing clothes together, leave a little space between garments so air can move more freely inside the wardrobe.</li>
+        <li>Use breathable cotton garment covers instead of storing expensive silk outfits in airtight plastic covers for long periods.</li>
+        <li>From time to time, open the wardrobe doors to improve air circulation, especially during humid weather.</li>
+        <li>If you have valuable silk collections, occasional inspection helps you notice any signs of moisture before they become serious.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Air Conditioning Doesn't Fully Protect Your Wardrobe</h3>
+      <p class="mb-4">
+        Many homeowners believe that running an air conditioner automatically keeps clothes safe. Unfortunately, that's not always true.
+      </p>
+      <p class="mb-4">
+        An air conditioner mainly cools the room. The inside of a closed wardrobe remains a separate enclosed space where moisture can still build up. This is why wardrobes sometimes develop a damp smell even in air-conditioned homes. Cooling the room and controlling humidity are two different things.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Better Way to Protect Valuable Silk Clothes</h3>
+      <p class="mb-4">
+        If your wardrobe contains expensive silk sarees, bridal outfits, designer dresses, or heirloom garments, controlling humidity becomes one of the best ways to protect them.
+      </p>
+      <p class="mb-4">
+        A dehumidifier continuously removes excess moisture from the surrounding air, helping keep indoor humidity at a healthier level. As a result, wardrobes remain drier, unpleasant odors are reduced, and the chances of mold growth become much lower.
+      </p>
+      <p class="mb-4">
+        This is especially helpful in cities that experience long monsoon seasons or naturally high humidity throughout the year.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Your Silk Clothes Deserve the Same Care You Give Them</h3>
+      <p class="mb-4">
+        Most silk outfits are more than just clothes. They remind us of weddings, festivals, family celebrations, and special memories. Some are passed down from one generation to another. Others are carefully chosen after months of searching.
+      </p>
+      <p class="mb-4">
+        Protecting them isn't only about preserving fabric, it's about preserving memories. With a few good storage habits and proper humidity control, your favourite silk clothes can stay fresh, beautiful, and ready to wear for many years.
+      </p>
+      <p class="mb-4 font-medium">
+        AMFAH dehumidifiers help maintain balanced indoor humidity, making them an excellent solution for protecting silk sarees, designer dresses, bridal wear, and other valuable garments from excess moisture during the rainy season.
+      </p>
+      <p class="mb-4 mt-6">
+        <a href="/home-dehumidifiers" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px] font-semibold text-brand-navy">Explore AMFAH Home Dehumidifiers for Wardrobe Protection</a>
+      </p>
+    `
+  },
+  {
+    slug: "what-is-a-portable-air-conditioner-benefits-uses-how-it-works",
+    title: "What is a Portable Air Conditioner? Benefits, Uses & How It Works",
+    metaTitle: "Portable AC | Benefits, Uses & Portable AC vs Split AC | AMFAH",
+    metaDescription: "Learn what a portable air conditioner is, how it works, its benefits, where it can be used, and how it compares with a split AC for homes, offices, and commercial spaces.",
+    summary: "Learn what a portable air conditioner is, how it works, its benefits, where it can be used, and how it compares with a split AC for homes, offices, and commercial spaces.",
+    date: "August 1, 2026",
+    image: "/blogs/portable-ac.jpg",
+    readTime: "5 min read",
+    category: "Buying Guides",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        Imagine you've just moved into a rented apartment. The room gets extremely hot during summer, but the landlord doesn't allow drilling holes in the wall for a split air conditioner. Or maybe you own a small office where employees only work during certain hours of the day. Installing a permanent air conditioning system doesn't seem like a smart investment.
+      </p>
+      <p class="mb-4">
+        Now think about a retail shop, a server room, a temporary site office, or even an exhibition stall. These places often need cooling, but only for a limited time or in a specific area. This is where many people begin looking for a portable air conditioner. Instead of installing a fixed cooling system, they simply move the air conditioner wherever it's needed.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Exactly Is a Portable Air Conditioner?</h3>
+      <p class="mb-4">
+        A portable air conditioner is a movable cooling unit designed to cool a room or a specific area without permanent installation. Unlike a split AC, which stays fixed on a wall, a portable AC can be moved from one room to another whenever required.
+      </p>
+      <p class="mb-4">
+        Most portable air conditioners come with wheels, making them easy to relocate. The unit draws warm air from the room, cools it, and releases cooler air back into the space. At the same time, the hot air is expelled outside through an exhaust hose connected to a nearby window or opening. The result is comfortable cooling without major installation work.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Are Portable Air Conditioners Becoming Popular?</h3>
+      <p class="mb-4">
+        Today's homes and workplaces are very different from those of a decade ago. More people are working from home, businesses are opening temporary offices, retail stores rearrange their layouts, warehouses create seasonal workstations, and events are organized in temporary venues.
+      </p>
+      <p class="mb-4">
+        In many of these situations, installing a permanent split AC doesn't make practical or financial sense. A portable air conditioner offers flexibility. You can cool the room that needs attention today and move the same unit somewhere else tomorrow. That convenience is one of the biggest reasons portable ACs are becoming increasingly popular.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Where Can a Portable Air Conditioner Be Used?</h3>
+      <p class="mb-4">
+        One of the biggest strengths of a portable AC is that it isn't limited to one type of building:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>At home:</strong> It's commonly used in bedrooms, study rooms, home offices, guest rooms, and apartments where permanent installation isn't possible.</li>
+        <li><strong>In commercial spaces:</strong> Portable ACs are useful in clinics, salons, retail stores, restaurants, server rooms, and office cabins where localized cooling is more practical than cooling the entire building.</li>
+        <li><strong>Industrial facilities:</strong> They use portable cooling for electrical panels, control rooms, production areas, workshops, and temporary workstations that generate excess heat.</li>
+      </ul>
+      <p class="mb-4">
+        Because the unit can be moved easily, businesses often use one portable AC in different locations throughout the day.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Biggest Advantages of a Portable Air Conditioner</h3>
+      <p class="mb-4">
+        One of the biggest reasons people choose a portable AC is its flexibility. Unlike fixed cooling systems, it isn't tied to a single room. If your requirements change, the unit moves with you.
+      </p>
+      <p class="mb-4">
+        Installation is also much simpler. Most models require only a nearby power socket and a suitable outlet for the exhaust hose. There is no need for extensive wall modifications or outdoor compressor installation.
+      </p>
+      <p class="mb-4">
+        Portable ACs are also ideal for rented properties because they don't permanently alter the building. For businesses, they provide targeted cooling exactly where it's needed instead of wasting energy cooling an entire floor. This makes them useful for temporary projects, seasonal workspaces, and areas where cooling requirements frequently change.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC vs Split AC</h3>
+      <p class="mb-4">
+        People often compare portable air conditioners with split ACs, but both are designed for different purposes.
+      </p>
+      <p class="mb-4">
+        A split AC is an excellent choice when you need permanent cooling for a room that will always be used in the same way. Once installed, it offers efficient and consistent cooling for that space.
+      </p>
+      <p class="mb-4">
+        A portable air conditioner, on the other hand, is designed for flexibility. If you need cooling in different rooms, live in a rented property, manage temporary workspaces, or cannot install a fixed air conditioner, a portable AC is often the more practical option. Rather than replacing a split AC, it solves problems that a fixed system cannot.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Is Cooling Enough During the Monsoon?</h3>
+      <p class="mb-4">
+        Many people notice something interesting during the rainy season. The room feels cool, yet it still feels uncomfortable. This happens because temperature and humidity are two different things.
+      </p>
+      <p class="mb-4">
+        A portable air conditioner lowers the temperature, but in regions with high humidity, excess moisture in the air can still create a sticky feeling. That's why many homes and businesses combine portable air conditioners with dehumidifiers. The air conditioner cools the room, while the dehumidifier removes excess moisture, creating a fresher and more comfortable indoor environment.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Is a Portable Air Conditioner Right for You?</h3>
+      <p class="mb-4">
+        If your cooling requirements change frequently, a portable AC offers a level of flexibility that fixed systems simply can't provide. Whether you're living in a rented apartment, managing a growing business, setting up a temporary workspace, or looking for cooling in areas where installation is difficult, a portable air conditioner provides a practical solution without permanent modifications.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Flexible Cooling for Modern Spaces</h3>
+      <p class="mb-4">
+        Every building has different cooling needs. Some require permanent air conditioning, while others need a solution that can move with changing requirements. Portable air conditioners are designed for this flexibility, offering convenient cooling wherever it's needed.
+      </p>
+      <p class="mb-4 font-medium">
+        For environments where high humidity is also a concern, pairing a portable AC with an AMFAH dehumidifier helps create a cooler, drier, and more comfortable indoor space throughout the year.
+      </p>
+      <p class="mb-4 mt-6">
+        <a href="/portable-ac" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px] font-semibold text-brand-navy">Explore AMFAH Portable Air Conditioners & Solutions</a>
+      </p>
+    `
+  },
+  {
     slug: "best-portable-dehumidifiers-india-buying-guide",
     title: "Best Portable Dehumidifiers in India: Buying Guide",
     metaTitle: "Best Portable Dehumidifiers in India: Buying Guide | Amfah",

@@ -10,6 +10,7 @@ import HeroImageSlider from "@/components/sections/HeroImageSlider";
 import NewHero from "@/components/sections/NewHero";
 import MonsoonPromoBanner from "@/components/sections/MonsoonPromoBanner";
 import HumidityTrackerCard from "@/components/sections/HumidityTrackerCard";
+import DehumidifierBuyingGuide from "@/components/sections/DehumidifierBuyingGuide";
 import dynamic from "next/dynamic";
 
 const ReviewCarousel = dynamic(() => import("@/components/sections/ReviewCarousel"));
@@ -373,34 +374,42 @@ export default function Home() {
       </section>
 
       {/* YOUTUBE VIDEO & HUMIDITY TRACKER SECTION */}
-      <section className="py-5 md:py-10 relative overflow-hidden bg-white">
-        <div className="w-full px-6 md:px-16 max-w-8xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <section className="pb-12 relative overflow-hidden bg-white">
+        <div className="w-full px-6 md:px-16 max-w-8xl mx-auto relative z-10 space-y-10 md:space-y-18">
 
-            {/* LEFT SIDE: YOUTUBE VIDEO */}
-            <div className="lg:col-span-5 space-y-4">
-              <ScrollReveal delay={0.2} scale={0.98} className="w-full">
-                <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-brand-border bg-black shadow-xl shadow-black/5 group transition-all duration-500 hover:scale-[1.01]">
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src="https://www.youtube.com/embed/pI7V5L8Nqrc?si=owV7kHF5qoThFL4S"
-                    title="AMFAH Dehumidifier Demonstration"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
-                </div>
+          {/* TOP CENTERED YOUTUBE VIDEO */}
+          <div className="max-w-4xl mx-auto text-center space-y-3">
+            <ScrollReveal delay={0.2} scale={0.98} className="w-full">
+              <div className="relative aspect-video w-full rounded-3xl overflow-hidden border border-slate-200 bg-black shadow-xl shadow-slate-900/10 group transition-all duration-500 hover:shadow-2xl">
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/pI7V5L8Nqrc?si=owV7kHF5qoThFL4S"
+                  title="AMFAH Dehumidifier Demonstration"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* BOTTOM TWO-COLUMN LAYOUT: BUYING GUIDE (LEFT 50%) + HUMIDITY TRACKER CARD (RIGHT 50%) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+            {/* LEFT SIDE: SELECTION GUIDE (50%) */}
+            <div className="lg:col-span-6 flex">
+              <ScrollReveal delay={0.25} className="w-full flex">
+                <DehumidifierBuyingGuide />
               </ScrollReveal>
             </div>
 
-            {/* RIGHT SIDE: HUMIDITY TRACKER UI CARD */}
-            <div className="lg:col-span-7">
-              <ScrollReveal delay={0.25}>
+            {/* RIGHT SIDE: HUMIDITY TRACKER CARD (50%) */}
+            <div className="lg:col-span-6 flex">
+              <ScrollReveal delay={0.3} className="w-full flex">
                 <HumidityTrackerCard />
               </ScrollReveal>
             </div>
-
           </div>
+
         </div>
       </section>
 
