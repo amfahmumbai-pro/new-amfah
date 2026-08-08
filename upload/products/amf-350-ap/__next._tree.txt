@@ -1,3 +1,0 @@
-:HL["/_next/static/css/f6395479f3c4952b.css","style"]
-:HL["/_next/static/css/366b7987812e2e45.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"amf-350-ap","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"nBcIMe288e0PC5h5UJJow"}

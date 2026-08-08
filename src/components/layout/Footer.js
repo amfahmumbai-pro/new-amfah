@@ -41,7 +41,7 @@ export default function Footer() {
               <MessageSquareCode className="h-4 w-4" />
               <span>Chat on WhatsApp</span>
             </a>
-            
+
             {/* Premium Social Media Links */}
             <div className="flex items-center gap-3 pt-2">
               <a
@@ -55,7 +55,7 @@ export default function Footer() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </a>
-              
+
               <a
                 href="https://www.instagram.com/amfah_airquality/"
                 target="_blank"
@@ -69,7 +69,7 @@ export default function Footer() {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                 </svg>
               </a>
-              
+
               <a
                 href="https://www.linkedin.com/company/amfah-india-trading-pvt-ltd/"
                 target="_blank"
@@ -83,7 +83,7 @@ export default function Footer() {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               </a>
-              
+
               <a
                 href="https://x.com/amfahindia"
                 target="_blank"
@@ -96,7 +96,7 @@ export default function Footer() {
                   <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
                 </svg>
               </a>
-              
+
               <a
                 href="https://www.youtube.com/@AMFAHINDIA"
                 target="_blank"
@@ -109,7 +109,7 @@ export default function Footer() {
                   <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
                 </svg>
               </a>
-              
+
               <a
                 href="https://in.pinterest.com/amfahhumiditysolutions/?invite_code=73ee0de8dd354f7ba2d0afca3e1bfa70&sender=694891554912906208"
                 target="_blank"
@@ -179,11 +179,11 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 text-xs text-brand-gray-medium items-center">
                 <Smartphone className="h-4 w-4 text-brand-blue flex-shrink-0" />
-                <a href="tel:+919324516326" className="hover:text-brand-blue font-medium">Mobile: +91 93245 16326</a>
+                <a href="tel:+919324516326" className="hover:text-brand-blue font-medium">Mobile: +91 93245 16323</a>
               </li>
               <li className="flex gap-3 text-xs text-brand-gray-medium items-center">
                 <MessageSquareCode className="h-4 w-4 text-brand-blue flex-shrink-0" />
-                <p className="hover:text-brand-blue font-medium">WhatsApp: +91 90046 63226 / +91 93245 16326</p>
+                <p className="hover:text-brand-blue font-medium">WhatsApp: +91 90046 63226 / +91 93219 91814</p>
               </li>
               <li className="flex gap-3 text-xs text-brand-gray-medium items-center">
                 <Mail className="h-4 w-4 text-brand-blue flex-shrink-0" />
@@ -218,7 +218,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 text-xs text-brand-gray-medium items-center">
                 <MessageSquareCode className="h-4 w-4 text-brand-blue flex-shrink-0" />
-                <a href="tel:+919324516326" className="hover:text-brand-blue font-medium">WhatsApp: +91 9324 516326</a>
+                <a href="tel:+919324516326" className="hover:text-brand-blue font-medium">WhatsApp: +91 90046 63226 / +91 93219 91814</a>
               </li>
               <li className="flex gap-3 text-xs text-brand-gray-medium items-center">
                 <Mail className="h-4 w-4 text-brand-blue flex-shrink-0" />

@@ -20,11 +20,12 @@ const ClienteleShowcase = dynamic(() => import("@/components/sections/ClienteleS
 const FAQSection = dynamic(() => import("@/components/sections/FAQSection"));
 const InstagramGallery = dynamic(() => import("@/components/sections/InstagramGallery"));
 import { products } from "@/data/products";
+import { sortByCoverageArea } from "@/utils/productUtils";
 import { industries } from "@/data/industries";
 
 export default function Home() {
   // Select top 3 products for preview (mix of industrial and residential)
-  const featuredProducts = products.slice(0, 3);
+  const featuredProducts = sortByCoverageArea(products).slice(0, 3);
 
   // Select top 4 industries for homepage showcase
   const featuredIndustries = industries.slice(0, 4);

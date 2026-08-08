@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /private/
-Disallow: /search
-
-Sitemap: https://amfah.com/sitemap.xml

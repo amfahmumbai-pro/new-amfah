@@ -18,6 +18,7 @@ import {
   SortDesc
 } from "lucide-react";
 import ProductCard from "@/components/cards/ProductCard";
+import { getCoverageSqFt } from "@/utils/productUtils";
 
 export default function PortableACCatalog({ initialProducts }) {
   const searchParams = useSearchParams();
@@ -64,6 +65,8 @@ export default function PortableACCatalog({ initialProducts }) {
 
   // Sort Option Definitions
   const sortOptions = [
+    { id: "coverage-asc", label: "Coverage Area, low to high", icon: SortAsc },
+    { id: "coverage-desc", label: "Coverage Area, high to low", icon: SortDesc },
     { id: "featured", label: "Featured", icon: Sparkles },
     { id: "relevance", label: "Most relevant", icon: TrendingUp },
     { id: "sales", label: "Best selling", icon: Flame },
@@ -103,6 +106,10 @@ export default function PortableACCatalog({ initialProducts }) {
     const metaB = getMeta(b.slug);
 
     switch (sortBy) {
+      case "coverage-asc":
+        return getCoverageSqFt(a) - getCoverageSqFt(b);
+      case "coverage-desc":
+        return getCoverageSqFt(b) - getCoverageSqFt(a);
       case "relevance":
         return metaB.relevance - metaA.relevance;
       case "sales":
@@ -113,7 +120,7 @@ export default function PortableACCatalog({ initialProducts }) {
         return b.name.localeCompare(a.name);
       case "featured":
       default:
-        return metaA.featured - metaB.featured;
+        return getCoverageSqFt(a) - getCoverageSqFt(b);
     }
   });
 

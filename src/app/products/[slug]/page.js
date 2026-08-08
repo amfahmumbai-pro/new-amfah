@@ -5,9 +5,11 @@ import { ArrowLeft, Check, Compass, Cpu, Settings, Award, FileDown } from "lucid
 import Button from "@/components/ui/Button";
 // import InquiryForm from "@/components/forms/InquiryForm";
 import ContactForm from "@/components/forms/ContactForm";
+import RequestCallbackModal from "@/components/forms/RequestCallbackModal";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import { products } from "@/data/products";
+import { sortByCoverageArea } from "@/utils/productUtils";
 import { defaultProductImages } from "@/data/productImages";
 import ProductImageGallery from "@/components/ui/ProductImageGallery";
 
@@ -103,9 +105,9 @@ export default async function ProductDetailPage({ params }) {
   };
 
   // Find related products (same category but not current product)
-  const relatedProducts = products
-    .filter((p) => p.categoryId === product.categoryId && p.slug !== product.slug)
-    .slice(0, 2);
+  const relatedProducts = sortByCoverageArea(
+    products.filter((p) => p.categoryId === product.categoryId && p.slug !== product.slug)
+  ).slice(0, 2);
 
   // Dynamic category label for related products section
   const categoryLabel = (product.categoryId === "industrial" || product.categoryId === "residential")
@@ -298,6 +300,9 @@ export default async function ProductDetailPage({ params }) {
                       </li>
                     ))}
                   </ul>
+                  
+                  {/* Request a Callback button directly below features */}
+                  <RequestCallbackModal productName={nameToUse} categoryName={product.category} />
                 </ScrollReveal>
               </div>
             </div>

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "@/components/ui/AppLink";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, PhoneCall, Mail, Search,MessageSquareCode } from "lucide-react";
+import { Menu, X, ChevronDown, PhoneCall, Mail, Search, MessageSquareCode } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "@/components/ui/Button";
 
@@ -48,8 +48,8 @@ export default function Navbar() {
     },
     {
       type: "whatsapp",
-      href: "https://wa.me/919324516326",
-      label: "+91 93245 16326",
+      href: "https://wa.me/919004663226 ",
+      label: "+91 90046 63226 ",
       icon: <MessageSquareCode className="h-4 w-4 text-brand-blue" />,
     },
     {
@@ -153,11 +153,10 @@ export default function Navbar() {
   return (
     <header
       onMouseLeave={() => handleSetSelected(null)}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-        isScrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isScrolled
           ? "bg-white/95 backdrop-blur-md border-b border-brand-border shadow-sm"
           : "bg-white border-b border-transparent"
-      } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+        } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Patent Announcement Banner */}
       <div className="bg-[#d41124] text-white text-center py-2.5 sm:py-4 text-xs md:text-[10px] lg:text-[14px] font-medium tracking-wide font-display relative z-10 select-none overflow-hidden">
@@ -169,10 +168,10 @@ export default function Navbar() {
           </span>
           <span className="opacity-60">|</span>
           <span className="inline-flex text-white/95 items-center gap-1.5">The Most Preferred Brand on the Government e-Marketplace (GeM) Portal
-          <img src="/images/gem-logo.png" alt="Gem Logo" className="h-8 w-auto object-contain" />
+            <img src="/images/gem-logo.png" alt="Gem Logo" className="h-8 w-auto object-contain" />
           </span>
         </div>
-        
+
         {/* Mobile Scrolling View */}
         <div className="sm:hidden w-full overflow-hidden whitespace-nowrap relative flex items-center">
           <div className="inline-flex animate-marquee gap-8" style={{ animationDuration: "25s" }}>
@@ -193,14 +192,13 @@ export default function Navbar() {
           </div>
         </div>
       </div>
- 
-      <div className={`max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-between transition-all duration-300 ${
-        isScrolled ? "py-3" : "py-4 sm:py-5"
-      }`}>
+
+      <div className={`max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-between transition-all duration-300 ${isScrolled ? "py-3" : "py-4 sm:py-5"
+        }`}>
         {/* Logo */}
-        <Link 
-          href="/" 
-          onMouseEnter={() => handleSetSelected(null)} 
+        <Link
+          href="/"
+          onMouseEnter={() => handleSetSelected(null)}
           className="flex items-center group shrink-0"
         >
           <Image
@@ -212,9 +210,9 @@ export default function Navbar() {
             priority
           />
         </Link>
- 
+
         {/* Desktop Nav Links */}
-        <nav 
+        <nav
           id="desktop-nav-container"
           className="hidden lg:flex items-center gap-1.5 lg:gap-2.5 xl:gap-6 2xl:gap-7 shrink-0 relative"
         >
@@ -222,7 +220,7 @@ export default function Navbar() {
             const isActive =
               (link.href && link.href !== "#" && (pathname === link.href || pathname?.startsWith(link.href + "/"))) ||
               (link.dropdown && link.dropdown.some(sub => pathname === sub.href || pathname?.startsWith(sub.href + "/")));
- 
+
             if (link.dropdown) {
               const isDropdownOpen = selected === index;
               const hasLink = link.href && link.href !== "#";
@@ -232,13 +230,12 @@ export default function Navbar() {
                   <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`} />
                 </>
               );
-              const linkClass = `flex items-center gap-0.5 font-display font-medium text-xs lg:text-xs xl:text-sm 2xl:text-base hover:text-brand-blue py-2 transition-colors cursor-pointer shrink-0 ${
-                isActive ? "text-brand-blue" : "text-brand-navy"
-              }`;
+              const linkClass = `flex items-center gap-0.5 font-display font-medium text-xs lg:text-xs xl:text-sm 2xl:text-base hover:text-brand-blue py-2 transition-colors cursor-pointer shrink-0 ${isActive ? "text-brand-blue" : "text-brand-navy"
+                }`;
 
               return (
-                <div 
-                  key={link.name} 
+                <div
+                  key={link.name}
                   className="relative shrink-0"
                 >
                   {hasLink ? (
@@ -264,16 +261,15 @@ export default function Navbar() {
                 </div>
               );
             }
- 
+
             return (
               <Link
                 key={link.name}
                 id={`shift-tab-${index}`}
                 href={link.href}
                 onMouseEnter={() => handleSetSelected(null)}
-                className={`inline-flex items-center font-display font-medium text-xs lg:text-xs xl:text-sm 2xl:text-base py-2 transition-all hover:text-brand-blue shrink-0 ${
-                  isActive ? "text-brand-blue" : "text-brand-navy"
-                }`}
+                className={`inline-flex items-center font-display font-medium text-xs lg:text-xs xl:text-sm 2xl:text-base py-2 transition-all hover:text-brand-blue shrink-0 ${isActive ? "text-brand-blue" : "text-brand-navy"
+                  }`}
               >
                 {link.name}
               </Link>
@@ -294,8 +290,8 @@ export default function Navbar() {
         </nav>
 
         {/* CTA Contact Button */}
-        <div 
-          onMouseEnter={() => handleSetSelected(null)} 
+        <div
+          onMouseEnter={() => handleSetSelected(null)}
           className="hidden lg:flex items-center gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 shrink-0"
         >
           <div className="hidden xl:flex relative h-6 w-[175px] overflow-hidden flex items-center justify-start shrink-0">
@@ -349,9 +345,8 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`lg:hidden absolute top-full left-0 w-full bg-white border-b border-brand-border shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-40 ${
-          isOpen ? "h-[calc(100vh-100%)] overflow-y-auto opacity-100 py-6" : "h-0 overflow-hidden opacity-0 py-0"
-        }`}
+        className={`lg:hidden absolute top-full left-0 w-full bg-white border-b border-brand-border shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-40 ${isOpen ? "h-[calc(100vh-100%)] overflow-y-auto opacity-100 py-6" : "h-0 overflow-hidden opacity-0 py-0"
+          }`}
       >
         <div className="px-6 space-y-4 flex flex-col">
           {navLinks.map((link) => {
@@ -379,9 +374,8 @@ export default function Navbar() {
                       target={sub.href.startsWith("http") ? "_blank" : undefined}
                       rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       onClick={() => setIsOpen(false)}
-                      className={`block px-2 py-2 rounded-lg font-display font-medium text-brand-navy hover:bg-brand-gray-light ${
-                        pathname === sub.href ? "text-brand-blue bg-brand-blue-light" : ""
-                      }`}
+                      className={`block px-2 py-2 rounded-lg font-display font-medium text-brand-navy hover:bg-brand-gray-light ${pathname === sub.href ? "text-brand-blue bg-brand-blue-light" : ""
+                        }`}
                     >
                       {sub.name}
                     </Link>
@@ -395,9 +389,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-2 py-2.5 rounded-lg font-display font-semibold text-lg text-brand-navy hover:bg-brand-gray-light ${
-                  pathname === link.href ? "text-brand-blue bg-brand-blue-light" : ""
-                }`}
+                className={`block px-2 py-2.5 rounded-lg font-display font-semibold text-lg text-brand-navy hover:bg-brand-gray-light ${pathname === link.href ? "text-brand-blue bg-brand-blue-light" : ""
+                  }`}
               >
                 {link.name}
               </Link>
@@ -514,9 +507,9 @@ const Content = ({ selected, dir, navLinks, pathname, setSelected }) => {
         transition={{ duration: 0.25, ease: "easeInOut" }}
         className="absolute -top-[7px] h-2 w-3.5 bg-brand-border/60 flex items-center justify-center -translate-x-1/2"
       >
-        <span 
-          style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }} 
-          className="h-2 w-3 bg-white mt-[1px]" 
+        <span
+          style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
+          className="h-2 w-3 bg-white mt-[1px]"
         />
       </motion.span>
 
@@ -544,11 +537,10 @@ const Content = ({ selected, dir, navLinks, pathname, setSelected }) => {
                     target={sub.href.startsWith("http") ? "_blank" : undefined}
                     rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     onClick={() => setSelected(null)}
-                    className={`block px-3 py-2 rounded-xl font-display text-sm font-medium hover:bg-brand-gray-light hover:text-brand-blue transition-all ${
-                      pathname === sub.href
+                    className={`block px-3 py-2 rounded-xl font-display text-sm font-medium hover:bg-brand-gray-light hover:text-brand-blue transition-all ${pathname === sub.href
                         ? "text-brand-blue bg-brand-blue-light"
                         : "text-brand-navy"
-                    }`}
+                      }`}
                   >
                     {sub.name}
                   </Link>

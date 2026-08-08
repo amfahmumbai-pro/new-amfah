@@ -53,10 +53,10 @@ export default function OfficeCardsClient() {
               <Phone className="h-4 w-4" />
             </div>
             <div className="text-sm md:text-base text-brand-gray-dark font-medium leading-relaxed space-y-1">
-              <p>Toll Free: 022 40-107-074</p>
-              <p>Call: +91 93219 91812</p>
-              <p>Mobile: +91 93245 16326</p>
-              <p>Whatsapp: +91 90046 63226</p>
+              <p>Toll Free: 022 40-107-074 (Between 10 AM to 7 PM) Monday to Saturday</p>
+              <p>Call: +91 93219 91812 (Between 10 AM to 7 PM) Monday to Saturday</p>
+              <p>Mobile: +91 93245 16323 (Between 10 AM to 7 PM) Monday to Saturday</p>
+              <p>Whatsapp: +91 90046 63226 / +91 93219 91814 (Available 24/7 on Whatsapp)</p>
             </div>
           </div>
 
@@ -119,8 +119,8 @@ export default function OfficeCardsClient() {
               <Phone className="h-4 w-4" />
             </div>
             <div className="text-sm md:text-base text-brand-gray-dark font-medium leading-relaxed">
-              <p>Mobile: +91 93219 91810</p>
-              <p>WhatsApp: +91 9324 516326</p>
+              <p>Mobile: +91 93219 91810 (Between 10 AM to 7 PM) Monday to Saturday</p>
+              <p>WhatsApp: +91 90046 63226 / +91 93219 91814 (Available 24/7 on Whatsapp)</p>
             </div>
           </div>
 

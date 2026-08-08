@@ -5,6 +5,7 @@ import { Droplets } from "lucide-react";
 import ProductCard from "@/components/cards/ProductCard";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import { products } from "@/data/products";
+import { sortByCoverageArea } from "@/utils/productUtils";
 
 const categories = [
   { name: "All Equipment", id: "all" },
@@ -187,8 +188,8 @@ export default function ProductsCatalog() {
           {categories
             .filter((cat) => cat.id !== "all")
             .map((cat) => {
-              const catProducts = products.filter(
-                (product) => product.categoryId === cat.id
+              const catProducts = sortByCoverageArea(
+                products.filter((product) => product.categoryId === cat.id)
               );
               
               if (catProducts.length === 0) return null;

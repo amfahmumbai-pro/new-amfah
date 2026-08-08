@@ -7,6 +7,7 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 import ProductCard from "@/components/cards/ProductCard";
 import { applications } from "@/data/applications";
 import { products } from "@/data/products";
+import { sortByCoverageArea } from "@/utils/productUtils";
 
 // Generate dynamic SEO metadata
 export async function generateMetadata({ params }) {
@@ -46,8 +47,10 @@ export default async function HomeUseDetailPage({ params }) {
   const homeApps = applications.filter((app) => app.type === "home");
 
   // Get recommended product items
-  const recommendedItems = products.filter((prod) =>
-    currentApp.recommendedProducts.includes(prod.slug)
+  const recommendedItems = sortByCoverageArea(
+    products.filter((prod) =>
+      currentApp.recommendedProducts.includes(prod.slug)
+    )
   );
 
   // Custom risk factors for residential environments
