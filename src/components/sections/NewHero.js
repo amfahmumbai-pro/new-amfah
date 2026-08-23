@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "@/components/ui/AppLink";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const slides = [
   {
@@ -33,6 +33,27 @@ const slides = [
     buttonText: "know more",
     buttonLink: "/industrial-dehumidifiers",
     align: "right", // Image left, Text right
+  },
+  {
+    title: "PORTABLE AC",
+    specification: "AMFAH AMF-PDAC-18, 1.5 Ton Portable Air Conditioner | 4-in-1 AC, Fan, Dehumidifier, Auto | Energy Efficient Mobile AC with Adustable Vent,\n Auto Shut Off, Overheat Protection, White ",
+    price: {
+      current: "59,990",
+      mrp: "74,990",
+      discount: "20% off",
+    },
+    badge: "Amazon's Choice",
+    amazonReviews: {
+      rating: "4.1 out of 5",
+      totalRatings: "22 global ratings",
+    },
+    subtitle: "₹59,990 M.R.P: ₹74,990 (20% off)",
+    image: "/products/portable-ac-new.png",
+    imageScale: "scale-100 sm:scale-100 md:scale-110 lg:scale-120",
+    buttonText: "View On Amazon",
+    buttonLink: "https://www.amazon.in/AMFAH-AMF-PDAC-18-Conditioner-Dehumidifier-Adjustable/dp/B0F5GTXY4D/ref=sr_1_4?crid=2KSNAKP1UEGS0&dib=eyJ2IjoiMSJ9.1D49s_rzp88Mu4V8kGHo45JCaoTCFAY_bVQdw8wp95hc8kxoGne96oSLl-Vk4-Jzxy_Bk77hJZa7bdG3rmrWqXJtSjd0ZvSUM57HMT4T0UKNPVzzGHztMfLR4qESIvsraYqY4PJXvt7Z9HgQKQcApm9MJCJkz5ng34WmP_tbuN6to8I3-4TAzkqJ7zDX5Qr9uIi5xjdnlcfbsYyYCb6TsIODVbn9aFiX0SJ0Cg20YOI.16jNg54zXnkNcFUX9RsOwT6Zyai8XWFXBbAUw9d3IcA&dib_tag=se&keywords=portable+ac&qid=1787396803&sprefix=portable+ac%2Caps%2C316&sr=8-4",
+    buttonClass: "bg-[#FFCE12] text-slate-900 font-bold hover:bg-[#e5b80b]",
+    align: "left", // Text left, Image right
   },
   {
     title: "CEILING DEHUMIDIFIER",
@@ -222,7 +243,7 @@ export default function NewHero() {
           />
         ))}
       </div>
-      <div className="max-w-8xl px-4 md:px-6 lg:px-8 xl:px-12 pt-10 md:pt-14 py-6 md:py-8 mx-auto relative min-h-[280px] sm:min-h-[360px] md:min-h-[440px] lg:min-h-[500px] flex items-center">
+      <div className="max-w-8xl px-4 md:px-6 lg:px-8 xl:px-12 pt-10 md:pt-14 pb-8 sm:pb-8 mx-auto relative min-h-[310px] sm:min-h-[360px] md:min-h-[440px] lg:min-h-[500px] flex items-center">
         <AnimatePresence initial={false} custom={direction} mode="wait">
           {slides[currentIndex].type === "advocacy" ? (
             <motion.div
@@ -361,17 +382,17 @@ export default function NewHero() {
             >
               {/* Left-aligned Text Layout or Right-aligned Image Layout */}
               <div
-                className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${slides[currentIndex].align === "right"
+                className={`col-span-7 flex flex-col justify-center text-left space-y-1.5 sm:space-y-4 md:space-y-6 ${slides[currentIndex].align === "right"
                   ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2"
-                  : "lg:col-span-5 lg:order-1 order-1 pl-4"
+                  : "lg:col-span-5 lg:order-1 order-1 pl-1 sm:pl-4"
                   }`}
               >
-                <h2 className="font-display font-bold text-xl sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
+                <h2 className="font-display font-bold text-lg sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
                   {slides[currentIndex].title}
                 </h2>
 
                 {slides[currentIndex].specification && (
-                  <p className="font-sans font-bold text-xs sm:text-sm md:text-xl lg:text-2xl text-[#d41124] leading-snug select-none">
+                  <p className="font-sans font-bold text-[10px] sm:text-sm md:text-xl lg:text-2xl text-[#d41124] leading-snug select-none">
                     {slides[currentIndex].specification.split("\n").map((line, idx) => (
                       <span key={idx} className="inline md:block">
                         {idx > 0 ? <><span className="md:hidden"> </span>{line.trim()}</> : line}
@@ -380,38 +401,147 @@ export default function NewHero() {
                   </p>
                 )}
 
-                <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none">
-                  {slides[currentIndex].subtitle}
-                </p>
+                {slides[currentIndex].price ? (
+                  <div className="flex items-baseline gap-1.5 sm:gap-3 select-none flex-wrap font-sans pt-0.5 sm:pt-1">
+                    <span className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 flex items-start tracking-tight">
+                      <span className="text-xs sm:text-base md:text-lg font-semibold mr-0.5 mt-0.5">₹</span>
+                      <span>{slides[currentIndex].price.current}</span>
+                    </span>
+                    <span className="text-[10px] sm:text-sm md:text-base text-slate-500 font-medium">
+                      M.R.P: <span className="line-through">₹{slides[currentIndex].price.mrp}</span>
+                    </span>
+                    <span className="text-[10px] sm:text-sm md:text-base text-slate-700 font-semibold">
+                      ({slides[currentIndex].price.discount})
+                    </span>
+                  </div>
+                ) : (
+                  <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none">
+                    {slides[currentIndex].subtitle}
+                  </p>
+                )}
 
-                <div className="pt-1 sm:pt-2">
-                  <Link
-                    href={slides[currentIndex].buttonLink}
-                    prefetch={false}
-                    className="inline-block px-4 py-1.5 sm:px-8 sm:py-3 bg-[#d41124] text-white font-sans text-[10px] sm:text-sm font-medium rounded-full shadow-sm hover:bg-[#1251a0] active:scale-[0.98] transition-all duration-300"
-                  >
-                    {slides[currentIndex].buttonText}
-                  </Link>
+                <div className="pt-0.5 sm:pt-2">
+                  {slides[currentIndex].buttonLink?.startsWith("http") ? (
+                    <a
+                      href={slides[currentIndex].buttonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-block px-3.5 py-1 sm:px-8 sm:py-3 font-sans text-[10px] sm:text-sm rounded-full shadow-sm active:scale-[0.98] transition-all duration-300 cursor-pointer ${slides[currentIndex].buttonClass || "bg-[#d41124] text-white font-medium hover:bg-[#1251a0]"
+                        }`}
+                    >
+                      {slides[currentIndex].buttonText}
+                    </a>
+                  ) : (
+                    <Link
+                      href={slides[currentIndex].buttonLink}
+                      prefetch={false}
+                      className={`inline-block px-3.5 py-1 sm:px-8 sm:py-3 font-sans text-[10px] sm:text-sm rounded-full shadow-sm active:scale-[0.98] transition-all duration-300 cursor-pointer ${slides[currentIndex].buttonClass || "bg-[#d41124] text-white font-medium hover:bg-[#1251a0]"
+                        }`}
+                    >
+                      {slides[currentIndex].buttonText}
+                    </Link>
+                  )}
                 </div>
               </div>
 
               {/* Image Showcase Layout */}
               <div
-                className={`col-span-5 flex items-center w-full ${slides[currentIndex].align === "right"
-                  ? "lg:col-span-5 lg:order-1 order-1 justify-start"
-                  : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
+                className={`col-span-5 flex flex-col items-center justify-center w-full ${slides[currentIndex].align === "right"
+                  ? "lg:col-span-5 lg:order-1 order-1"
+                  : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2"
                   }`}
               >
-                <div className="relative w-full max-w-[260px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-square sm:aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
+                <div className="relative w-full max-w-[180px] sm:max-w-[300px] md:max-w-[440px] lg:max-w-[620px] aspect-square sm:aspect-[4/3] flex items-center justify-center select-none">
+                  {slides[currentIndex].badge && (
+                    <div className="absolute -top-2.5 sm:top-2 right-0 sm:right-10 z-20 pointer-events-auto">
+                      <div className="bg-[#0F1111] text-white text-[7.5px] sm:text-[11px] md:text-xs font-sans font-bold px-1.5 sm:px-4 py-0.5 sm:py-2 rounded-xs sm:rounded-sm shadow-md flex items-center gap-1 border border-white/10 tracking-wide whitespace-nowrap">
+                        <span>Amazon&apos;s Choice</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Desktop / Tablet Floating Review Card (sm and above) */}
+                  {slides[currentIndex].amazonReviews && (
+                    <div className="hidden sm:flex absolute -left-6 md:-left-12 lg:-left-22 top-1/2 -translate-y-1/2 z-20 pointer-events-auto bg-white/95 backdrop-blur-md px-3 py-2 sm:px-5 sm:py-3.5 rounded-xl sm:rounded-2xl border border-slate-200/90 shadow-md sm:shadow-lg flex-col items-start select-none">
+                      {/* Amazon Logo Image */}
+                      <div className="relative w-16 sm:w-26 h-4 sm:h-8 mb-1">
+                        <Image
+                          src="/images/amazon-logo.png"
+                          alt="Amazon Logo"
+                          fill
+                          className="object-contain object-left"
+                          priority
+                        />
+                      </div>
+
+                      <span className="font-bold text-slate-900 text-xs sm:text-sm font-sans tracking-tight mb-1 whitespace-nowrap leading-tight">
+                        Customer reviews
+                      </span>
+
+                      {/* Stars + Rating */}
+                      <div className="flex items-center gap-1 sm:gap-1.5 mb-0.5 whitespace-nowrap">
+                        <div className="flex items-center text-[#DE7921]">
+                          <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#DE7921] text-[#DE7921]" />
+                          <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#DE7921] text-[#DE7921]" />
+                          <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#DE7921] text-[#DE7921]" />
+                          <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#DE7921] text-[#DE7921]" />
+                          <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#DE7921]" />
+                        </div>
+                        <span className="font-bold text-slate-900 text-xs sm:text-sm font-sans ml-0.5">
+                          {slides[currentIndex].amazonReviews.rating}
+                        </span>
+                      </div>
+
+                      <span className="text-[10px] sm:text-xs text-slate-500 font-sans whitespace-nowrap leading-none">
+                        {slides[currentIndex].amazonReviews.totalRatings}
+                      </span>
+                    </div>
+                  )}
+
                   <Image
                     src={slides[currentIndex].image}
                     alt={slides[currentIndex].title}
                     fill
                     priority
-                    className="object-contain scale-125 sm:scale-100 drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
-                    sizes="(max-width: 768px) 100vw, 600px"
+                    className={`object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)] ${slides[currentIndex].imageScale || "scale-100 sm:scale-100"
+                      }`}
+                    sizes="(max-width: 768px) 100vw, 650px"
                   />
                 </div>
+
+                {/* Mobile Review Badge - Placed below the portable AC image so the image is unobstructed */}
+                {slides[currentIndex].amazonReviews && (
+                  <div className="flex sm:hidden mt-1.5 z-20 pointer-events-auto bg-white/95 backdrop-blur-md px-2.5 py-1.5 rounded-lg border border-slate-200/90 shadow-xs flex-col items-center select-none w-full max-w-[140px]">
+                    {/* Amazon Logo Image */}
+                    <div className="relative w-20 h-5 mb-1">
+                      <Image
+                        src="/images/amazon-logo.png"
+                        alt="Amazon Logo"
+                        fill
+                        className="object-contain object-center"
+                        priority
+                      />
+                    </div>
+
+                    {/* Stars + Rating */}
+                    <div className="flex items-center gap-0.5 whitespace-nowrap">
+                      <div className="flex items-center text-[#DE7921]">
+                        <Star className="w-3 h-3 fill-[#DE7921] text-[#DE7921]" />
+                        <Star className="w-3 h-3 fill-[#DE7921] text-[#DE7921]" />
+                        <Star className="w-3 h-3 fill-[#DE7921] text-[#DE7921]" />
+                        <Star className="w-3 h-3 fill-[#DE7921] text-[#DE7921]" />
+                        <Star className="w-3 h-3 text-[#DE7921]" />
+                      </div>
+                      <span className="font-bold text-slate-900 text-[9px] font-sans ml-0.5">
+                        {slides[currentIndex].amazonReviews.rating}
+                      </span>
+                    </div>
+
+                    <span className="text-[7.5px] text-slate-500 font-sans whitespace-nowrap leading-none mt-0.5">
+                      {slides[currentIndex].amazonReviews.totalRatings}
+                    </span>
+                  </div>
+                )}
               </div>
             </motion.div>
           )}

@@ -10,6 +10,7 @@ export default function Footer() {
     { name: "Home Profile", href: "/" },
     { name: "Our Expertise", href: "/about" },
     { name: "All Dehumidifiers", href: "/products" },
+    { name: "FAQs", href: "/faq" },
     { name: "Patent Licence", href: "/pdf/patent-licence.pdf", isPdf: true },
     { name: "Get in Touch", href: "/contact" },
   ];

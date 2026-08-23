@@ -1,5 +1,500 @@
 export const blogs = [
   {
+    slug: "rise-of-portable-ac-in-india",
+    title: "The Rise of Portable AC in India: Why More People Are Choosing Portable Cooling",
+    metaTitle: "Portable AC in India | Rise of Portable Air Conditioners",
+    metaDescription: "Discover why portable ACs are becoming popular in India and how they offer flexible cooling for homes, rental properties, offices, and commercial spaces.",
+    summary: "Discover why portable ACs are becoming popular in India and how they offer flexible cooling for homes, rental properties, offices, and commercial spaces.",
+    date: "August 22, 2026",
+    image: "/blogs/portable-ac2.png",
+    readTime: "6 min read",
+    category: "Buying Guides",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        Summer in India is changing the way people think about cooling. A few years ago, if someone wanted an air conditioner, there were usually two choices: a split AC or a window AC. Today, there is another option that is getting more attention — the portable AC.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Different Way of Staying Cool Is Becoming Popular</h3>
+      <p class="mb-4">
+        You may have seen one in a home, office or shop. It looks different from a regular wall-mounted AC because it sits on the floor and can be moved when required.
+      </p>
+      <p class="mb-4">
+        At first, a portable air conditioner may sound like a product made only for temporary use. But that's changing.
+      </p>
+      <p class="mb-4">
+        People are living in rented homes, moving between cities for work, working from home, opening temporary offices and looking for cooling solutions that don't require permanent changes to a building. This is where portable ACs are finding their place in India.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Are More People Looking at Portable ACs?</h3>
+      <p class="mb-4">
+        The way people live and work has changed:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Someone may rent an apartment for two years before moving to another city.</li>
+        <li>A small business may operate from a rented office.</li>
+        <li>A company may create a temporary workspace for a new project.</li>
+        <li>A student may move between rented rooms during their studies.</li>
+      </ul>
+      <p class="mb-4">
+        In all these situations, installing a permanent air conditioner can become a difficult decision.
+      </p>
+      <p class="mb-4">
+        A split AC requires installation, wall drilling, piping and an outdoor unit. A portable AC takes a different approach. The unit stays inside the room and uses an exhaust hose to send hot air outside through a suitable window or opening. Most portable units are also fitted with wheels, making them easier to move.
+      </p>
+      <p class="mb-4">
+        That simple difference is one of the main reasons portable ACs are attracting attention.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Rental Home Problem</h3>
+      <p class="mb-4">
+        Imagine you have rented a beautiful apartment. The walls have just been painted. The interiors are finished. Everything looks exactly the way you want it.
+      </p>
+      <p class="mb-4">
+        Then summer arrives and you need an AC.
+      </p>
+      <p class="mb-4">
+        A split AC installation usually involves mounting the indoor unit, drilling through the wall for pipes and installing an outdoor unit. For a homeowner, this may be a normal part of installing an AC. For a tenant, it can be a different story.
+      </p>
+      <p class="mb-4">
+        The landlord may not allow drilling. The building may have restrictions on outdoor units. And when you eventually move out, the installation has to be removed.
+      </p>
+      <p class="mb-4">
+        This is one of the situations where portable AC becomes attractive. Recent Indian coverage has specifically highlighted rented homes and people who cannot make permanent changes to their property as an important use case for portable air conditioners.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">No Need to Turn Your Wall Into an AC Installation Site</h3>
+      <p class="mb-4">
+        Installing a split AC is not just about putting a machine on the wall. The indoor unit has to be mounted securely. A passage is needed for refrigerant pipes, electrical connections and drainage. The outdoor unit also needs a suitable location. All of this requires installation work.
+      </p>
+      <p class="mb-4">
+        Portable AC takes a much simpler route. Instead of fixing an indoor unit permanently to the wall, the air conditioner stays on the floor.
+      </p>
+      <p class="mb-4">
+        The hot air produced during cooling is directed outside using the exhaust hose and a suitable window arrangement. This means you don't have to redesign the room around a permanent AC installation. For people living in rented properties, this can make a huge difference.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Happens When You Move?</h3>
+      <p class="mb-4">
+        This is one of the biggest reasons portable AC is getting attention. India has a large population of people who move for work, education and business.
+      </p>
+      <p class="mb-4">
+        Maybe you are working in Mumbai today and move to Pune next year. Maybe you're studying in Bengaluru for a few years. Maybe your company changes offices.
+      </p>
+      <p class="mb-4">
+        With a permanently installed AC, moving can become another project: the system has to be removed, transported and installed again.
+      </p>
+      <p class="mb-4">
+        A portable AC is designed around a different idea. You can move the unit with you. Disconnect it from the existing setup, transport it to the new location and set it up again where suitable ventilation is available. That freedom is difficult to get from a permanently installed cooling system.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC Is Also Finding Its Way Into Offices</h3>
+      <p class="mb-4">
+        The rise of portable AC isn't limited to homes. Look at modern offices. Many companies operate from rented buildings, and office layouts also change frequently.
+      </p>
+      <p class="mb-4">
+        A meeting room may become a workstation. A new team may be added. A temporary project team may need a separate room. Sometimes one room becomes uncomfortable because of computers, equipment, sunlight or poor airflow.
+      </p>
+      <p class="mb-4">
+        Installing a complete split AC system for every changing requirement isn't always convenient. A portable AC can be brought into the room without making major changes to the building.
+      </p>
+      <p class="mb-4">
+        This makes portable cooling useful for:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Office cabins & meeting rooms</li>
+        <li>Temporary workspaces & project offices</li>
+        <li>Retail shops & showrooms</li>
+        <li>Clinics & consultation rooms</li>
+        <li>Commercial spaces & reception areas</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Businesses Like Flexible Cooling</h3>
+      <p class="mb-4">
+        For a business, flexibility can be more valuable than it first appears.
+      </p>
+      <p class="mb-4">
+        Imagine a company rents an office for two years and invests in permanent AC installations. A year later, the company moves to a larger office. The cooling system now has to be removed and the new office needs another installation.
+      </p>
+      <p class="mb-4">
+        This doesn't mean split ACs are useless. It simply shows why portable cooling has a different advantage. A portable AC can move when the business moves. For temporary offices and changing workspaces, that flexibility can make cooling much easier to manage.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC Doesn't Mean Complicated Cooling</h3>
+      <p class="mb-4">
+        One reason portable ACs are becoming easier for people to understand is their simple design. The unit sits inside the room, the user connects the exhaust hose to the appropriate window kit or opening, and the machine draws warm indoor air, cools it, and sends the cooled air back into the room while the extracted heat is exhausted outside.
+      </p>
+      <p class="mb-4">
+        There is still a setup involved. A portable AC isn't simply a machine that can be placed anywhere with no ventilation. The exhaust needs to be installed correctly for the unit to work properly. But compared with a permanent split AC installation, the process is much less disruptive.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">India's Growing Need for Flexible Cooling</h3>
+      <p class="mb-4">
+        The demand for cooling in India is also being influenced by hotter weather and longer periods of uncomfortable heat. Recent reporting has highlighted increasing electricity demand linked to air-conditioning use during hot periods in India.
+      </p>
+      <p class="mb-4">
+        But the answer isn't always to install a permanent AC in every room. People are looking for cooling solutions that fit their homes, budgets and lifestyles:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>A rented apartment has different requirements from an owned bungalow.</li>
+        <li>A small office has different requirements from a large corporate building.</li>
+        <li>A temporary workspace has different requirements from a permanent home.</li>
+      </ul>
+      <p class="mb-4">
+        Portable ACs fit into this changing picture because they provide another way to approach cooling.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Small Homes Are Another Reason Portable AC Is Getting Attention</h3>
+      <p class="mb-4">
+        Indian cities are becoming more crowded, and many people live in apartments where space is limited. Not every home has a convenient place for an outdoor AC unit. Not every room is easy to modify. And not every homeowner wants visible pipes running through carefully designed interiors.
+      </p>
+      <p class="mb-4">
+        A portable AC can be placed inside the room without mounting a large indoor unit on the wall. For people looking for a more flexible approach, this can be a practical alternative.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC and Monsoon Humidity</h3>
+      <p class="mb-4">
+        India doesn't only have hot summers. The monsoon brings another problem — humidity. A room can feel uncomfortable even when the temperature isn't extremely high. The air may feel heavy and sticky because of the moisture present in it.
+      </p>
+      <p class="mb-4">
+        Portable ACs can remove some moisture while they cool, and some models also offer dehumidification modes. This can be useful in humid weather.
+      </p>
+      <p class="mb-4">
+        However, cooling and humidity control are still two different things. If excess moisture is the main problem in a home, wardrobe, storage room or office, a dedicated dehumidifier is designed specifically to control that moisture.
+      </p>
+      <p class="mb-4">
+        For Indian homes and businesses, understanding both temperature and humidity can help create a much more comfortable indoor environment.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Portable AC Is More Than a Temporary Solution</h3>
+      <p class="mb-4">
+        Portable ACs were once viewed mainly as something you use when a normal AC cannot be installed. That perception is changing.
+      </p>
+      <p class="mb-4">
+        Today, people are actively choosing portable cooling because they want flexibility:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>They want something that can work in a rented home.</li>
+        <li>They want something they can move.</li>
+        <li>They want to avoid permanent wall modifications.</li>
+        <li>They want cooling for temporary offices and workspaces.</li>
+        <li>They want a solution that doesn't depend on installing an outdoor unit.</li>
+      </ul>
+      <p class="mb-4">
+        That doesn't make portable AC suitable for every possible building. It simply means that modern cooling needs are changing, and portable air conditioning is becoming a more practical part of that conversation.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Portable AC Trend Is Just Beginning</h3>
+      <p class="mb-4">
+        Think about how quickly our lifestyles have changed. People work from home, rent homes for shorter periods, businesses move offices, students move cities, families relocate for work, and commercial spaces change their layouts.
+      </p>
+      <p class="mb-4">
+        Cooling systems need to fit these changes. This is where portable AC has a natural advantage. Instead of asking the building to adapt permanently to the air conditioner, the cooling system can adapt to the space. That is a very different way of thinking about air conditioning.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why More Indians Are Choosing Portable Cooling</h3>
+      <p class="mb-4">
+        The rise of portable AC in India isn't happening because people suddenly stopped using split ACs. It's happening because there are situations where a fixed AC isn't the easiest solution:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>For a renter:</strong> Avoiding permanent wall work can be important.</li>
+        <li><strong>For an office:</strong> Being able to move the unit can be useful.</li>
+        <li><strong>For a temporary workspace:</strong> Permanent installation may not make sense.</li>
+        <li><strong>For frequent relocations:</strong> Portability can save a lot of hassle.</li>
+        <li><strong>For businesses:</strong> Flexible cooling makes it easier to respond when the workspace changes.</li>
+      </ul>
+      <p class="mb-4">
+        Portable AC gives people another choice. And as Indian homes, offices and lifestyles continue to change, that choice is becoming increasingly relevant.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A New Chapter in Cooling</h3>
+      <p class="mb-4">
+        The future of cooling isn't necessarily about one type of air conditioner replacing another. It's about having the right solution for different situations. Some spaces need permanent cooling; others need flexibility. Some buildings allow extensive installation; others don't. Some people own their homes; others rent. And some businesses need cooling today but may move tomorrow.
+      </p>
+      <p class="mb-4 font-medium">
+        AMFAH portable AC solutions are designed for people and businesses looking for flexible cooling without the complexity of a traditional permanent installation. With a movable design and a simpler setup, portable AC gives you the freedom to take your cooling solution with you as your space and requirements change.
+      </p>
+      <p class="mb-4 font-semibold text-brand-navy">
+        The rise of portable AC in India is really about one simple idea: Cooling should fit your life, not the other way around.
+      </p>
+      <p class="mb-4 mt-6">
+        <a href="/portable-ac" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px] font-semibold text-brand-navy">Explore AMFAH Portable Air Conditioners & Solutions</a>
+      </p>
+    `
+  },
+  {
+    slug: "portable-ac-vs-split-ac",
+    title: "Why Portable AC Is a Better Option Than a Split AC",
+    metaTitle: "Portable AC vs Split AC",
+    metaDescription: "Compare portable AC vs split AC to understand installation, portability, wall damage, cooling, and why portable AC is a practical choice for homes, offices, and rental spaces.",
+    summary: "Compare portable AC vs split AC to understand installation, portability, wall damage, cooling, and why portable AC is a practical choice for homes, offices, and rental spaces.",
+    date: "August 22, 2026",
+    image: "/blogs/portable-ac.png",
+    readTime: "6 min read",
+    category: "Buying Guides",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        Summer has arrived. You have just moved into a new apartment and the afternoon heat is becoming difficult to handle. The room gets hot, you cannot concentrate on your work, and sleeping at night becomes uncomfortable. Naturally, the first thing that comes to mind is a split AC.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Sometimes, Installing an AC Is More Complicated Than You Think</h3>
+      <p class="mb-4">
+        You call an installer. Then you start hearing about wall drilling, copper pipes, an outdoor unit, drainage, electrical work and installation charges.
+      </p>
+      <p class="mb-4">
+        If you own the house, this may not be a big concern. But what if you're renting? What if your landlord doesn't want holes drilled into the wall? What if your office is rented and you may move to another location next year? Or what if you simply don't want to disturb a newly painted wall or expensive interior?
+      </p>
+      <p class="mb-4">
+        This is where a portable AC can make life much easier. A portable air conditioner gives you proper air conditioning without turning the cooling system into a permanent part of the building.
+      </p>
+      <p class="mb-4">
+        You can place it inside the room, connect the exhaust arrangement to a suitable window and start using it. And when your requirements change, you can move the unit. That's the biggest difference between a portable AC and a traditional split AC.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Is a Portable AC?</h3>
+      <p class="mb-4">
+        A portable AC is a self-contained air conditioning unit designed to sit on the floor and provide cooling without the permanent installation normally associated with a split AC. The main components are contained inside the portable unit.
+      </p>
+      <p class="mb-4">
+        It draws warm air from the room, cools it and releases cool air back into the room. The heat removed from the room needs to be sent outside, which is why portable ACs normally use an exhaust hose connected to a suitable window or opening.
+      </p>
+      <p class="mb-4">
+        Most portable ACs are also fitted with wheels, so the unit can be moved when required.
+      </p>
+      <p class="mb-4">
+        This simple design makes portable air conditioning useful for homes, rented apartments, offices, shops, temporary workspaces and many other situations where permanent AC installation isn't convenient.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Split AC Changes Your Wall Permanently</h3>
+      <p class="mb-4">
+        This is something people often don't think about before buying a split AC. A split AC isn't simply mounted on the wall.
+      </p>
+      <p class="mb-4">
+        The indoor unit needs to be fixed using a mounting bracket. A passage also has to be created through the wall for the refrigerant pipes, electrical connections and drain pipe. The outdoor unit then needs to be installed in a suitable location outside the room.
+      </p>
+      <p class="mb-4">
+        This means drilling and installation work becomes part of the process. Current installation guidance and comparisons describe wall mounting, wall openings, pipe routing and outdoor-unit placement as part of a conventional split AC installation.
+      </p>
+      <p class="mb-4">
+        Think about a freshly painted bedroom. You have spent money on a beautiful wall finish. Now the AC installation requires drilling and pipe routing through that wall. The work can be done professionally, but the wall is still being modified to accommodate the AC.
+      </p>
+      <p class="mb-4">
+        And when you eventually remove the split AC, you may be left with mounting holes and openings that need to be sealed, repaired or repainted. For a permanent home, many people are comfortable with this. For a rented apartment or temporary office, it can become an unnecessary headache.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC Doesn't Require the Same Permanent Wall Installation</h3>
+      <p class="mb-4">
+        This is where portable AC has a clear advantage. Instead of mounting an indoor unit on the wall, the portable AC simply stands on the floor.
+      </p>
+      <p class="mb-4">
+        There is no indoor unit to permanently fix. There is no outdoor compressor unit hanging outside the building. There is no need to route copper refrigerant pipes across the wall in the same way as a conventional split installation.
+      </p>
+      <p class="mb-4">
+        The portable unit generally uses an exhaust hose and window kit to send hot air outside. You still need to set up the exhaust properly, but the overall arrangement is much less permanent. For people who don't want to make major changes to their property, this can be a huge advantage.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Portable AC Is Perfect for Rental Homes</h3>
+      <p class="mb-4">
+        Imagine living in a rented apartment. You may stay there for six months. Or maybe two years. You don't know yet.
+      </p>
+      <p class="mb-4">
+        Installing a split AC means making changes to someone else's property. You may need the owner's permission before drilling the wall. The building may also have rules about installing outdoor AC units. And when you eventually move, you have to arrange for the AC to be removed and installed again somewhere else.
+      </p>
+      <p class="mb-4">
+        A portable AC makes this much easier. You can use the unit in your rented home without installing a permanent indoor unit. When you move, the AC moves with you.
+      </p>
+      <p class="mb-4">
+        This is one of the main reasons portable ACs are increasingly being considered by renters and people who frequently change homes. Recent Indian comparisons also highlight rental homes and properties where permanent installation is restricted as strong use cases for portable air conditioners.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What About Offices?</h3>
+      <p class="mb-4">
+        Portable ACs aren't only useful for homes. Think about a small office. The company has rented the space for a few years, but the building owner doesn't want permanent changes to the walls. Or perhaps the company has created a temporary office for a new project.
+      </p>
+      <p class="mb-4">
+        There may be a meeting room that gets hot during the afternoon. Maybe a cabin has poor airflow. Maybe the office has recently added more computers and the room now feels warmer than before.
+      </p>
+      <p class="mb-4">
+        Installing a complete split AC system may take planning, permission and installation work. A portable AC can be brought into the office and set up with much less disruption.
+      </p>
+      <p class="mb-4">
+        This makes portable air conditioners useful for:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Office cabins</li>
+        <li>Meeting rooms</li>
+        <li>Temporary offices</li>
+        <li>Reception areas</li>
+        <li>Small commercial spaces</li>
+        <li>Rented workspaces</li>
+        <li>Shops</li>
+        <li>Clinics</li>
+        <li>Temporary project offices</li>
+      </ul>
+      <p class="mb-4">
+        For businesses, the ability to move the cooling equipment when the office layout changes can be extremely useful.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">You Don't Need an Outdoor AC Unit</h3>
+      <p class="mb-4">
+        Walk around an apartment building and you'll notice outdoor AC units everywhere. Some buildings have dedicated spaces for them. Others don't.
+      </p>
+      <p class="mb-4">
+        In certain apartments, finding a suitable place for an outdoor unit can be difficult. In offices, building management may have restrictions on external installations. In rented properties, the landlord may not want additional equipment installed outside.
+      </p>
+      <p class="mb-4">
+        A portable AC avoids the need for a conventional outdoor compressor unit. The cooling system remains inside the room, while the hot air is exhausted outside through the appropriate hose arrangement. This makes the installation cleaner and much easier to manage when permanent outdoor equipment isn't practical.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Installation Becomes Much Easier</h3>
+      <p class="mb-4">
+        A conventional split AC installation involves several steps: the indoor unit needs to be mounted, the outdoor unit needs to be positioned, the wall needs to be drilled, pipes and wiring need to be routed, the drain system needs to be arranged, and then the entire system needs to be tested.
+      </p>
+      <p class="mb-4">
+        Portable AC installation is much simpler. You place the unit near a suitable window, attach the exhaust hose and window kit according to the manufacturer's instructions, and connect the unit to power.
+      </p>
+      <p class="mb-4">
+        The exact setup depends on the model, but portable ACs are designed around this simpler installation process. For someone who wants cooling without a major installation project, that simplicity is a major benefit.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Happens When You Move?</h3>
+      <p class="mb-4">
+        This is where the difference becomes even more obvious. A split AC is designed to stay where it is installed. If you move to another home, you need to arrange for dismantling, transportation and reinstallation. The old wall may also need repair after the unit and pipes are removed.
+      </p>
+      <p class="mb-4">
+        With a portable AC, the process is much simpler: disconnect the unit, move it, and set it up again. The cooling system isn't tied to one building.
+      </p>
+      <p class="mb-4">
+        For students, renters, people who relocate for work and businesses that frequently change offices, this flexibility can be extremely valuable.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC Is Also Useful for Temporary Cooling</h3>
+      <p class="mb-4">
+        Not every cooling requirement lasts for years. A business may set up a temporary office. A company may renovate its main workplace and move employees into another building for a few months. An exhibition may run for several days. A shop may need additional cooling during a temporary setup. A construction company may need cooling inside a temporary office cabin.
+      </p>
+      <p class="mb-4">
+        Installing a permanent split AC for a short-term requirement doesn't always make sense. A portable AC can be moved into the space, used during the required period and relocated when the work is finished. This is one of the biggest strengths of portable air conditioning.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC Gives You More Freedom With Your Interior</h3>
+      <p class="mb-4">
+        Modern homes and offices are no longer designed only around functionality. People spend a lot of money on interiors: wooden wall panels, wallpaper, decorative ceilings, designer paint, built-in furniture, and minimalist interiors.
+      </p>
+      <p class="mb-4">
+        A wall-mounted split AC can become another element that has to be planned into the room. The installation also requires a route for the pipes and drain line.
+      </p>
+      <p class="mb-4">
+        A portable AC takes a different approach. The unit stays on the floor and doesn't require a permanently mounted indoor unit. For people who want to avoid extensive wall work, this can make the cooling system much easier to integrate into the room.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC During the Indian Summer and Monsoon</h3>
+      <p class="mb-4">
+        India doesn't have just one type of weather. Summer can bring extreme heat, while the monsoon brings high moisture along with warm temperatures. This combination can make indoor spaces feel uncomfortable.
+      </p>
+      <p class="mb-4">
+        A portable AC helps by lowering the room temperature. Some portable AC models can also remove moisture during the cooling process and may include a dedicated dehumidification mode. This can be especially useful when the room feels both hot and humid.
+      </p>
+      <p class="mb-4">
+        However, if the main problem is excessive humidity rather than temperature, a dedicated dehumidifier is designed specifically for moisture control. That's why cooling and humidity control should be considered separately when choosing equipment for your home or workplace.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Portable AC Is the Better Choice for Flexible Spaces</h3>
+      <p class="mb-4">
+        A split AC works around the building. A portable AC works around your requirements. That's a major difference.
+      </p>
+      <p class="mb-4">
+        If you move to another room, another office or another property, your cooling requirement moves with you. You don't have to redesign the space around a permanently installed AC. You don't have to find a place for an outdoor compressor. You don't have to make the same wall modifications required for a conventional split installation.
+      </p>
+      <p class="mb-4">
+        You simply move the unit, set it up correctly and continue using it. That flexibility is what makes portable AC a better option for many modern homes and workplaces.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What About Electricity Consumption?</h3>
+      <p class="mb-4">
+        Portable ACs are designed for convenience and flexibility, but electricity consumption is still something users should consider. The actual power consumption depends on the model, cooling capacity, room size, insulation, outdoor temperature and how long the unit runs.
+      </p>
+      <p class="mb-4">
+        The important thing is to choose a portable AC that is properly matched to the room and use it in a well-sealed space. Keeping doors and windows closed while the AC is operating can also help maintain the cooled environment. Using the correct exhaust setup is equally important because the hot air removed from the room needs to be properly discharged outside.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC for Modern Work and Living</h3>
+      <p class="mb-4">
+        Our homes and workplaces are changing. People work from home. Companies rent flexible offices. Businesses move locations. Students shift between accommodation. Families move into new apartments. Temporary workspaces are becoming common.
+      </p>
+      <p class="mb-4">
+        In all these situations, permanent cooling isn't always the most convenient answer. Portable AC gives people the ability to have air conditioning without making the building permanently dependent on the cooling system. And that is what makes it different.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Portable AC vs Split AC: Which One Fits Your Needs?</h3>
+      <p class="mb-4">
+        If you want permanent cooling and don't mind modifying the building, a split AC requires a conventional installation. But if you want flexibility, mobility and a simpler setup, portable AC offers a much more convenient alternative.
+      </p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left border-collapse border border-slate-200 text-sm">
+          <thead>
+            <tr class="bg-slate-100 font-bold text-brand-navy">
+              <th class="border border-slate-200 p-3">Feature / Consideration</th>
+              <th class="border border-slate-200 p-3">Portable AC</th>
+              <th class="border border-slate-200 p-3">Split AC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-200 p-3 font-semibold text-slate-800">Installation Complexity</td>
+              <td class="border border-slate-200 p-3">Plug-and-play; DIY window kit exhaust hose</td>
+              <td class="border border-slate-200 p-3">Professional drilling, piping & electrical work required</td>
+            </tr>
+            <tr class="bg-slate-50/50">
+              <td class="border border-slate-200 p-3 font-semibold text-slate-800">Wall Modifications</td>
+              <td class="border border-slate-200 p-3">Zero holes drilled; preserves interior walls</td>
+              <td class="border border-slate-200 p-3">Mounting brackets & 3-inch wall core holes</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-semibold text-slate-800">Outdoor Unit Required</td>
+              <td class="border border-slate-200 p-3">No outdoor condenser unit needed</td>
+              <td class="border border-slate-200 p-3">Requires exterior wall or balcony mounting space</td>
+            </tr>
+            <tr class="bg-slate-50/50">
+              <td class="border border-slate-200 p-3 font-semibold text-slate-800">Mobility & Relocation</td>
+              <td class="border border-slate-200 p-3">Easy to move on caster wheels room-to-room or house-to-house</td>
+              <td class="border border-slate-200 p-3">Fixed to one spot; costly de-installation and wall repair</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-semibold text-slate-800">Best Application</td>
+              <td class="border border-slate-200 p-3">Rented homes, flexible offices, temporary project sites, cabins</td>
+              <td class="border border-slate-200 p-3">Permanently owned homes with fixed cooling layouts</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>For renters:</strong> Portable AC means less concern about permanent wall changes.</li>
+        <li><strong>For offices:</strong> It means easier installation in rented or temporary spaces.</li>
+        <li><strong>For businesses:</strong> It means cooling equipment that can move as requirements change.</li>
+        <li><strong>For homeowners:</strong> It means another option when installing an outdoor unit isn't practical.</li>
+      </ul>
+      <p class="mb-4 font-medium">
+        The biggest advantage isn't complicated technology. It's convenience.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Future of Flexible Cooling</h3>
+      <p class="mb-4">
+        Cooling should make your life easier, not create another installation problem. You shouldn't have to redesign a rented apartment just to stay comfortable. You shouldn't have to worry about permanent wall work every time you change your office. And you shouldn't have to leave your cooling system behind when you move.
+      </p>
+      <p class="mb-4">
+        Portable air conditioning offers a simple answer to these problems.
+      </p>
+      <p class="mb-4 font-medium">
+        AMFAH portable AC solutions are designed for homes, offices and commercial spaces where convenient and flexible cooling matters. With a movable design and a simpler installation approach, portable AC gives you the freedom to bring cooling wherever it is needed without committing to a permanent split AC installation.
+      </p>
+      <p class="mb-4">
+        When your space changes, your cooling solution can change with it. That's what makes portable AC a smarter choice for modern, flexible spaces.
+      </p>
+      <p class="mb-4 mt-6">
+        <a href="/portable-ac" class="bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_1px] bg-no-repeat bg-[position:100%_100%] transition-[background-size] duration-300 hover:bg-[length:0%_1px] font-semibold text-brand-navy">Explore AMFAH Portable Air Conditioners & Flexible Cooling Solutions</a>
+      </p>
+    `
+  },
+  {
     slug: "how-to-protect-silk-clothes-during-monsoon",
     title: "How to Protect Silk Clothes During Monsoon",
     metaTitle: "Silk Clothes in Rainy Season | How to Protect Silk Clothes During Monsoon",

@@ -113,14 +113,14 @@ export default async function ProductDetailPage({ params }) {
   const categoryLabel = (product.categoryId === "industrial" || product.categoryId === "residential")
     ? "Dehumidifiers"
     : product.categoryId === "purifier"
-    ? "Air Purifiers"
-    : product.categoryId === "humidifier"
-    ? "Humidifiers"
-    : product.categoryId === "portable-ac"
-    ? "Portable ACs"
-    : product.categoryId === "air-to-water"
-    ? "Water Generators"
-    : "Products";
+      ? "Air Purifiers"
+      : product.categoryId === "humidifier"
+        ? "Humidifiers"
+        : product.categoryId === "portable-ac"
+          ? "Portable ACs"
+          : product.categoryId === "air-to-water"
+            ? "Water Generators"
+            : "Products";
 
   // Helper variables to extract specific product specs for custom FAQs
   const tankCapacity = getSpecValue(product.specifications, ["water tank capacity", "tank volume", "condensate tank", "water tank", "storage tank capacity", "tank capacity"]) || "built-in tank";
@@ -137,103 +137,103 @@ export default async function ProductDetailPage({ params }) {
   const techSummary = product.tech || "";
 
   // Generate specialized FAQs dynamically based on category and product-specific attributes
-  const faqs = product.categoryId === "industrial" 
+  const faqs = product.categoryId === "industrial"
     ? [
-        { 
-          q: `What is the moisture extraction capacity and coverage area of the ${nameToUse}?`, 
-          a: `The ${nameToUse} is rated to extract ${product.extraction} of moisture per day and is optimized for coverage areas of ${coverageVal}.` 
-        },
-        { 
-          q: `What are the drainage options and water tank specifications for this model?`, 
-          a: `This model features a condensate tank capacity of ${tankCapacity} ${featuresList.some(f => f.toLowerCase().includes("pump")) ? "and features an integrated high-lift water pump to dispose of water vertically or horizontally up to 15 feet." : "and supports continuous gravity drainage. You can attach a high-pressure hose to the drain connection for uninterrupted 24-hour drainage."}` 
-        },
-        { 
-          q: `Can the ${nameToUse} operate in low-temperature environments?`, 
-          a: `Yes, it is designed to operate efficiently within a temperature range of ${tempRange}. It incorporates a specialized defrosting system (hot-gas or warm-gas defrost) that prevents frost from building up on the cooling coils, ensuring continuous operation down to low temperatures.` 
-        },
-        { 
-          q: `What are the electrical requirements and refrigerant used in the ${nameToUse}?`, 
-          a: `It runs on eco-friendly refrigerant ${refrigerant}, consuming approximately ${power} and drawing ${current} of electric current during normal operations. ${compressor ? `It is powered by a high-grade ${compressor} compressor for maximum reliability.` : ""}` 
-        }
-      ]
+      {
+        q: `What is the moisture extraction capacity and coverage area of the ${nameToUse}?`,
+        a: `The ${nameToUse} is rated to extract ${product.extraction} of moisture per day and is optimized for coverage areas of ${coverageVal}.`
+      },
+      {
+        q: `What are the drainage options and water tank specifications for this model?`,
+        a: `This model features a condensate tank capacity of ${tankCapacity} ${featuresList.some(f => f.toLowerCase().includes("pump")) ? "and features an integrated high-lift water pump to dispose of water vertically or horizontally up to 15 feet." : "and supports continuous gravity drainage. You can attach a high-pressure hose to the drain connection for uninterrupted 24-hour drainage."}`
+      },
+      {
+        q: `Can the ${nameToUse} operate in low-temperature environments?`,
+        a: `Yes, it is designed to operate efficiently within a temperature range of ${tempRange}. It incorporates a specialized defrosting system (hot-gas or warm-gas defrost) that prevents frost from building up on the cooling coils, ensuring continuous operation down to low temperatures.`
+      },
+      {
+        q: `What are the electrical requirements and refrigerant used in the ${nameToUse}?`,
+        a: `It runs on eco-friendly refrigerant ${refrigerant}, consuming approximately ${power} and drawing ${current} of electric current during normal operations. ${compressor ? `It is powered by a high-grade ${compressor} compressor for maximum reliability.` : ""}`
+      }
+    ]
     : product.categoryId === "purifier"
-    ? [
-        { 
-          q: `What filter technologies does the ${nameToUse} use and how often should they be replaced?`, 
-          a: `The ${nameToUse} employs a high-efficiency filtration system, typically consisting of a washable pre-filter, a high-efficiency H13 HEPA filter, and an active carbon filter. The pre-filter should be cleaned regularly, while the HEPA and carbon filters should be replaced every 6 to 12 months depending on usage.` 
+      ? [
+        {
+          q: `What filter technologies does the ${nameToUse} use and how often should they be replaced?`,
+          a: `The ${nameToUse} employs a high-efficiency filtration system, typically consisting of a washable pre-filter, a high-efficiency H13 HEPA filter, and an active carbon filter. The pre-filter should be cleaned regularly, while the HEPA and carbon filters should be replaced every 6 to 12 months depending on usage.`
         },
-        { 
-          q: `What is the clean airflow rating and coverage area of this purifier?`, 
-          a: `It provides a clean airflow circulation rate of ${product.airflow || "optimal circulation"} and is optimized to purify spaces of ${coverageVal}.` 
+        {
+          q: `What is the clean airflow rating and coverage area of this purifier?`,
+          a: `It provides a clean airflow circulation rate of ${product.airflow || "optimal circulation"} and is optimized to purify spaces of ${coverageVal}.`
         },
-        { 
-          q: `Can the ${nameToUse} be used to reduce room humidity?`, 
-          a: `No, the ${nameToUse} is dedicated to high-efficiency air filtration (eliminating dust, smoke, allergens, and PM2.5). For humidity control, please check our range of home and commercial dehumidifiers.` 
+        {
+          q: `Can the ${nameToUse} be used to reduce room humidity?`,
+          a: `No, the ${nameToUse} is dedicated to high-efficiency air filtration (eliminating dust, smoke, allergens, and PM2.5). For humidity control, please check our range of home and commercial dehumidifiers.`
         }
       ]
-    : product.categoryId === "air-to-water"
-    ? [
-        { 
-          q: `How does the ${nameToUse} generate pure drinking water from the air?`, 
-          a: `The ${nameToUse} extracts moisture directly from the humidity in the ambient air, condenses it, and passes it through an advanced filtration system. You simply plug the unit into a standard power outlet, and it generates fresh drinking water without requiring any plumbing or external water connection.` 
-        },
-        { 
-          q: `What purification stages does this generator use to ensure water safety?`, 
-          a: `It features an advanced multi-stage purification system (including Pre-Filter, HEPA H13, Active Carbon, RO membrane, and UV Sterilization) to remove all contaminants. Additionally, a mineralization filter adds essential trace minerals like Calcium and Magnesium to ensure clean, refreshing alkaline water (pH 7.2 to 7.8).` 
-        },
-        { 
-          q: `What is the daily water production capacity and storage tank volume?`, 
-          a: `It has a daily water production capacity of ${product.extraction} and is equipped with an integrated ${tankCapacity} storage tank.` 
-        }
-      ]
-    : product.categoryId === "humidifier"
-    ? [
-        { 
-          q: `What is the moisture output and recommended coverage area for the ${nameToUse}?`, 
-          a: `The ${nameToUse} has a humidification capacity of ${product.extraction} per day and is optimized for coverage areas of ${coverageVal}.` 
-        },
-        { 
-          q: `What technology does the ${nameToUse} use to generate mist, and is it quiet?`, 
-          a: `It utilizes advanced ultrasonic cool mist transducer technology to vibrate water into a micro-fine mist, dispersing it quickly and evenly. It is whisper-silent, operating at a noise level of ${noise}, which is ideal for nurseries, bedrooms, and offices.` 
-        },
-        { 
-          q: `What type of water should be used, and how do I clean the humidifier?`, 
-          a: `We highly recommend using distilled or demineralized water to prevent mineral dust build-up. For maintenance, rinse the tank weekly and clean the ultrasonic transducer oscillator every 2-3 weeks with white vinegar to clear scaling.` 
-        }
-      ]
-    : product.categoryId === "portable-ac"
-    ? [
-        { 
-          q: `What is the cooling capacity of the ${nameToUse} and how is it installed?`, 
-          a: `The ${nameToUse} features a powerful cooling capacity of ${product.extraction} (suitable for areas of ${coverageVal}). It includes a simple window slider kit and flexible exhaust duct. To install, position the panel in a window, connect the hose from the unit to the panel, and plug it in.` 
-        },
-        { 
-          q: `Does the ${nameToUse} require manual water drainage during operation?`, 
-          a: `Under normal cooling conditions, the unit is equipped with a self-evaporative system that recycles condensed water to cool the condenser coils and vents it out through the exhaust duct as steam. Manual drainage is only necessary in extremely humid conditions or in dedicated dehumidifier mode.` 
-        },
-        { 
-          q: `What fan speeds and protection features does this portable AC have?`, 
-          a: `It supports ${fanSpeeds} fan speeds and has smart features like thermostatic cut-off, auto-shutoff, overheating protection, auto-diagnosis, and an anti-bacterial water tank for maximum safety and comfort.` 
-        }
-      ]
-    : [
-        { 
-          q: `How much moisture can the ${nameToUse} extract, and what area does it cover?`, 
-          a: `The ${nameToUse} has a dehumidification capacity of ${product.extraction} per day and is engineered for coverage areas of ${coverageVal}.` 
-        },
-        { 
-          q: `Does the ${nameToUse} include air purification capabilities?`, 
-          a: `${featuresList.some(f => /hepa|carbon|purif|filtr/.test(f.toLowerCase())) || techSummary.toLowerCase().includes("purif") || techSummary.toLowerCase().includes("hepa") ? `Yes! This model features advanced multi-stage air purification (including a HEPA and active carbon filter system) that effectively filters dust, allergens, PM2.5, and odors from the air while controlling humidity.` : `Yes, it is equipped with a high-efficiency dust filter that traps airborne particles, ensuring the air circulated back into the room is clean and filtered.`}` 
-        },
-        { 
-          q: `What is the noise level of the ${nameToUse} during operation?`, 
-          a: `The unit operates at a quiet noise level of ${noise}, ensuring a peaceful indoor environment. This makes it perfect for bedrooms, studies, and living spaces without causing distraction.` 
-        },
-        { 
-          q: `What is the water tank capacity and does it support auto-shutoff?`, 
-          a: `It features a ${tankCapacity} water tank with a full tank alarm and auto-shutoff function to prevent overflow. It also offers a continuous drainage port, letting you connect a hose for hands-free 24/7 moisture control.` 
-        }
-      ];
+      : product.categoryId === "air-to-water"
+        ? [
+          {
+            q: `How does the ${nameToUse} generate pure drinking water from the air?`,
+            a: `The ${nameToUse} extracts moisture directly from the humidity in the ambient air, condenses it, and passes it through an advanced filtration system. You simply plug the unit into a standard power outlet, and it generates fresh drinking water without requiring any plumbing or external water connection.`
+          },
+          {
+            q: `What purification stages does this generator use to ensure water safety?`,
+            a: `It features an advanced multi-stage purification system (including Pre-Filter, HEPA H13, Active Carbon, RO membrane, and UV Sterilization) to remove all contaminants. Additionally, a mineralization filter adds essential trace minerals like Calcium and Magnesium to ensure clean, refreshing alkaline water (pH 7.2 to 7.8).`
+          },
+          {
+            q: `What is the daily water production capacity and storage tank volume?`,
+            a: `It has a daily water production capacity of ${product.extraction} and is equipped with an integrated ${tankCapacity} storage tank.`
+          }
+        ]
+        : product.categoryId === "humidifier"
+          ? [
+            {
+              q: `What is the moisture output and recommended coverage area for the ${nameToUse}?`,
+              a: `The ${nameToUse} has a humidification capacity of ${product.extraction} per day and is optimized for coverage areas of ${coverageVal}.`
+            },
+            {
+              q: `What technology does the ${nameToUse} use to generate mist, and is it quiet?`,
+              a: `It utilizes advanced ultrasonic cool mist transducer technology to vibrate water into a micro-fine mist, dispersing it quickly and evenly. It is whisper-silent, operating at a noise level of ${noise}, which is ideal for nurseries, bedrooms, and offices.`
+            },
+            {
+              q: `What type of water should be used, and how do I clean the humidifier?`,
+              a: `We highly recommend using distilled or demineralized water to prevent mineral dust build-up. For maintenance, rinse the tank weekly and clean the ultrasonic transducer oscillator every 2-3 weeks with white vinegar to clear scaling.`
+            }
+          ]
+          : product.categoryId === "portable-ac"
+            ? [
+              {
+                q: `What is the cooling capacity of the ${nameToUse} and how is it installed?`,
+                a: `The ${nameToUse} features a powerful cooling capacity of ${product.extraction} (suitable for areas of ${coverageVal}). It includes a simple window slider kit and flexible exhaust duct. To install, position the panel in a window, connect the hose from the unit to the panel, and plug it in.`
+              },
+              {
+                q: `Does the ${nameToUse} require manual water drainage during operation?`,
+                a: `Under normal cooling conditions, the unit is equipped with a self-evaporative system that recycles condensed water to cool the condenser coils and vents it out through the exhaust duct as steam. Manual drainage is only necessary in extremely humid conditions or in dedicated dehumidifier mode.`
+              },
+              {
+                q: `What fan speeds and protection features does this portable AC have?`,
+                a: `It supports ${fanSpeeds} fan speeds and has smart features like thermostatic cut-off, auto-shutoff, overheating protection, auto-diagnosis, and an anti-bacterial water tank for maximum safety and comfort.`
+              }
+            ]
+            : [
+              {
+                q: `How much moisture can the ${nameToUse} extract, and what area does it cover?`,
+                a: `The ${nameToUse} has a dehumidification capacity of ${product.extraction} per day and is engineered for coverage areas of ${coverageVal}.`
+              },
+              {
+                q: `Does the ${nameToUse} include air purification capabilities?`,
+                a: `${featuresList.some(f => /hepa|carbon|purif|filtr/.test(f.toLowerCase())) || techSummary.toLowerCase().includes("purif") || techSummary.toLowerCase().includes("hepa") ? `Yes! This model features advanced multi-stage air purification (including a HEPA and active carbon filter system) that effectively filters dust, allergens, PM2.5, and odors from the air while controlling humidity.` : `Yes, it is equipped with a high-efficiency dust filter that traps airborne particles, ensuring the air circulated back into the room is clean and filtered.`}`
+              },
+              {
+                q: `What is the noise level of the ${nameToUse} during operation?`,
+                a: `The unit operates at a quiet noise level of ${noise}, ensuring a peaceful indoor environment. This makes it perfect for bedrooms, studies, and living spaces without causing distraction.`
+              },
+              {
+                q: `What is the water tank capacity and does it support auto-shutoff?`,
+                a: `It features a ${tankCapacity} water tank with a full tank alarm and auto-shutoff function to prevent overflow. It also offers a continuous drainage port, letting you connect a hose for hands-free 24/7 moisture control.`
+              }
+            ];
 
   return (
     <div className="flex flex-col bg-white">
@@ -263,7 +263,13 @@ export default async function ProductDetailPage({ params }) {
             {/* Left: Product Image & Gallery */}
             <div className="lg:col-span-6">
               <ScrollReveal delay={0.1}>
-                <ProductImageGallery images={productImages} productName={nameToUse} />
+                <ProductImageGallery
+                  images={productImages}
+                  productName={nameToUse}
+                  badge={product.badge}
+                  amazonReviews={product.amazonReviews}
+                  amazonLink={product.amazonLink}
+                />
               </ScrollReveal>
             </div>
 
@@ -276,9 +282,21 @@ export default async function ProductDetailPage({ params }) {
                 <span className="inline-block pt-1 text-2xl border rounded-lg p-2 bg-red-100 font-bold text-brand-accent">
                   {product.subtitle}
                 </span>
-                <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy mt-4 mb-2">
-                  {nameToUse}
-                </h1>
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-4 mb-2">
+                  <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">
+                    {nameToUse}
+                  </h1>
+                  {product.amazonLink && (
+                    <a
+                      href={product.amazonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-2.5 font-sans text-xs sm:text-sm font-bold rounded-full shadow-xs active:scale-[0.98] transition-all duration-300 cursor-pointer bg-[#FFCE12] text-slate-900 hover:bg-[#e5b80b] hover:shadow-md shrink-0"
+                    >
+                      View On Amazon
+                    </a>
+                  )}
+                </div>
               </ScrollReveal>
 
               {/* Features Section */}
@@ -288,11 +306,10 @@ export default async function ProductDetailPage({ params }) {
                     <Settings className="h-4 w-4 text-brand-blue" />
                     <span >Features</span>
                   </h3>
-                  <ul className={`${
-                    product.features && product.features.length > 6
+                  <ul className={`${product.features && product.features.length > 6
                       ? "grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3"
                       : "space-y-3"
-                  } text-sm text-brand-gray-dark font-medium`}>
+                    } text-sm text-brand-gray-dark font-medium`}>
                     {product.features && product.features.map((f, i) => (
                       <li key={i} className="flex gap-2 items-start">
                         <Check className="h-4 w-4 text-emerald-500 flex-shrink-0 mt-0.5" />
@@ -300,7 +317,7 @@ export default async function ProductDetailPage({ params }) {
                       </li>
                     ))}
                   </ul>
-                  
+
                   {/* Request a Callback button directly below features */}
                   <RequestCallbackModal productName={nameToUse} categoryName={product.category} />
                 </ScrollReveal>
@@ -370,8 +387,8 @@ export default async function ProductDetailPage({ params }) {
         <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Inquiry form column */}
           <div className="lg:col-span-5">
-              {/* <InquiryForm productName={product.name} /> */}
-              <ContactForm />
+            {/* <InquiryForm productName={product.name} /> */}
+            <ContactForm />
           </div>
 
           {/* Product type FAQ accordion column */}
@@ -403,7 +420,7 @@ export default async function ProductDetailPage({ params }) {
                 Related {categoryLabel}
               </h2>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
               {relatedProducts.map((rel, index) => {
                 const relImages = defaultProductImages[rel.slug] || [rel.image];

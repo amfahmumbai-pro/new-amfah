@@ -22,6 +22,7 @@ export default function sitemap() {
     "/industries",
     "/blogs",
     "/news",
+    "/faq",
     "/contact",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
