@@ -24,15 +24,9 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: {
-    default: "Best Premium Dehumidifiers | Industrial & Home Moisture Control | AMFAH",
-    template: "%s | Amfah.com",
-  },
-  description: "Discover the best premium dehumidifiers from AMFAH. High-capacity industrial moisture control systems and ultra-quiet home dehumidifiers.",
+  title: "Dehumidifiers & Air Quality Solutions India | AMFAH",
+  description: "India's patented, GeM-preferred brand for dehumidifiers, air purifiers, humidifiers and portable ACs. Trusted by AIIMS, ISRO and Taj since 2008.",
   metadataBase: new URL("https://amfah.com"),
-  alternates: {
-    canonical: "/",
-  },
   keywords: [
     "industrial dehumidifier",
     "home dehumidifier",
@@ -57,7 +51,6 @@ export const metadata = {
   openGraph: {
     title: "AMFAH Dehumidifiers | Premium Industrial & Home Moisture Control",
     description: "AMFAH is an industry pioneer in indoor air quality and humidity control. Discover our premium high-capacity industrial systems and ultra-quiet home dehumidifiers.",
-    url: "https://amfah.com",
     siteName: "AMFAH",
     locale: "en_US",
     type: "website",
@@ -169,7 +162,7 @@ export default function RootLayout({ children }) {
         <WhatsAppButton />
         <AIReviewButton />
         <AmfahChatbot />
-        <ContactPopup />
+        {/* <ContactPopup /> */}
       </body>
     </html>
   );

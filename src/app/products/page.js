@@ -4,9 +4,24 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 import ProductsCatalog from "@/components/sections/ProductsCatalog";
 
 export const metadata = {
-  title: "Buy Best Dehumidifiers",
+  title: "All Dehumidifiers & Air Quality Products | AMFAH",
   description:
-    "Home Dehumidifier and Industrial Dehumidifier for sale in India. High quality & Reliable delivery. Best Price guarantee | Get a quick inquiry or Call 022 40-107-074"
+    "Browse every AMFAH dehumidifier, air purifier, humidifier and portable AC. Compare capacity, tank size and coverage area to find the right unit.",
+  alternates: {
+    canonical: "https://amfah.com/products",
+  },
+  openGraph: {
+    title: "All Dehumidifiers & Air Quality Products | AMFAH",
+    description:
+      "Browse every AMFAH dehumidifier, air purifier, humidifier and portable AC. Compare capacity, tank size and coverage area to find the right unit.",
+    url: "https://amfah.com/products",
+    images: [
+      {
+        url: "/banner/dehumidifiers.jpeg",
+        alt: "AMFAH Dehumidifiers Catalog",
+      },
+    ],
+  },
 };
 
 export default function ProductsPage() {

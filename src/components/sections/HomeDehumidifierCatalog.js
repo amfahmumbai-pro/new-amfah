@@ -3,22 +3,22 @@ import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  SlidersHorizontal, 
-  ArrowUpDown, 
-  Tag, 
-  Sparkles, 
-  AlertCircle, 
-  ChevronDown, 
-  Check, 
+import {
+  SlidersHorizontal,
+  ArrowUpDown,
+  Tag,
+  Sparkles,
+  AlertCircle,
+  ChevronDown,
+  Check,
   X,
-  TrendingUp, 
-  DollarSign, 
-  Calendar, 
-  Clock, 
-  SortAsc, 
-  SortDesc, 
-  Flame 
+  TrendingUp,
+  DollarSign,
+  Calendar,
+  Clock,
+  SortAsc,
+  SortDesc,
+  Flame
 } from "lucide-react";
 import ProductCard from "@/components/cards/ProductCard";
 import { getCoverageSqFt } from "@/utils/productUtils";
@@ -38,11 +38,11 @@ const getProductCapacityLiters = (product) => {
 
 const getProductTankCapacity = (product) => {
   const specs = product.specifications || {};
-  const tankStr = 
-    specs["Water Tank Capacity"] || 
-    specs["Condensate Tank Capacity"] || 
-    specs["Tank Volume"] || 
-    specs["Capacity of Condensate Water Tank"] || 
+  const tankStr =
+    specs["Water Tank Capacity"] ||
+    specs["Condensate Tank Capacity"] ||
+    specs["Tank Volume"] ||
+    specs["Capacity of Condensate Water Tank"] ||
     "";
   const numbers = tankStr.match(/\d[\d,.]*/g);
   if (!numbers) return 0;
@@ -176,7 +176,7 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
   const filteredProducts = initialProducts.filter((product) => {
     const matchesTier = activeTier === "all" || getProductTier(product) === activeTier;
     const matchesBrand = selectedBrand === "all" || getProductBrand(product) === selectedBrand;
-    
+
     // Room Size (Sq Ft) check
     let matchesSize = true;
     if (selectedSize !== "all") {
@@ -243,9 +243,9 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
     }
   });
 
-  const activeFiltersCount = 
-    (selectedBrand !== "all" ? 1 : 0) + 
-    (selectedSize !== "all" ? 1 : 0) + 
+  const activeFiltersCount =
+    (selectedBrand !== "all" ? 1 : 0) +
+    (selectedSize !== "all" ? 1 : 0) +
     (selectedCapacity !== "all" ? 1 : 0) +
     (selectedTank !== "all" ? 1 : 0);
 
@@ -287,7 +287,7 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
     <div className="space-y-8">
       {/* Filters and Sorting Bar */}
       <div className="hidden md:flex flex-col sm:flex-row gap-4 items-center justify-between bg-brand-gray-light border border-brand-border p-4 rounded-2xl shadow-sm">
-        
+
         {/* Filters Group */}
         <div className="flex items-center gap-3 w-full sm:w-auto">
           <button
@@ -319,7 +319,7 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
             <span className="hidden sm:inline text-xs font-bold text-brand-navy uppercase tracking-wider shrink-0">
               Sort By:
             </span>
-            
+
             <button
               onClick={() => {
                 setIsSortOpen(!isSortOpen);
@@ -354,11 +354,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                         setSortBy(option.id);
                         setIsSortOpen(false);
                       }}
-                      className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${
-                        isSelected
+                      className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
                           ? "bg-brand-blue-light/70 text-brand-blue"
                           : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center gap-2">
                         <IconComponent className={`h-3.5 w-3.5 ${isSelected ? "text-brand-blue" : "text-brand-gray-medium"}`} />
@@ -443,11 +442,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                             <button
                               key={opt.id}
                               onClick={() => setSelectedBrand(opt.id)}
-                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
-                                active
+                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
                                   ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
                                   : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
-                              }`}
+                                }`}
                             >
                               <span>{opt.label}</span>
                               {active && <Check className="h-4 w-4 text-brand-blue shrink-0" />}
@@ -471,11 +469,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                             <button
                               key={opt.id}
                               onClick={() => setSelectedSize(opt.id)}
-                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
-                                active
+                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
                                   ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
                                   : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
-                              }`}
+                                }`}
                             >
                               <span>{opt.label}</span>
                               {active && <Check className="h-4 w-4 text-brand-blue shrink-0" />}
@@ -499,11 +496,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                             <button
                               key={opt.id}
                               onClick={() => setSelectedCapacity(opt.id)}
-                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
-                                active
+                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
                                   ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
                                   : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
-                              }`}
+                                }`}
                             >
                               <span>{opt.label}</span>
                               {active && <Check className="h-4 w-4 text-brand-blue shrink-0" />}
@@ -527,11 +523,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                             <button
                               key={opt.id}
                               onClick={() => setSelectedTank(opt.id)}
-                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
-                                active
+                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
                                   ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
                                   : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
-                              }`}
+                                }`}
                             >
                               <span>{opt.label}</span>
                               {active && <Check className="h-4 w-4 text-brand-blue shrink-0" />}
@@ -571,10 +566,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                 </span>
               )}
             </button>
-            
+
             {/* Divider */}
             <div className="h-4 w-px bg-white/15" />
-            
+
             {/* Sort Button */}
             <button
               onClick={() => setIsSortOpen(!isSortOpen)}
@@ -589,8 +584,8 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
           <AnimatePresence>
             {isSortOpen && (
               <>
-                <div 
-                  className="fixed inset-0 bg-black/20 z-40 md:hidden" 
+                <div
+                  className="fixed inset-0 bg-black/20 z-40 md:hidden"
                   onClick={() => setIsSortOpen(false)}
                 />
                 <motion.div
@@ -618,11 +613,10 @@ export default function HomeDehumidifierCatalog({ initialProducts }) {
                           setSortBy(option.id);
                           setIsSortOpen(false);
                         }}
-                        className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${
-                          isSelected
+                        className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
                             ? "bg-brand-blue-light/70 text-brand-blue"
                             : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center gap-2">
                           <IconComponent className={`h-3.5 w-3.5 ${isSelected ? "text-brand-blue" : "text-brand-gray-medium"}`} />

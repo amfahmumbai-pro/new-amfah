@@ -2,19 +2,19 @@
 import { useState, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  SlidersHorizontal, 
-  ArrowUpDown, 
-  Sparkles, 
-  AlertCircle, 
-  ChevronDown, 
-  Check, 
-  TrendingUp, 
-  DollarSign, 
-  Calendar, 
-  Clock, 
-  SortAsc, 
-  SortDesc, 
+import {
+  SlidersHorizontal,
+  ArrowUpDown,
+  Sparkles,
+  AlertCircle,
+  ChevronDown,
+  Check,
+  TrendingUp,
+  DollarSign,
+  Calendar,
+  Clock,
+  SortAsc,
+  SortDesc,
   Flame,
   Droplets
 } from "lucide-react";
@@ -75,7 +75,7 @@ export default function AirToWaterCatalog({ initialProducts }) {
 
   // Filter products
   const filteredProducts = initialProducts.filter((product) => {
-    const matchesCapacity = selectedCapacity === "all" || 
+    const matchesCapacity = selectedCapacity === "all" ||
       (selectedCapacity === "10" && product.extraction.includes("10"));
     return matchesCapacity;
   });
@@ -108,7 +108,7 @@ export default function AirToWaterCatalog({ initialProducts }) {
     <div className="space-y-8">
       {/* Filters and Sorting Bar */}
       <div className="flex flex-col md:flex-row gap-4 items-center justify-between bg-brand-gray-light border border-brand-border p-4 rounded-2xl shadow-sm">
-        
+
         {/* Filters Group */}
         <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
           <div className="flex items-center gap-1.5 text-xs font-bold text-brand-navy uppercase tracking-wider mr-1 shrink-0">
@@ -126,8 +126,8 @@ export default function AirToWaterCatalog({ initialProducts }) {
               className="bg-white border border-brand-border px-4 py-2.5 rounded-xl text-xs font-bold text-brand-gray-dark hover:border-brand-blue/30 focus:outline-none flex items-center justify-between gap-2 shadow-sm transition-all cursor-pointer min-w-[150px]"
             >
               <span>
-                {selectedCapacity === "all" 
-                  ? "Capacity: All" 
+                {selectedCapacity === "all"
+                  ? "Capacity: All"
                   : "10 Liters / Day"}
               </span>
               <ChevronDown className={`h-3.5 w-3.5 text-brand-gray-medium transition-transform duration-300 ${isCapacityOpen ? "rotate-180" : ""}`} />
@@ -177,7 +177,7 @@ export default function AirToWaterCatalog({ initialProducts }) {
             <span className="hidden sm:inline text-xs font-bold text-brand-navy uppercase tracking-wider shrink-0">
               Sort By:
             </span>
-            
+
             <button
               onClick={() => {
                 setIsSortOpen(!isSortOpen);
@@ -213,11 +213,10 @@ export default function AirToWaterCatalog({ initialProducts }) {
                         setSortBy(option.id);
                         setIsSortOpen(false);
                       }}
-                      className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${
-                        isSelected
+                      className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
                           ? "bg-brand-blue-light/70 text-brand-blue"
                           : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center gap-2">
                         <IconComponent className={`h-3.5 w-3.5 ${isSelected ? "text-brand-blue" : "text-brand-gray-medium"}`} />

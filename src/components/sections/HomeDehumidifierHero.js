@@ -1,16 +1,23 @@
 "use client";
-import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 export default function HomeDehumidifierHero() {
-  const searchParams = useSearchParams();
-  const filter = searchParams.get("filter");
+  const [filter, setFilter] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      setFilter(params.get("filter"));
+    }
+  }, []);
+
   const isEconomy = filter === "economy";
   const isPremium = filter === "premium";
 
-  const heroImage = isEconomy 
-    ? "/banner/home-economy-dehumidifier.jpeg" 
+  const heroImage = isEconomy
+    ? "/banner/home-economy-dehumidifier.jpeg"
     : "/banner/home-dehumidifier(1).jpeg";
 
   return (
@@ -19,7 +26,7 @@ export default function HomeDehumidifierHero() {
       <div className="absolute inset-0 z-0">
         <Image
           src={heroImage}
-          alt="Category Hero Background"
+          alt="Home & Retail Dehumidifiers Background"
           fill
           priority
           className="object-cover"
@@ -27,7 +34,7 @@ export default function HomeDehumidifierHero() {
         {/* Overlay to ensure high text contrast */}
         <div className="absolute inset-0 bg-black/20" />
       </div>
-      
+
       <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10 flex flex-col items-center">
         {(isEconomy || isPremium) && (
           <ScrollReveal delay={0.1}>
@@ -38,7 +45,7 @@ export default function HomeDehumidifierHero() {
         )}
         <ScrollReveal delay={0.2}>
           <h1 className="font-display font-extrabold text-3xl md:text-5xl tracking-tight leading-tight text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.6),_0_8px_20px_rgba(0,0,0,0.4),_0_20px_40px_rgba(0,0,0,0.3)]">
-             Home & Retail Dehumidifiers
+            Home & Retail Dehumidifiers
           </h1>
         </ScrollReveal>
       </div>

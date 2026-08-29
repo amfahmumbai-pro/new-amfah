@@ -4,8 +4,22 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 import OfficeCardsClient from "./OfficeCardsClient";
 
 export const metadata = {
-  title: "Contact Us | AMFAH Relative Humidity Control Support",
-  description: "Connect with AMFAH dehumidifier consulting engineers. Book on-site inspections, ask for commercial quotes, or request technical support logs.",
+  title: "Contact AMFAH | Mumbai & Delhi | Free Quote",
+  description: "Get a free humidity audit and unit recommendation. AMFAH sales and service in Mumbai and New Delhi. Call, WhatsApp or send an enquiry.",
+  alternates: {
+    canonical: "https://amfah.com/contact",
+  },
+  openGraph: {
+    title: "Contact AMFAH | Mumbai & Delhi | Free Quote",
+    description: "Get a free humidity audit and unit recommendation. AMFAH sales and service in Mumbai and New Delhi. Call, WhatsApp or send an enquiry.",
+    url: "https://amfah.com/contact",
+    images: [
+      {
+        url: "/images/amfah-logo.png",
+        alt: "Contact AMFAH India",
+      },
+    ],
+  },
 };
 
 export default function ContactPage() {

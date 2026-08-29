@@ -7,8 +7,22 @@ import AirToWaterCatalog from "@/components/sections/AirToWaterCatalog";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Premium Air to Water Generators | Pure Atmospheric Drinking Water",
-  description: "Browse AMFAH's atmospheric water generators that extract clean, pure, mineralized drinking water directly from ambient atmospheric humidity.",
+  title: "Atmospheric Water Generators | Air to Water | AMFAH",
+  description: "AMFAH air-to-water generators condense clean drinking water from humidity in the air. Capacities for homes, offices and remote sites across India.",
+  alternates: {
+    canonical: "https://amfah.com/air-to-water",
+  },
+  openGraph: {
+    title: "Atmospheric Water Generators | Air to Water | AMFAH",
+    description: "AMFAH air-to-water generators condense clean drinking water from humidity in the air. Capacities for homes, offices and remote sites across India.",
+    url: "https://amfah.com/air-to-water",
+    images: [
+      {
+        url: "/Air-To-Water-300-×-206-px.png",
+        alt: "Air to Water Generators AMFAH",
+      },
+    ],
+  },
 };
 
 export default function AirToWaterPage() {
@@ -54,11 +68,11 @@ export default function AirToWaterPage() {
           {/* Overlay to ensure text contrast */}
           <div className="absolute inset-0 bg-black/20" />
         </div>
-        
+
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
           <ScrollReveal delay={0.2}>
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight leading-tight text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.6),_0_8px_20px_rgba(0,0,0,0.4),_0_20px_40px_rgba(0,0,0,0.3)]">
-               Air to Water Generators
+              Air to Water Generators
             </h1>
           </ScrollReveal>
         </div>
@@ -67,7 +81,7 @@ export default function AirToWaterPage() {
       {/* Main Grid: Products + Benefits */}
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-20">
-          
+
           {/* 1. Products Section */}
           <div className="space-y-12">
             <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>

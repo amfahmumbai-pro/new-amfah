@@ -8,8 +8,22 @@ import IndustrialDehumidifierCatalog from "@/components/sections/IndustrialDehum
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Best Premium Industrial Dehumidifiers | Commercial Moisture Control | AMFAH",
-  description: "Explore the best premium industrial & commercial dehumidifiers from AMFAH. High-capacity moisture control systems for cleanrooms, cold storage, warehouses, and factories.",
+  title: "Industrial & Commercial Dehumidifiers India | AMFAH",
+  description: "Heavy duty industrial dehumidifiers up to 480 L/day for factories, warehouses and cleanrooms. Stainless builds, ceiling models, free moisture load audit.",
+  alternates: {
+    canonical: "https://amfah.com/industrial-dehumidifiers",
+  },
+  openGraph: {
+    title: "Industrial & Commercial Dehumidifiers India | AMFAH",
+    description: "Heavy duty industrial dehumidifiers up to 480 L/day for factories, warehouses and cleanrooms. Stainless builds, ceiling models, free moisture load audit.",
+    url: "https://amfah.com/industrial-dehumidifiers",
+    images: [
+      {
+        url: "/products/amf-138dmp (2).png",
+        alt: "Commercial and Industrial Dehumidifiers AMFAH",
+      },
+    ],
+  },
 };
 
 export default async function IndustrialDehumidifiersPage() {
@@ -57,7 +71,7 @@ export default async function IndustrialDehumidifiersPage() {
       {/* Main product show layout */}
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-20">
-          
+
           {/* 1. Products Catalog Section */}
           <div className="space-y-12">
             <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>

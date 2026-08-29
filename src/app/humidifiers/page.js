@@ -7,8 +7,22 @@ import HumidifierCatalog from "@/components/sections/HumidifierCatalog";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Premium Ultrasonic Humidifiers | Target Moisture Output Systems",
-  description: "Browse AMFAH's ultrasonic cool mist humidifiers designed for nurseries, living rooms, cleanrooms, and wooden interiors.",
+  title: "Humidifiers for Dry Indoor Air | AMFAH India",
+  description: "Add moisture back into over-dry rooms in winter and heavily air-conditioned spaces. AMFAH humidifiers for homes, clinics and process areas.",
+  alternates: {
+    canonical: "https://amfah.com/humidifiers",
+  },
+  openGraph: {
+    title: "Humidifiers for Dry Indoor Air | AMFAH India",
+    description: "Add moisture back into over-dry rooms in winter and heavily air-conditioned spaces. AMFAH humidifiers for homes, clinics and process areas.",
+    url: "https://amfah.com/humidifiers",
+    images: [
+      {
+        url: "/products/amf-08hm.png",
+        alt: "Ultrasonic Humidifiers AMFAH",
+      },
+    ],
+  },
 };
 
 export default function HumidifiersPage() {
@@ -54,11 +68,11 @@ export default function HumidifiersPage() {
           {/* Overlay to ensure text contrast */}
           <div className="absolute inset-0 bg-black/20" />
         </div>
-        
+
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
           <ScrollReveal delay={0.2}>
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight leading-tight text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.6),_0_8px_20px_rgba(0,0,0,0.4),_0_20px_40px_rgba(0,0,0,0.3)]">
-               Ultrasonic Humidifiers
+              Ultrasonic Humidifiers
             </h1>
           </ScrollReveal>
         </div>
@@ -67,7 +81,7 @@ export default function HumidifiersPage() {
       {/* Main Grid: Products + Benefits */}
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-20">
-          
+
           {/* 1. Products Section */}
           <div className="space-y-12">
             <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>

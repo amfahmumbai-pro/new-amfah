@@ -7,8 +7,22 @@ import PortableACCatalog from "@/components/sections/PortableACCatalog";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Premium Portable Air Conditioners | High-Efficiency 1.5 Ton Cooling",
-  description: "Browse AMFAH's range of high-efficiency portable air conditioners. Ideal for bedrooms, server rooms, retail shops, and offices.",
+  title: "Portable Air Conditioners in India | AMFAH",
+  description: "Plug and play portable ACs with no outdoor unit, for rented flats, server rooms and site offices. 1.5 ton 4-in-1 models with fast cooling.",
+  alternates: {
+    canonical: "https://amfah.com/portable-ac",
+  },
+  openGraph: {
+    title: "Portable Air Conditioners in India | AMFAH",
+    description: "Plug and play portable ACs with no outdoor unit, for rented flats, server rooms and site offices. 1.5 ton 4-in-1 models with fast cooling.",
+    url: "https://amfah.com/portable-ac",
+    images: [
+      {
+        url: "/products/portable-ac-new.png",
+        alt: "Portable Air Conditioners AMFAH",
+      },
+    ],
+  },
 };
 
 export default function PortableACPage() {
@@ -66,7 +80,7 @@ export default function PortableACPage() {
           {/* Overlay to ensure text contrast */}
           <div className="absolute inset-0 bg-black/20" />
         </div>
-        
+
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
           <ScrollReveal delay={0.2}>
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight leading-tight text-white uppercase [text-shadow:_0_2px_4px_rgba(0,0,0,0.6),_0_8px_20px_rgba(0,0,0,0.4),_0_20px_40px_rgba(0,0,0,0.3)]">
@@ -79,7 +93,7 @@ export default function PortableACPage() {
       {/* Main Grid: Products + Benefits */}
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-20">
-          
+
           {/* 1. Products Section */}
           <div className="space-y-12">
             <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>

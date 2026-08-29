@@ -37,12 +37,12 @@ export default function ProductsCatalog() {
   // Dynamic sticky top offset calculation to match header state
   useEffect(() => {
     let lastScrollY = window.scrollY;
-    
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const header = document.querySelector("header");
       if (!header) return;
-      
+
       const totalHeaderHeight = header.offsetHeight;
       const banner = header.querySelector(".bg-\\[\\#d41124\\]");
       const bannerHeight = banner ? banner.offsetHeight : 0;
@@ -59,26 +59,26 @@ export default function ProductsCatalog() {
       } else {
         setStickyTopOffset(`${totalHeaderHeight}px`);
       }
-      
+
       lastScrollY = currentScrollY;
     };
-    
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll(); // Initial run
-    
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Intersection Observer for scroll-spy active state tracking
   useEffect(() => {
     const sectionIds = categories.filter((c) => c.id !== "all").map((c) => c.id);
-    
+
     const observerOptions = {
       root: null,
       rootMargin: "-25% 0px -65% 0px", // Trigger when category header/content occupies mid viewport
       threshold: 0,
     };
-    
+
     const handleIntersection = (entries) => {
       if (isScrollingRef.current) return;
       entries.forEach((entry) => {
@@ -87,14 +87,14 @@ export default function ProductsCatalog() {
         }
       });
     };
-    
+
     const observer = new IntersectionObserver(handleIntersection, observerOptions);
-    
+
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
-    
+
     // Reset to "all" when scrolled to the very top
     const handleScrollTop = () => {
       if (window.scrollY < 200) {
@@ -103,9 +103,9 @@ export default function ProductsCatalog() {
         }
       }
     };
-    
+
     window.addEventListener("scroll", handleScrollTop, { passive: true });
-    
+
     return () => {
       observer.disconnect();
       window.removeEventListener("scroll", handleScrollTop);
@@ -115,11 +115,11 @@ export default function ProductsCatalog() {
 
   const handleFilter = (catId) => {
     setActiveCategory(catId);
-    
+
     // Lock observer changes while smooth scroll is in progress
     isScrollingRef.current = true;
     if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
-    
+
     const params = new URLSearchParams(searchParams.toString());
     if (catId === "all") {
       params.delete("cat");
@@ -142,7 +142,7 @@ export default function ProductsCatalog() {
         const navbarHeight = (header?.offsetHeight || 130) + 70;
         const elementPosition = element.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - navbarHeight;
-        
+
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth",
@@ -159,7 +159,7 @@ export default function ProductsCatalog() {
   return (
     <section className="bg-white pb-16 md:pb-24 relative">
       {/* Sticky Category Tab Navigation Bar */}
-      <div 
+      <div
         className="sticky transition-[top] duration-300 z-30 bg-white border-b border-brand-border/60 py-3 mb-8 md:mb-12 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden shadow-sm"
         style={{ top: stickyTopOffset }}
       >
@@ -169,11 +169,10 @@ export default function ProductsCatalog() {
               <button
                 key={cat.id}
                 onClick={() => handleFilter(cat.id)}
-                className={`whitespace-nowrap px-4 py-2 md:px-5 md:py-2.5 rounded-lg font-display text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer flex-shrink-0 ${
-                  activeCategory === cat.id
+                className={`whitespace-nowrap px-4 py-2 md:px-5 md:py-2.5 rounded-lg font-display text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer flex-shrink-0 ${activeCategory === cat.id
                     ? "bg-brand-navy text-white shadow-md"
                     : "text-brand-gray-medium hover:text-brand-blue"
-                }`}
+                  }`}
               >
                 {cat.name}
               </button>
@@ -191,13 +190,13 @@ export default function ProductsCatalog() {
               const catProducts = sortByCoverageArea(
                 products.filter((product) => product.categoryId === cat.id)
               );
-              
+
               if (catProducts.length === 0) return null;
 
               return (
-                <div 
-                  key={cat.id} 
-                  id={cat.id} 
+                <div
+                  key={cat.id}
+                  id={cat.id}
                   className="space-y-6 md:space-y-8 scroll-mt-24"
                 >
                   {/* Category Section Title Bar */}

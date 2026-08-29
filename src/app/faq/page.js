@@ -12,9 +12,9 @@ import {
 } from "@/data/faqs";
 
 export const metadata = {
-  title: "Dehumidifier FAQ | All Questions About Humidity & Air Treatment | AMFAH",
+  title: "Dehumidifier FAQs | Sizing, RH & Care | AMFAH",
   description:
-    "Get clear answers to all your questions about dehumidifiers: what they do, why you need one, room sizing table, key features, working principle, energy use, and maintenance.",
+    "What a dehumidifier does, what capacity your space needs, ideal RH for home and industry, drainage options and filter cleaning. Answered simply.",
   keywords: [
     "what is a dehumidifier",
     "why do you need a dehumidifier",
@@ -31,9 +31,9 @@ export const metadata = {
     canonical: "https://amfah.com/faq",
   },
   openGraph: {
-    title: "Frequently Asked Questions About Dehumidifiers | AMFAH India",
+    title: "Dehumidifier FAQs | Sizing, RH & Care | AMFAH",
     description:
-      "Understand why you need a dehumidifier, how refrigerant dehumidifiers work, room sizing table, key features, and proper maintenance.",
+      "What a dehumidifier does, what capacity your space needs, ideal RH for home and industry, drainage options and filter cleaning. Answered simply.",
     url: "https://amfah.com/faq",
     siteName: "AMFAH India",
     images: [

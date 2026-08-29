@@ -20,9 +20,34 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const pageUrl = `https://amfah.com/home-uses/${appData.slug}`;
+  const appImage = appData.image || "/images/amfah-logo.png";
+  const title = appData.metaTitle || `Home Dehumidifiers for ${appData.name} | AMFAH`;
+  const description = appData.metaDescription || appData.shortDescription;
+
   return {
-    title: `Home Dehumidifiers for ${appData.name} | AMFAH`,
-    description: appData.shortDescription,
+    title,
+    description,
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      images: [
+        {
+          url: appImage,
+          alt: appData.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [appImage],
+    },
   };
 }
 

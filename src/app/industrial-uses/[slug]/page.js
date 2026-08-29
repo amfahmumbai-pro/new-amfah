@@ -20,9 +20,34 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const pageUrl = `https://amfah.com/industrial-uses/${appData.slug}`;
+  const appImage = appData.image || "/images/amfah-logo.png";
+  const title = appData.metaTitle || `Industrial Dehumidifiers for ${appData.name} | AMFAH`;
+  const description = appData.metaDescription || appData.shortDescription;
+
   return {
-    title: `Commercial/Commercial/Industrial Dehumidifiers for ${appData.name} | AMFAH`,
-    description: appData.shortDescription,
+    title,
+    description,
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      images: [
+        {
+          url: appImage,
+          alt: appData.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [appImage],
+    },
   };
 }
 

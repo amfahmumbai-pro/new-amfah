@@ -9,8 +9,22 @@ import HomeDehumidifierVideo from "@/components/sections/HomeDehumidifierVideo";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Buy Home Dehumidifiers at Best Price",
-  description: "Home Dehumidifier for sale in India. High quality & reliable delivery. Best Price Guaranteed! Get a quick quote or Call 022 40-107-074",
+  title: "Home Dehumidifiers for Indian Homes | AMFAH",
+  description: "Quiet home dehumidifiers for bedrooms, wardrobes and basements. Stop mould, damp walls and musty smells through the monsoon. Premium and economy series.",
+  alternates: {
+    canonical: "https://amfah.com/home-dehumidifiers",
+  },
+  openGraph: {
+    title: "Home Dehumidifiers for Indian Homes | AMFAH",
+    description: "Quiet home dehumidifiers for bedrooms, wardrobes and basements. Stop mould, damp walls and musty smells through the monsoon. Premium and economy series.",
+    url: "https://amfah.com/home-dehumidifiers",
+    images: [
+      {
+        url: "/products/amf-50d-a (3).png",
+        alt: "Home Dehumidifiers AMFAH",
+      },
+    ],
+  },
 };
 
 export default async function HomeDehumidifiersPage() {

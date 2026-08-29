@@ -7,8 +7,22 @@ import AirPurifierCatalog from "@/components/sections/AirPurifierCatalog";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Premium Air Purifiers | High-Efficiency HEPA H13 Air Purification",
-  description: "Browse AMFAH's range of smart air purifiers featuring multi-stage HEPA H13 filtration, active carbon pre-filters, and smart air quality indicators.",
+  title: "Air Purifiers for Home & Office in India | AMFAH",
+  description: "HEPA air purifiers that remove PM2.5, dust, smoke and allergens. Models for bedrooms through to large commercial floors, with service support across India.",
+  alternates: {
+    canonical: "https://amfah.com/air-purifiers",
+  },
+  openGraph: {
+    title: "Air Purifiers for Home & Office in India | AMFAH",
+    description: "HEPA air purifiers that remove PM2.5, dust, smoke and allergens. Models for bedrooms through to large commercial floors, with service support across India.",
+    url: "https://amfah.com/air-purifiers",
+    images: [
+      {
+        url: "/products/amf-350-ap.png",
+        alt: "Air Purifiers AMFAH",
+      },
+    ],
+  },
 };
 
 export default function AirPurifiersPage() {
@@ -54,11 +68,11 @@ export default function AirPurifiersPage() {
           {/* Overlay to ensure text contrast */}
           <div className="absolute inset-0 bg-black/25" />
         </div>
-        
+
         <div className="max-w-5xl mx-auto px-6 text-center space-y-2 relative z-10">
           <ScrollReveal delay={0.2}>
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight leading-tight text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.6),_0_8px_20px_rgba(0,0,0,0.4),_0_20px_40px_rgba(0,0,0,0.3)]">
-               Smart Air Purifiers
+              Smart Air Purifiers
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.3}>
@@ -76,7 +90,7 @@ export default function AirPurifiersPage() {
       {/* Main Grid: Products + Benefits */}
       <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-20">
-          
+
           {/* 1. Products Section */}
           <div className="space-y-12">
             <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>

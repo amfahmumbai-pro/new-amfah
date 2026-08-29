@@ -1,5 +1,162 @@
 export const blogs = [
   {
+    slug: "what-size-dehumidifier-do-i-need",
+    title: "What Size Dehumidifier Do I Need?",
+    metaTitle: "What Size Dehumidifier Do I Need",
+    metaDescription: "Find out what size dehumidifier you need for your room based on room size, humidity levels, moisture sources, and usage. A simple guide for Indian homes and offices.",
+    summary: "Find out what size dehumidifier you need for your room based on room size, humidity levels, moisture sources, and usage. A simple guide for Indian homes and offices.",
+    date: "August 29, 2026",
+    image: "/blogs/dehumidifier-size.png",
+    readTime: "7 min read",
+    category: "Buying Guides",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        This is where things become particularly relevant for Indian homes. During monsoon, humidity can increase significantly. A room that feels perfectly comfortable in January may feel completely different in July.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Signs Your Room Has Excess Humidity</h3>
+      <p class="mb-4">
+        During peak humidity periods, you may notice:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Your clothes aren't drying properly.</li>
+        <li>Your wardrobe smells different or musty.</li>
+        <li>The room feels sticky and heavy.</li>
+        <li>The bathroom stays wet for much longer.</li>
+        <li>Furniture feels damp to the touch.</li>
+        <li>Storage areas develop a persistent musty smell.</li>
+      </ul>
+      <p class="mb-4">
+        In these conditions, you may need more dehumidification capacity than you would during a relatively dry season. That's why it's useful to consider the worst humidity conditions your room experiences, rather than choosing a unit based only on the room's average conditions.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Does the Number of People in the Room Matter?</h3>
+      <p class="mb-4">
+        Yes. People naturally add moisture to indoor air through breathing and perspiration. A room occupied by one person has a different moisture load from a room regularly occupied by several people.
+      </p>
+      <p class="mb-4">
+        The Home Depot's current sizing guidance specifically recommends accounting for the number of people using the space when determining capacity. This becomes more noticeable in:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Bedrooms</li>
+        <li>Offices</li>
+        <li>Meeting rooms</li>
+        <li>Small commercial spaces</li>
+        <li>Clinics</li>
+        <li>Classrooms</li>
+      </ul>
+      <p class="mb-4">
+        So if a room regularly has several people inside, don't look only at its floor area.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What About Clothes Drying Inside the Room?</h3>
+      <p class="mb-4">
+        This is another big one. Imagine it's raining outside. You wash your clothes, but you can't use the balcony because of continuous rain. So you hang everything inside the room.
+      </p>
+      <p class="mb-4">
+        As those clothes dry, the water doesn't simply disappear — it becomes moisture in the surrounding air. This can make the room significantly more humid.
+      </p>
+      <p class="mb-4">
+        ENERGY STAR includes laundry drying as an example of a high-moisture condition when sizing a dehumidifier. If indoor clothes drying is a regular occurrence, consider that extra moisture when selecting the capacity.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Should I Buy a Bigger Dehumidifier?</h3>
+      <p class="mb-4">
+        A common thought is: <em>"If a 30-litre unit is enough, maybe I should just buy a 50-litre unit to be safe."</em>
+      </p>
+      <p class="mb-4">
+        Choosing adequate capacity is important, but you shouldn't select a machine based only on the idea that bigger is always better. The correct approach is to match the unit to your room and moisture conditions.
+      </p>
+      <p class="mb-4">
+        Current sizing guidance generally recommends choosing enough capacity for the space and its humidity conditions, rather than simply selecting the largest machine available. The manufacturer's stated coverage area should also be checked before buying.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Happens If the Dehumidifier Is Too Small?</h3>
+      <p class="mb-4">
+        This is one of the most common mistakes. Imagine you have a large room with serious humidity problems but choose a very small dehumidifier because it costs less.
+      </p>
+      <p class="mb-4">
+        You switch it on. Hours pass. The room still feels damp. The humidity doesn't fall as quickly as expected. The machine may need to operate for much longer to deal with the moisture entering the space.
+      </p>
+      <p class="mb-4">
+        This can make the whole experience frustrating. That's why capacity matters: a properly sized dehumidifier should be able to handle the moisture load of the room rather than constantly struggling against it.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Happens If the Dehumidifier Is Too Large?</h3>
+      <p class="mb-4">
+        A larger-capacity unit isn't necessarily a problem, but choosing far more capacity than you need can be unnecessary. You may end up paying more upfront for a machine that is designed for a much larger space.
+      </p>
+      <p class="mb-4">
+        The goal is not to find the biggest dehumidifier. The goal is to find the right dehumidifier. That means considering:
+      </p>
+      <div class="bg-brand-gray-light border border-brand-border rounded-xl p-4 my-4 font-semibold text-brand-navy">
+        Room size + humidity level + moisture sources + manufacturer's coverage recommendation.
+      </div>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Don't Choose a Dehumidifier Based Only on Litres Per Day</h3>
+      <p class="mb-4">
+        This is particularly important when shopping in India. You may see one product advertised as 30 L/day and another as 35 L/day. It can be tempting to assume the 35 L/day model is automatically better.
+      </p>
+      <p class="mb-4">
+        But the moisture-removal rating is only one part of the decision. Look at the recommended coverage area. Check the operating conditions used for the rating. Look at power consumption. Check whether the unit has a humidistat. Consider continuous drainage if you expect long operating periods. And most importantly, think about the actual humidity problem in your space.
+      </p>
+      <p class="mb-4">
+        Product ratings are measured under specified conditions, so published capacity shouldn't be treated as the exact amount of water the machine will remove from your room every day.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Humidity Level Should You Aim For?</h3>
+      <p class="mb-4">
+        Buying the correct size is only half the job. You also need to know what humidity level you're trying to maintain.
+      </p>
+      <p class="mb-4">
+        ENERGY STAR states that indoor relative humidity is generally considered optimal around 30% to 50%, with levels above this range potentially creating conditions that encourage mold growth.
+      </p>
+      <p class="mb-4">
+        For a typical home, you don't need to make the air extremely dry. The objective is to bring excessive humidity under control and maintain a comfortable indoor environment. A dehumidifier with a built-in humidistat can make this easier because it can monitor the humidity and cycle the compressor as needed.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">How to Choose the Right Dehumidifier for Your Home</h3>
+      <p class="mb-4">
+        Before buying, take a few minutes to answer these questions:
+      </p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>How big is the room?</strong> Measure the length and width.</li>
+        <li><strong>How humid is the room?</strong> Does it simply feel sticky, or are you seeing condensation and damp spots?</li>
+        <li><strong>Are there additional moisture sources?</strong> Do you dry clothes indoors? Is there a bathroom nearby? Are there lots of people in the room?</li>
+        <li><strong>How many doors and windows are there?</strong> More openings can allow more humid air to enter.</li>
+        <li><strong>What coverage does the manufacturer recommend?</strong> Always compare your room with the actual product specifications.</li>
+      </ul>
+      <p class="mb-4">
+        Once you know these things, choosing the right capacity becomes much easier.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">A Simple Example</h3>
+      <p class="mb-4">
+        Let's say you have a 300 sq. ft. bedroom in Mumbai. During monsoon, the room feels damp and develops a musty smell. You occasionally dry clothes inside.
+      </p>
+      <p class="mb-4">
+        Instead of simply searching for "300 sq ft dehumidifier," you should consider the fact that the room has a higher moisture load. A unit with adequate capacity for a moderately damp 300 sq. ft. room may not be the same choice as one needed for a very damp room. This is exactly why professional sizing charts consider both space and moisture condition.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">What Size Dehumidifier Is Right for You?</h3>
+      <p class="mb-4">
+        There isn't one magic number. A small bedroom with mild humidity can need a very different machine from a large living room during peak monsoon. A wardrobe room has different requirements from a laundry area. An office with ten people has different moisture levels from a quiet home office. And a room where clothes are constantly drying needs more attention than a room that simply feels slightly humid.
+      </p>
+      <p class="mb-4">
+        So before buying a dehumidifier, don't ask only: <em>"How many litres per day should I buy?"</em>
+      </p>
+      <p class="mb-4">
+        Ask: <strong>"How much moisture does my space actually have?"</strong>
+      </p>
+      <p class="mb-4">
+        Once you answer that question, choosing the right capacity becomes much easier. AMFAH offers dehumidification solutions for homes, offices and commercial spaces, with different capacities designed for different environments.
+      </p>
+      <p class="mb-4 font-semibold text-brand-navy">
+        The right dehumidifier isn't necessarily the biggest one. It's the one that has enough capacity to handle your room, your humidity and your everyday moisture problems.
+      </p>
+    `,
+  },
+  {
     slug: "rise-of-portable-ac-in-india",
     title: "The Rise of Portable AC in India: Why More People Are Choosing Portable Cooling",
     metaTitle: "Portable AC in India | Rise of Portable Air Conditioners",
@@ -227,7 +384,7 @@ export const blogs = [
     metaTitle: "Portable AC vs Split AC",
     metaDescription: "Compare portable AC vs split AC to understand installation, portability, wall damage, cooling, and why portable AC is a practical choice for homes, offices, and rental spaces.",
     summary: "Compare portable AC vs split AC to understand installation, portability, wall damage, cooling, and why portable AC is a practical choice for homes, offices, and rental spaces.",
-    date: "August 22, 2026",
+    date: "August 15, 2026",
     image: "/blogs/portable-ac.png",
     readTime: "6 min read",
     category: "Buying Guides",

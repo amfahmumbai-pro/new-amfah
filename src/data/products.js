@@ -1615,14 +1615,9 @@ export const products = [
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with durable rustproof stainless steel construction, heavy-duty 110L/day moisture removal capacity, powerful air circulation system, and continuous direct drainage option.",
     features: [
       "High-Capacity Moisture Removal",
-      "Ideal for Industrial & Commercial Spaces",
       "Durable Stainless Steel Construction",
-      "Dual Drainage Options for Convenience",
-      "Powerful Air Circulation System",
-      "Hitachi Compressor for Reliable Performance",
-      "Energy-Efficient Operation with R410a Refrigerant",
-      "Quiet Functioning Despite Heavy Duty Use",
-      "Easy to Use and Maintain"
+      "6L Built-in Water Tank or direct drainage by hose",
+      "Energy-Efficient Operation with R410a Refrigerant"
     ],
     applications: [
       "Chemical Processing Plants",
@@ -1631,21 +1626,21 @@ export const products = [
       "Food Packaging Areas"
     ],
     specifications: {
-      "Model Name": "AMF-SS-120L",
-      "Brand": "AMFAH",
+      "Model Name": "AMF SS 120L",
       "Dehumidification Capacity": "120 Litres/Day",
       "Coverage Area": "Up to 1400 sq. ft. (80-120 m²)",
       "Water Tank Capacity": "6 Liters",
-      "Drainage": "Tank + Direct Drainage Option",
+      "Drainage": "6L Built-in Water Tank or direct drainage by hose",
       "Air Flow": "1100 m³/h",
-      "Noise Level": "60 dB(A)",
       "Current": "6.3 A",
-      "Body Material": "Stainless Steel",
-      "Dimensions (D x W x H)": "36 x 48 x 90 cm",
+      "Material (Body )": "Stainless Steel",
+      "Dimensions": "18.9 × 14.2 × 35.6 inches.",
       "Weight": "47 kg",
-      "Compressor": "Hitachi",
+      "Compressor": "Highly Hitachi",
+      "Power Supply": "220~240V/50HZ",
+      "Power Input": "1260W",
       "Refrigerant": "R410a",
-      "Warranty": "1 Year"
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-ss-120l (4).png"
   },
@@ -1803,14 +1798,10 @@ export const products = [
     coverage: "Up to 2000 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. Protects you and your valuables with durable rustproof stainless steel body casing, heavy-duty 148L/day moisture removal capacity, dynamic Hitachi compressor, and continuous direct hose drainage ready.",
     features: [
-      "Ideal for Large Industrial & Commercial Areas",
-      "Durable Stainless Steel Body",
+      "180 Litres/Day Dehumidification Capacity",
       "6L Tank with Direct Drainage Option",
-      "Equipped with Hitachi Compressor",
-      "Energy-Efficient R410a Refrigerant",
-      "Heavy-Duty Performance with 7.8A Current Draw",
-      "Quiet for Its Class",
-      "Covered by 1-Year Warranty"
+      "Durable Stainless Steel Body",
+      "Energy-Efficient R410a Refrigerant"
     ],
     applications: [
       "Chemical Processing Plants",
@@ -1819,21 +1810,21 @@ export const products = [
       "Food Packaging Areas"
     ],
     specifications: {
-      "Model Name": "AMF-SS-180L",
-      "Brand": "AMFAH",
-      "Dehumidification Capacity": "180 Litres/Day",
+      "Model Name": "AMF SS 180L",
       "Coverage Area": "120-160 m² (Up to 2000 sq. ft.)",
+      "Dehumidification Capacity": "180 Litres/Day",
       "Water Tank Capacity": "6 Liters",
-      "Drainage": "Tank + Direct Hose Option",
+      "Drainage": "6L Built-in Water Tank or direct drainage by hose",
       "Air Flow": "1400 m³/h",
-      "Noise Level": "68 dB(A)",
+      "Power Supply": "220~240V/50HZ",
+      "Power Input": "1800W",
       "Current": "7.8 A",
       "Body Material": "Stainless Steel",
-      "Dimensions (D x W x H)": "36 x 48 x 100.5 cm",
       "Weight": "52 kg",
-      "Compressor": "Hitachi",
+      "Dimensions": "18.9 × 14.2 × 39.6 inches.",
+      "Compressor": "Highly Hitachi",
       "Refrigerant": "R410a",
-      "Warranty": "1 Year Warranty"
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/amf-ss-180l.png"
   },
@@ -1925,8 +1916,8 @@ export const products = [
       "Humidity Range (T 30-32°C)": "30% - 90% RH",
       "Humidity Range (T 32-35°C)": "30% - 70% RH",
       "Dimensions (W x H x D)": "560 x 800 x 520 mm",
-      "Weight": "48 kg"
-
+      "Weight": "48 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/fral-fdnp-62.png"
   },

@@ -2,8 +2,22 @@ import BlogsContent from "./BlogsContent";
 import { blogs } from "@/data/blogs";
 
 export const metadata = {
-  title: "AMFAH Blogs | Best Dehumidifiers and Air Purifiers in India",
-  description: "Amfah, India's premier dehumidifier brand, offers superior moisture control solutions for industrial and commercial applications. Trusted since 2008.",
+  title: "Humidity & Air Quality Blog | AMFAH India",
+  description: "Practical guides on controlling humidity in Indian homes and industry: sizing, running costs, monsoon damp, mould and moisture damage.",
+  alternates: {
+    canonical: "https://amfah.com/blogs",
+  },
+  openGraph: {
+    title: "Humidity & Air Quality Blog | AMFAH India",
+    description: "Practical guides on controlling humidity in Indian homes and industry: sizing, running costs, monsoon damp, mould and moisture damage.",
+    url: "https://amfah.com/blogs",
+    images: [
+      {
+        url: "/blogs/amfah-blog.jpeg",
+        alt: "AMFAH Blogs",
+      },
+    ],
+  },
 };
 
 export default function BlogsPage() {

@@ -36,12 +36,32 @@ export async function generateMetadata({ params }) {
   };
   const nameToUse = overrides[product.slug] || product.name;
 
+  const productImages = defaultProductImages[product.slug] || ["/images/amfah-logo.png"];
+  const primaryImage = productImages[0] || "/images/amfah-logo.png";
+  const productUrl = `https://amfah.com/products/${product.slug}`;
+
   return {
     title: `${nameToUse} | Premium ${product.category}`,
     description: `Technical specifications, features, applications, and commercial inquiry for the ${nameToUse} ${product.subtitle}.`,
+    alternates: {
+      canonical: productUrl,
+    },
     openGraph: {
       title: `${nameToUse} | Dehumidifier Specifications`,
       description: product.tech,
+      url: productUrl,
+      images: [
+        {
+          url: primaryImage,
+          alt: nameToUse,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${nameToUse} | Dehumidifier Specifications`,
+      description: product.tech,
+      images: [primaryImage],
     },
   };
 }

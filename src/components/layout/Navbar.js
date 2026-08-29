@@ -155,8 +155,8 @@ export default function Navbar() {
     <header
       onMouseLeave={() => handleSetSelected(null)}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-brand-border shadow-sm"
-          : "bg-white border-b border-transparent"
+        ? "bg-white/95 backdrop-blur-md border-b border-brand-border shadow-sm"
+        : "bg-white border-b border-transparent"
         } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Patent Announcement Banner */}
@@ -539,8 +539,8 @@ const Content = ({ selected, dir, navLinks, pathname, setSelected }) => {
                     rel={sub.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     onClick={() => setSelected(null)}
                     className={`block px-3 py-2 rounded-xl font-display text-sm font-medium hover:bg-brand-gray-light hover:text-brand-blue transition-all ${pathname === sub.href
-                        ? "text-brand-blue bg-brand-blue-light"
-                        : "text-brand-navy"
+                      ? "text-brand-blue bg-brand-blue-light"
+                      : "text-brand-navy"
                       }`}
                   >
                     {sub.name}

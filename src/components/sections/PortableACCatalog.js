@@ -3,15 +3,15 @@ import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  SlidersHorizontal, 
-  ArrowUpDown, 
-  Sparkles, 
-  AlertCircle, 
-  ChevronDown, 
-  Check, 
+import {
+  SlidersHorizontal,
+  ArrowUpDown,
+  Sparkles,
+  AlertCircle,
+  ChevronDown,
+  Check,
   X,
-  TrendingUp, 
+  TrendingUp,
   Flame,
   Wind,
   SortAsc,
@@ -88,7 +88,7 @@ export default function PortableACCatalog({ initialProducts }) {
 
   // Filter products
   const filteredProducts = initialProducts.filter((product) => {
-    const matchesStatus = selectedStatus === "all" || 
+    const matchesStatus = selectedStatus === "all" ||
       (selectedStatus === "best-seller" && product.specifications?.["Best Selling"] === "Yes") ||
       (selectedStatus === "standard" && product.specifications?.["Best Selling"] !== "Yes");
     return matchesStatus;
@@ -128,7 +128,7 @@ export default function PortableACCatalog({ initialProducts }) {
     <div className="space-y-8">
       {/* Filters and Sorting Bar */}
       <div className="hidden md:flex flex-col sm:flex-row gap-4 items-center justify-between bg-brand-gray-light border border-brand-border p-4 rounded-2xl shadow-sm">
-        
+
         {/* Filters Group */}
         <div className="flex items-center gap-3 w-full sm:w-auto">
           <button
@@ -160,7 +160,7 @@ export default function PortableACCatalog({ initialProducts }) {
             <span className="hidden sm:inline text-xs font-bold text-brand-navy uppercase tracking-wider shrink-0">
               Sort By:
             </span>
-            
+
             <button
               onClick={() => {
                 setIsSortOpen(!isSortOpen);
@@ -195,11 +195,10 @@ export default function PortableACCatalog({ initialProducts }) {
                         setSortBy(option.id);
                         setIsSortOpen(false);
                       }}
-                      className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${
-                        isSelected
+                      className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
                           ? "bg-brand-blue-light/70 text-brand-blue"
                           : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center gap-2">
                         <IconComponent className={`h-3.5 w-3.5 ${isSelected ? "text-brand-blue" : "text-brand-gray-medium"}`} />
@@ -288,11 +287,10 @@ export default function PortableACCatalog({ initialProducts }) {
                             <button
                               key={opt.id}
                               onClick={() => setSelectedStatus(opt.id)}
-                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
-                                active
+                              className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
                                   ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
                                   : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
-                              }`}
+                                }`}
                             >
                               <span>{opt.label}</span>
                               {active && <Check className="h-4 w-4 text-brand-blue shrink-0" />}
@@ -332,10 +330,10 @@ export default function PortableACCatalog({ initialProducts }) {
                 </span>
               )}
             </button>
-            
+
             {/* Divider */}
             <div className="h-4 w-px bg-white/15" />
-            
+
             {/* Sort Button */}
             <button
               onClick={() => setIsSortOpen(!isSortOpen)}
@@ -350,8 +348,8 @@ export default function PortableACCatalog({ initialProducts }) {
           <AnimatePresence>
             {isSortOpen && (
               <>
-                <div 
-                  className="fixed inset-0 bg-black/20 z-40 md:hidden" 
+                <div
+                  className="fixed inset-0 bg-black/20 z-40 md:hidden"
                   onClick={() => setIsSortOpen(false)}
                 />
                 <motion.div
@@ -379,11 +377,10 @@ export default function PortableACCatalog({ initialProducts }) {
                           setSortBy(option.id);
                           setIsSortOpen(false);
                         }}
-                        className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${
-                          isSelected
+                        className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
                             ? "bg-brand-blue-light/70 text-brand-blue"
                             : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center gap-2">
                           <IconComponent className={`h-3.5 w-3.5 ${isSelected ? "text-brand-blue" : "text-brand-gray-medium"}`} />

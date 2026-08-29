@@ -5,8 +5,22 @@ import ScrollReveal from "@/components/animations/ScrollReveal";
 import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata = {
-  title: "About Us | Industrial Humidity Leaders Since 2008",
-  description: "Learn about AMFAH's journey, engineering partnerships, and commitment to delivering absolute relative humidity control solutions.",
+  title: "About AMFAH | Air Quality & Humidity Since 2008",
+  description: "AMFAH has supplied dehumidification and air quality systems since 2008 to AIIMS, ISRO, the Indian Army, Taj and Serum Institute. Mumbai and Delhi offices.",
+  alternates: {
+    canonical: "https://amfah.com/about",
+  },
+  openGraph: {
+    title: "About AMFAH | Air Quality & Humidity Since 2008",
+    description: "AMFAH has supplied dehumidification and air quality systems since 2008 to AIIMS, ISRO, the Indian Army, Taj and Serum Institute. Mumbai and Delhi offices.",
+    url: "https://amfah.com/about",
+    images: [
+      {
+        url: "/banner/dehumidifiers.jpeg",
+        alt: "About AMFAH India",
+      },
+    ],
+  },
 };
 
 export default function AboutPage() {

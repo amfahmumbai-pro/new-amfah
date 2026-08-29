@@ -1,26 +1,27 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 export default function IndustrialDehumidifierHero() {
-  const searchParams = useSearchParams();
   const [filter, setFilter] = useState(null);
 
   useEffect(() => {
-    setFilter(searchParams.get("filter"));
-  }, [searchParams]);
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      setFilter(params.get("filter"));
+    }
+  }, []);
 
   const isEconomy = filter === "economy";
   const isPremium = filter === "premium";
   const isCeiling = filter === "ceiling";
 
-  const heroImage = isEconomy 
-    ? "/banner/inductrail-economy(1).jpeg" 
-    : isCeiling 
-    ? "/banner/ceiling-dehumidifier(1).jpeg"
-    : "/banner/industrial-dehumidifier(2).jpeg";
+  const heroImage = isEconomy
+    ? "/banner/inductrail-economy(1).jpeg"
+    : isCeiling
+      ? "/banner/ceiling-dehumidifier(1).jpeg"
+      : "/banner/industrial-dehumidifier(2).jpeg";
 
   return (
     <section className="relative border-b border-brand-border/60 overflow-hidden h-[240px] md:h-[400px] flex flex-col justify-center items-center">
@@ -36,7 +37,7 @@ export default function IndustrialDehumidifierHero() {
         {/* Overlay to ensure high text contrast */}
         <div className="absolute inset-0 bg-black/15" />
       </div>
-      
+
       <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10 flex flex-col items-center">
         {(isEconomy || isPremium || isCeiling) && (
           <ScrollReveal delay={0.1}>

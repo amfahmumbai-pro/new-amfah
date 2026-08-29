@@ -64,6 +64,11 @@ const slides = [
     align: "right", // Image left, Text right
   },
   {
+    type: "clienteles",
+    image: "/banner/clientele.jpeg",
+    alt: "Our Esteemed Clients & Key Industry Sectors for AMFAH Air Quality & Humidity Solutions",
+  },
+  {
     type: "advocacy",
     bgImage: "/banner/40to60.jpg",
     text: "Take action and join me in the fight against respiratory infections! Relative humidity of 40-60% in buildings will reduce respiratory infections and save lives.",
@@ -368,6 +373,35 @@ export default function NewHero() {
                   </div>
                 </div>
 
+              </div>
+            </motion.div>
+          ) : slides[currentIndex].type === "clienteles" ? (
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              className="w-full flex flex-col items-center justify-center relative select-none py-1 sm:py-2"
+            >
+              {/* Centered Heading with dedicated bottom spacing */}
+              <div className="w-full text-center mb-3 sm:mb-5 z-20">
+                <h2 className="font-display font-bold text-xl sm:text-3xl md:text-4xl text-[#1251a0] tracking-tight">
+                  Our Clienteles
+                </h2>
+              </div>
+
+              {/* Image Container with clear separation and responsive sizing */}
+              <div className="relative w-full max-w-5xl h-[180px] sm:h-[250px] md:h-[310px] lg:h-[360px] flex items-center justify-center">
+                <Image
+                  src={slides[currentIndex].image}
+                  alt={slides[currentIndex].alt || "Our Esteemed Clients & Key Industry Sectors"}
+                  fill
+                  priority
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                />
               </div>
             </motion.div>
           ) : (
