@@ -5,16 +5,20 @@ import { Loader2 } from "lucide-react";
 export const metadata = {
   title: "Search Dehumidifiers | Premium Air Treatment Systems",
   description: "Search and filter our complete catalog of industrial, commercial, and residential smart dehumidifiers to find the perfect match for your space.",
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
-    canonical: "https://amfah.com/search",
+    canonical: "https://amfah.com/search/",
   },
   openGraph: {
     title: "Search Dehumidifiers | AMFAH",
     description: "Search and filter our complete catalog of industrial, commercial, and residential smart dehumidifiers to find the perfect match for your space.",
-    url: "https://amfah.com/search",
+    url: "https://amfah.com/search/",
     images: [
       {
-        url: "/images/amfah-logo.png",
+        url: "https://amfah.com/New-Logo-3.png",
         alt: "Search AMFAH Products",
       },
     ],

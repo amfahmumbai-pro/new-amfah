@@ -10,19 +10,38 @@ export const metadata = {
   title: "Humidifiers for Dry Indoor Air | AMFAH India",
   description: "Add moisture back into over-dry rooms in winter and heavily air-conditioned spaces. AMFAH humidifiers for homes, clinics and process areas.",
   alternates: {
-    canonical: "https://amfah.com/humidifiers",
+    canonical: "https://amfah.com/humidifiers/",
   },
   openGraph: {
     title: "Humidifiers for Dry Indoor Air | AMFAH India",
     description: "Add moisture back into over-dry rooms in winter and heavily air-conditioned spaces. AMFAH humidifiers for homes, clinics and process areas.",
-    url: "https://amfah.com/humidifiers",
+    url: "https://amfah.com/humidifiers/",
     images: [
       {
-        url: "/products/amf-08hm.png",
+        url: "https://amfah.com/products/amf-08hm.png",
         alt: "Ultrasonic Humidifiers AMFAH",
       },
     ],
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://amfah.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Humidifiers",
+      "item": "https://amfah.com/humidifiers/"
+    }
+  ]
 };
 
 export default function HumidifiersPage() {
@@ -54,6 +73,10 @@ export default function HumidifiersPage() {
 
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Category Hero */}
       <section className="relative border-b border-brand-border/60 py-20 md:py-45 overflow-hidden">
         {/* Background Image */}

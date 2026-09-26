@@ -10,19 +10,38 @@ export const metadata = {
   title: "Air Purifiers for Home & Office in India | AMFAH",
   description: "HEPA air purifiers that remove PM2.5, dust, smoke and allergens. Models for bedrooms through to large commercial floors, with service support across India.",
   alternates: {
-    canonical: "https://amfah.com/air-purifiers",
+    canonical: "https://amfah.com/air-purifiers/",
   },
   openGraph: {
     title: "Air Purifiers for Home & Office in India | AMFAH",
     description: "HEPA air purifiers that remove PM2.5, dust, smoke and allergens. Models for bedrooms through to large commercial floors, with service support across India.",
-    url: "https://amfah.com/air-purifiers",
+    url: "https://amfah.com/air-purifiers/",
     images: [
       {
-        url: "/products/amf-350-ap.png",
+        url: "https://amfah.com/products/amf-350-ap.png",
         alt: "Air Purifiers AMFAH",
       },
     ],
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://amfah.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Air Purifiers",
+      "item": "https://amfah.com/air-purifiers/"
+    }
+  ]
 };
 
 export default function AirPurifiersPage() {
@@ -54,6 +73,10 @@ export default function AirPurifiersPage() {
 
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Category Hero */}
       <section className="relative border-b border-brand-border/60 py-24 md:py-34 overflow-hidden">
         {/* Background Image */}

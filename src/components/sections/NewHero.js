@@ -37,17 +37,12 @@ const slides = [
   {
     title: "PORTABLE AC",
     specification: "AMFAH AMF-PDAC-18, 1.5 Ton Portable Air Conditioner | 4-in-1 AC, Fan, Dehumidifier, Auto | Energy Efficient Mobile AC with Adustable Vent,\n Auto Shut Off, Overheat Protection, White ",
-    price: {
-      current: "59,990",
-      mrp: "74,990",
-      discount: "20% off",
-    },
     badge: "Amazon's Choice",
     amazonReviews: {
       rating: "4.1 out of 5",
       totalRatings: "22 global ratings",
     },
-    subtitle: "₹59,990 M.R.P: ₹74,990 (20% off)",
+    subtitle: "Stay Cool and Comfortable Anywhere Without Permanent Installation",
     image: "/products/portable-ac-new.png",
     imageScale: "scale-100 sm:scale-100 md:scale-110 lg:scale-120",
     buttonText: "View On Amazon",
@@ -60,7 +55,7 @@ const slides = [
     subtitle: "Save Space While Keeping Your Environment Dry and Comfortable",
     image: "/banner/banner3.png",
     buttonText: "know more",
-    buttonLink: "/industrial-dehumidifiers?filter=ceiling",
+    buttonLink: "/ceiling-dehumidifiers",
     align: "right", // Image left, Text right
   },
   {
@@ -387,8 +382,8 @@ export default function NewHero() {
             >
               {/* Centered Heading with dedicated bottom spacing */}
               <div className="w-full text-center mb-3 sm:mb-5 z-20">
-                <h2 className="font-display font-bold text-xl sm:text-3xl md:text-4xl text-[#1251a0] tracking-tight">
-                  Our Clienteles
+                <h2 className="font-display font-bold text-xs sm:text-base md:text-xl lg:text-2xl text-[#1251a0] tracking-tight">
+                  Our Esteemed Clients & Key Industry Sectors for AMFAH Air Quality & Humidity Solutions
                 </h2>
               </div>
 

@@ -95,7 +95,7 @@ export async function generateMetadata({ params }) {
   const keywords = Array.from(keywordSet);
 
   const siteUrl = "https://amfah.com";
-  const pageUrl = `${siteUrl}/news/${item.slug}`;
+  const pageUrl = `${siteUrl}/news/${item.slug}/`;
   const imageUrl = item.image
     ? `${siteUrl}${item.image}`
     : `${siteUrl}/banner/dehumidifiers.jpeg`;
@@ -195,12 +195,22 @@ export default async function NewsDetailPage({ params }) {
     notFound();
   }
 
+  const pageUrl = `https://amfah.com/news/${item.slug}/`;
+  const imageUrl = item.image
+    ? (item.image.startsWith("http") ? item.image : `https://amfah.com${item.image}`)
+    : "https://amfah.com/banner/dehumidifiers.jpeg";
+
   // Pre-fill Google-friendly Article Schema JSON-LD
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
     "headline": item.title,
     "description": item.summary,
+    "image": imageUrl,
     "datePublished": item.date,
     "author": {
       "@type": "Person",
@@ -211,9 +221,34 @@ export default async function NewsDetailPage({ params }) {
       "name": "AMFAH Dehumidifiers",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://amfah.com/logo.png"
+        "url": "https://amfah.com/New-Logo-3.png"
       }
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://amfah.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "News",
+        "item": "https://amfah.com/news/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": item.title,
+        "item": pageUrl
+      }
+    ]
   };
 
   // Find other reading suggestions
@@ -225,6 +260,10 @@ export default async function NewsDetailPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <main className="flex-grow pb-24">

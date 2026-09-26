@@ -98,7 +98,7 @@ export async function generateMetadata({ params }) {
   const keywords = Array.from(keywordSet);
 
   const siteUrl = "https://amfah.com";
-  const pageUrl = `${siteUrl}/blogs/${blog.slug}`;
+  const pageUrl = `${siteUrl}/blogs/${blog.slug}/`;
   const imageUrl = blog.image
     ? `${siteUrl}${blog.image}`
     : `${siteUrl}/banner/dehumidifiers.jpeg`;
@@ -198,15 +198,25 @@ export default async function BlogDetailPage({ params }) {
     notFound();
   }
 
-  // Pre-fill Google-friendly Article Schema JSON-LD
+  const pageUrl = `https://amfah.com/blogs/${blog.slug}/`;
+  const imageUrl = blog.image
+    ? (blog.image.startsWith("http") ? blog.image : `https://amfah.com${blog.image}`)
+    : "https://amfah.com/banner/dehumidifiers.jpeg";
+
+  // Pre-fill Google-friendly BlogPosting Schema JSON-LD
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
     "headline": blog.title,
     "description": blog.summary,
+    "image": imageUrl,
     "datePublished": blog.date,
     "author": {
-      "@type": "Person",
+      "@type": "Organization",
       "name": blog.author || "AMFAH India"
     },
     "publisher": {
@@ -214,13 +224,66 @@ export default async function BlogDetailPage({ params }) {
       "name": "AMFAH Dehumidifiers",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://amfah.com/logo.png"
+        "url": "https://amfah.com/New-Logo-3.png"
       }
     }
   };
 
-  // Find other reading suggestions (excluding current blog, maximum 3 for the 3-column grid layout)
-  const relatedBlogs = blogs.filter((b) => b.slug !== blog.slug).slice(0, 3);
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://amfah.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blogs",
+        "item": "https://amfah.com/blogs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": blog.title,
+        "item": pageUrl
+      }
+    ]
+  };
+
+  // Find relevant reading suggestions based on category & topic keywords (3 items for identical 3-column layout)
+  const currentKeywords = new Set(
+    (blog.title + " " + (blog.summary || ""))
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, "")
+      .split(/\s+/)
+      .filter(w => w.length > 3)
+  );
+
+  const relatedBlogs = blogs
+    .filter((b) => b.slug !== blog.slug)
+    .map((b) => {
+      let score = 0;
+      if (b.category && blog.category && b.category === blog.category) {
+        score += 5;
+      }
+      const bWords = (b.title + " " + (b.summary || ""))
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, "")
+        .split(/\s+/);
+      for (const w of bWords) {
+        if (w.length > 3 && currentKeywords.has(w)) {
+          score += 1;
+        }
+      }
+      return { b, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(item => item.b);
 
   return (
     <div className="flex flex-col bg-white min-h-screen font-sans">
@@ -229,7 +292,10 @@ export default async function BlogDetailPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Article Container */}
       <main className="flex-grow pb-10">

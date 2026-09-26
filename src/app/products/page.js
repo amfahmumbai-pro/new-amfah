@@ -8,25 +8,48 @@ export const metadata = {
   description:
     "Browse every AMFAH dehumidifier, air purifier, humidifier and portable AC. Compare capacity, tank size and coverage area to find the right unit.",
   alternates: {
-    canonical: "https://amfah.com/products",
+    canonical: "https://amfah.com/products/",
   },
   openGraph: {
     title: "All Dehumidifiers & Air Quality Products | AMFAH",
     description:
       "Browse every AMFAH dehumidifier, air purifier, humidifier and portable AC. Compare capacity, tank size and coverage area to find the right unit.",
-    url: "https://amfah.com/products",
+    url: "https://amfah.com/products/",
     images: [
       {
-        url: "/banner/dehumidifiers.jpeg",
+        url: "https://amfah.com/banner/dehumidifiers.jpeg",
         alt: "AMFAH Dehumidifiers Catalog",
       },
     ],
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://amfah.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://amfah.com/products/"
+    }
+  ]
+};
+
 export default function ProductsPage() {
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Catalog Hero */}
       <section className="relative py-2 md:py-46 overflow-hidden border-b border-brand-border/60">
         {/* Background Image */}

@@ -42,21 +42,21 @@ const containsTokenWithNumericPrecision = (text, token) => {
   if (!text || !token) return false;
   const lowerText = text.toLowerCase();
   const lowerToken = token.toLowerCase();
-  
+
   let index = lowerText.indexOf(lowerToken);
   while (index !== -1) {
     const charBefore = index > 0 ? lowerText[index - 1] : '';
     const charAfter = index + lowerToken.length < lowerText.length ? lowerText[index + lowerToken.length] : '';
-    
+
     const isDigit = (c) => c >= '0' && c <= '9';
-    
+
     const beforeOk = !(isDigit(lowerToken[0]) && isDigit(charBefore));
     const afterOk = !(isDigit(lowerToken[lowerToken.length - 1]) && isDigit(charAfter));
-    
+
     if (beforeOk && afterOk) {
       return true;
     }
-    
+
     index = lowerText.indexOf(lowerToken, index + 1);
   }
   return false;
@@ -93,7 +93,7 @@ export default function SearchClient() {
     if (category !== "all") {
       params.set("cat", category);
     }
-    
+
     // Replace URL query params smoothly without scrolling or reloading
     const newQueryString = params.toString();
     router.replace(newQueryString ? `${pathname}?${newQueryString}` : pathname, {
@@ -125,7 +125,7 @@ export default function SearchClient() {
 
       // Split the search query into individual words/tokens
       const tokens = q.split(/\s+/).filter(Boolean);
-      
+
       // Also create a normalized version of the search query (no spaces or hyphens)
       const normalizedQ = q.replace(/[^a-z0-9]/g, "");
 
@@ -151,7 +151,7 @@ export default function SearchClient() {
       // Check if tokens match across a combination of fields (e.g. "aquaria 10")
       const checkMultiFieldMatch = () => {
         if (tokens.length === 0) return false;
-        
+
         return tokens.every(token => {
           const nameMatch = containsTokenWithNumericPrecision(product.name, token);
           const subtitleMatch = containsTokenWithNumericPrecision(product.subtitle, token);
@@ -166,7 +166,7 @@ export default function SearchClient() {
               return containsTokenWithNumericPrecision(key, token) || containsTokenWithNumericPrecision(String(val), token);
             }
           );
-          
+
           return nameMatch || subtitleMatch || categoryMatch || techMatch || featureMatch || appMatch || specMatch;
         });
       };
@@ -176,10 +176,10 @@ export default function SearchClient() {
       const subtitleMatch = textMatches(product.subtitle);
       const categoryMatch = textMatches(product.category);
       const techMatch = textMatches(product.tech);
-      
+
       const featureMatch = product.features?.some((feature) => textMatches(feature));
       const appMatch = product.applications?.some((app) => textMatches(app));
-      
+
       const specMatch = Object.entries(product.specifications || {}).some(
         ([key, val]) => {
           const isIgnored = IGNORED_SPEC_KEYS.some(k => key.toLowerCase().includes(k));
@@ -239,20 +239,20 @@ export default function SearchClient() {
       <section className="bg-brand-gray-light border-b border-brand-border/60 py-16 relative overflow-hidden">
         {/* Dynamic Industrial Blueprint Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:3rem_3rem] opacity-40 pointer-events-none" />
-        
+
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
           {/* <ScrollReveal delay={0.05}>
             <span className="text-xs font-bold text-brand-blue uppercase tracking-widest font-display bg-brand-blue-light px-3.5 py-1.5 rounded-full border border-brand-blue/15">
               Live Catalog Search
             </span>
           </ScrollReveal> */}
-          
+
           <ScrollReveal delay={0.1}>
             <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-brand-navy leading-tight">
               Search
             </h1>
           </ScrollReveal>
-          
+
           {/* <ScrollReveal delay={0.15}>
             <p className="text-sm md:text-base text-brand-gray-medium max-w-xl mx-auto leading-relaxed">
               Instantly find specific dehumidifier capacities, whisper-quiet portables, high-performance systems, or search by specific industrial application keywords.
@@ -290,7 +290,7 @@ export default function SearchClient() {
       {/* Control Console & Filter Layout */}
       <section className="py-12 bg-white flex-grow">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
-          
+
 
 
           {/* Results Grid Display Area */}
@@ -308,7 +308,7 @@ export default function SearchClient() {
               <div className="h-14 w-14 bg-brand-gray-light border border-brand-border/60 rounded-full flex items-center justify-center mx-auto">
                 <AlertCircle className="h-6 w-6 text-brand-navy" />
               </div>
-              
+
               <div className="space-y-2">
                 <h3 className="font-display font-bold text-lg text-brand-navy">No results found</h3>
                 <p className="text-xs text-brand-gray-medium leading-relaxed font-semibold">
@@ -334,7 +334,7 @@ export default function SearchClient() {
               <div className="space-y-1.5 text-center md:text-left">
                 <h4 className="font-display font-bold text-base text-brand-navy flex items-center justify-center md:justify-start gap-1.5">
                   <Sparkles className="h-4 w-4 text-brand-accent animate-pulse" />
-                  <span>Need Custom Engineering Solutions?</span>
+                  <span>Need Help From Our Technical Team?</span>
                 </h4>
                 <p className="text-xs text-brand-gray-medium max-w-lg leading-relaxed">
                   Our professional dehumidification experts can custom-engineer large scale moisture extraction systems built specifically for extreme commercial climates.

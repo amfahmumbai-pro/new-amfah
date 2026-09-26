@@ -1,6 +1,5 @@
 import { Suspense } from "react";
-import Image from "next/image";
-import { Factory, Wind, Settings, Droplets, CheckCircle, ShieldCheck } from "lucide-react";
+import { Factory, Wind, Droplets, ShieldCheck } from "lucide-react";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import Button from "@/components/ui/Button";
 import IndustrialDehumidifierHero from "@/components/sections/IndustrialDehumidifierHero";
@@ -8,19 +7,19 @@ import IndustrialDehumidifierCatalog from "@/components/sections/IndustrialDehum
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Industrial & Commercial Dehumidifiers India | AMFAH",
-  description: "Heavy duty industrial dehumidifiers up to 480 L/day for factories, warehouses and cleanrooms. Stainless builds, ceiling models, free moisture load audit.",
+  title: "Ceiling Dehumidifiers India | Space-Saving Duct Mount | AMFAH",
+  description: "Heavy duty ceiling-mounted & ducted dehumidifiers in India. Space saving, whisper-quiet performance, and premium moisture extraction for commercial and residential spaces.",
   alternates: {
-    canonical: "https://amfah.com/industrial-dehumidifiers/",
+    canonical: "https://amfah.com/ceiling-dehumidifiers/",
   },
   openGraph: {
-    title: "Industrial & Commercial Dehumidifiers India | AMFAH",
-    description: "Heavy duty industrial dehumidifiers up to 480 L/day for factories, warehouses and cleanrooms. Stainless builds, ceiling models, free moisture load audit.",
-    url: "https://amfah.com/industrial-dehumidifiers/",
+    title: "Ceiling Dehumidifiers India | Space-Saving Duct Mount | AMFAH",
+    description: "Heavy duty ceiling-mounted & ducted dehumidifiers in India. Space saving, whisper-quiet performance, and premium moisture extraction for commercial and residential spaces.",
+    url: "https://amfah.com/ceiling-dehumidifiers/",
     images: [
       {
-        url: "https://amfah.com/products/amf-138dmp%20(2).png",
-        alt: "Commercial and Industrial Dehumidifiers AMFAH",
+        url: "https://amfah.com/banner/ceiling-dehumidifier(1).jpeg",
+        alt: "Ceiling Dehumidifiers AMFAH",
       },
     ],
   },
@@ -39,23 +38,15 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Commercial/Industrial Dehumidifiers",
-      "item": "https://amfah.com/industrial-dehumidifiers/"
+      "name": "Ceiling Dehumidifiers",
+      "item": "https://amfah.com/ceiling-dehumidifiers/"
     }
   ]
 };
 
-export default async function IndustrialDehumidifiersPage() {
-  // Filter only industrial hardware
+export default async function CeilingDehumidifiersPage() {
+  // Filter industrial hardware
   const industrialProducts = products.filter((p) => p.categoryId === "industrial");
-
-  const engineeringChecklist = [
-    "Integrated or standalone ducted configuration layout capability.",
-    "Corrosion-resistant epoxy-coated sheet frames.",
-    "BMS telemetry links using Siemens smart PLC controllers.",
-    "Eco-friendly R407C or R410A refrigeration coolant.",
-    "Hot-gas defrosting logic for sub-zero room stability."
-  ];
 
   const industrialBenefits = [
     {
@@ -71,7 +62,7 @@ export default async function IndustrialDehumidifiersPage() {
     {
       icon: Wind,
       title: "Healthy & Safe Workplace",
-      desc: "Keep floors dry to prevent slips and falls, and stop mold growth to create a clean, healthy workspace for your employees.",
+      desc: "Keep floors dry to prevent slips and falls, and stop mold growth to create a clean, healthy workplace for your employees.",
     },
     {
       icon: Droplets,
@@ -88,7 +79,7 @@ export default async function IndustrialDehumidifiersPage() {
       />
       {/* Category Hero */}
       <Suspense fallback={<div className="h-[250px] bg-brand-gray-light animate-pulse" />}>
-        <IndustrialDehumidifierHero />
+        <IndustrialDehumidifierHero defaultFilter="ceiling" />
       </Suspense>
 
       {/* Main product show layout */}
@@ -98,7 +89,7 @@ export default async function IndustrialDehumidifiersPage() {
           {/* 1. Products Catalog Section */}
           <div className="space-y-12">
             <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>
-              <IndustrialDehumidifierCatalog initialProducts={industrialProducts} />
+              <IndustrialDehumidifierCatalog initialProducts={industrialProducts} defaultTier="ceiling" />
             </Suspense>
           </div>
 
@@ -158,33 +149,6 @@ export default async function IndustrialDehumidifiersPage() {
           </div>
         </ScrollReveal>
       </section>
-
-      {/* SLA assurance trust panel */}
-      {/* <section className="py-12 bg-brand-gray-light border-t border-brand-border/60">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div className="flex gap-3 flex-col md:flex-row items-center">
-            <ShieldCheck className="h-8 w-8 text-brand-blue flex-shrink-0" />
-            <div>
-              <h4 className="font-display font-bold text-xs text-brand-navy uppercase tracking-wider">CE & RoHS Standard</h4>
-              <p className="text-[10px] text-brand-gray-medium font-semibold">CE, RoHS certified builds.</p>
-            </div>
-          </div>
-          <div className="flex gap-3 flex-col md:flex-row items-center">
-            <Wind className="h-8 w-8 text-brand-blue flex-shrink-0" />
-            <div>
-              <h4 className="font-display font-bold text-xs text-brand-navy uppercase tracking-wider">Centrifugal Blowers</h4>
-              <p className="text-[10px] text-brand-gray-medium font-semibold">High airflow dynamic pressure fans.</p>
-            </div>
-          </div>
-          <div className="flex gap-3 flex-col md:flex-row items-center">
-            <Droplets className="h-8 w-8 text-brand-blue flex-shrink-0" />
-            <div>
-              <h4 className="font-display font-bold text-xs text-brand-navy uppercase tracking-wider">120L - 480L Capacities</h4>
-              <p className="text-[10px] text-brand-gray-medium font-semibold">Heavy duty commercial extractors.</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }

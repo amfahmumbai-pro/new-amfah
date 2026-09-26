@@ -7,15 +7,15 @@ export const metadata = {
   title: "Contact AMFAH | Mumbai & Delhi | Free Quote",
   description: "Get a free humidity audit and unit recommendation. AMFAH sales and service in Mumbai and New Delhi. Call, WhatsApp or send an enquiry.",
   alternates: {
-    canonical: "https://amfah.com/contact",
+    canonical: "https://amfah.com/contact/",
   },
   openGraph: {
     title: "Contact AMFAH | Mumbai & Delhi | Free Quote",
     description: "Get a free humidity audit and unit recommendation. AMFAH sales and service in Mumbai and New Delhi. Call, WhatsApp or send an enquiry.",
-    url: "https://amfah.com/contact",
+    url: "https://amfah.com/contact/",
     images: [
       {
-        url: "/images/amfah-logo.png",
+        url: "https://amfah.com/New-Logo-3.png",
         alt: "Contact AMFAH India",
       },
     ],
@@ -23,6 +23,25 @@ export const metadata = {
 };
 
 export default function ContactPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://amfah.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact AMFAH",
+        "item": "https://amfah.com/contact/"
+      }
+    ]
+  };
+
   const contacts = [
     {
       icon: MapPin,
@@ -40,6 +59,10 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Title Header */}
       <section className="py-8 md:py-16 relative overflow-hidden">
         

@@ -8,15 +8,15 @@ export const metadata = {
   title: "About AMFAH | Air Quality & Humidity Since 2008",
   description: "AMFAH has supplied dehumidification and air quality systems since 2008 to AIIMS, ISRO, the Indian Army, Taj and Serum Institute. Mumbai and Delhi offices.",
   alternates: {
-    canonical: "https://amfah.com/about",
+    canonical: "https://amfah.com/about/",
   },
   openGraph: {
     title: "About AMFAH | Air Quality & Humidity Since 2008",
     description: "AMFAH has supplied dehumidification and air quality systems since 2008 to AIIMS, ISRO, the Indian Army, Taj and Serum Institute. Mumbai and Delhi offices.",
-    url: "https://amfah.com/about",
+    url: "https://amfah.com/about/",
     images: [
       {
-        url: "/banner/dehumidifiers.jpeg",
+        url: "https://amfah.com/banner/dehumidifiers.jpeg",
         alt: "About AMFAH India",
       },
     ],
@@ -24,6 +24,25 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://amfah.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About AMFAH",
+        "item": "https://amfah.com/about/"
+      }
+    ]
+  };
+
   const values = [
     {
       icon: ShieldCheck,
@@ -49,6 +68,10 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative py-8 md:py-20 overflow-hidden border-b border-brand-border/20 text-white bg-slate-900">
         {/* Background Image with blur and dark blue overlay */}

@@ -20,8 +20,10 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const pageUrl = `https://amfah.com/industrial-uses/${appData.slug}`;
-  const appImage = appData.image || "/images/amfah-logo.png";
+  const pageUrl = `https://amfah.com/industrial-uses/${appData.slug}/`;
+  const appImage = appData.image
+    ? (appData.image.startsWith("http") ? appData.image : `https://amfah.com${appData.image}`)
+    : "https://amfah.com/New-Logo-3.png";
   const title = appData.metaTitle || `Industrial Dehumidifiers for ${appData.name} | AMFAH`;
   const description = appData.metaDescription || appData.shortDescription;
 
@@ -113,8 +115,37 @@ export default async function IndustrialUseDetailPage({ params }) {
     }
   ];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://amfah.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Industrial Dehumidifiers",
+        "item": "https://amfah.com/industrial-dehumidifiers/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": currentApp.name,
+        "item": `https://amfah.com/industrial-uses/${currentApp.slug}/`
+      }
+    ]
+  };
+
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Main Grid Section */}
       <section className="py-4 md:py-14 bg-white">
         <div className="max-w-8xl mx-auto px-4 md:px-6">

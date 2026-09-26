@@ -27,18 +27,18 @@ export const metadata = {
   title: "Dehumidifiers & Air Quality Solutions India | AMFAH",
   description: "India's patented, GeM-preferred brand for dehumidifiers, air purifiers, humidifiers and portable ACs. Trusted by AIIMS, ISRO and Taj since 2008.",
   alternates: {
-    canonical: "https://amfah.com",
+    canonical: "https://amfah.com/",
   },
   openGraph: {
     title: "Dehumidifiers & Air Quality Solutions India | AMFAH",
     description: "India's patented, GeM-preferred brand for dehumidifiers, air purifiers, humidifiers and portable ACs. Trusted by AIIMS, ISRO and Taj since 2008.",
-    url: "https://amfah.com",
+    url: "https://amfah.com/",
     siteName: "AMFAH",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/amfah-logo.png",
+        url: "https://amfah.com/images/amfah-logo.png",
         width: 800,
         height: 600,
         alt: "AMFAH India Logo",

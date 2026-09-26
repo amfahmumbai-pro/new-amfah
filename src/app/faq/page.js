@@ -28,13 +28,13 @@ export const metadata = {
     "mold allergy humidity control India",
   ],
   alternates: {
-    canonical: "https://amfah.com/faq",
+    canonical: "https://amfah.com/faq/",
   },
   openGraph: {
     title: "Dehumidifier FAQs | Sizing, RH & Care | AMFAH",
     description:
       "What a dehumidifier does, what capacity your space needs, ideal RH for home and industry, drainage options and filter cleaning. Answered simply.",
-    url: "https://amfah.com/faq",
+    url: "https://amfah.com/faq/",
     siteName: "AMFAH India",
     images: [
       {
@@ -140,11 +140,34 @@ export default function FAQPage() {
     mainEntity: schemaEntities,
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://amfah.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQs",
+        "item": "https://amfah.com/faq/"
+      }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <FAQContent />
     </>

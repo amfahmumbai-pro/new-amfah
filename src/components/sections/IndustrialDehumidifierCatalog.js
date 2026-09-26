@@ -52,14 +52,14 @@ const getProductTankCapacity = (product) => {
   return parseFloat(numbers[0]);
 };
 
-export default function IndustrialDehumidifierCatalog({ initialProducts }) {
+export default function IndustrialDehumidifierCatalog({ initialProducts, defaultTier = "all" }) {
   const searchParams = useSearchParams();
   const [selectedBrand, setSelectedBrand] = useState("all"); // "all", "amfah", "olimpia", "fral"
   const [selectedSize, setSelectedSize] = useState("all"); // "all", "small", "medium", "large"
   const [selectedCapacity, setSelectedCapacity] = useState("all"); // "all", "low", "medium", "high"
   const [selectedTank, setSelectedTank] = useState("all"); // "all", "small", "large"
   const [sortBy, setSortBy] = useState("featured"); // featured, relevance, sales, name-asc, ...
-  const [activeTier, setActiveTier] = useState("all"); // "all", "premium", "economy", "ceiling"
+  const [activeTier, setActiveTier] = useState(defaultTier); // "all", "premium", "economy", "ceiling"
   const [isSortOpen, setIsSortOpen] = useState(false);
   const [isFilterSidebarOpen, setIsFilterSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -77,14 +77,25 @@ export default function IndustrialDehumidifierCatalog({ initialProducts }) {
     const capacityParam = searchParams.get("capacity");
     const brandParam = searchParams.get("brand");
     const filterParam = searchParams.get("filter");
+
+    // Seamlessly redirect if someone accesses /industrial-dehumidifiers/?filter=ceiling
+    if (
+      filterParam === "ceiling" &&
+      typeof window !== "undefined" &&
+      window.location.pathname.includes("industrial-dehumidifiers")
+    ) {
+      window.location.replace("/ceiling-dehumidifiers/");
+      return;
+    }
+
     if (capacityParam) setSelectedCapacity(capacityParam);
     if (brandParam) setSelectedBrand(brandParam);
     if (filterParam) {
       setActiveTier(filterParam);
     } else {
-      setActiveTier("all");
+      setActiveTier(defaultTier);
     }
-  }, [searchParams]);
+  }, [searchParams, defaultTier]);
 
   // Handle mobile detection dynamically
   useEffect(() => {
@@ -738,7 +749,7 @@ export default function IndustrialDehumidifierCatalog({ initialProducts }) {
                         param: "Product Brochure",
                         val1: (
                           <a
-                            href="/pdf/AMF-GDHD26L.pdf"
+                            href="/pdf/AMF-GDHD-26L.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1.5 text-brand-blue hover:text-brand-navy hover:underline font-bold transition-colors"

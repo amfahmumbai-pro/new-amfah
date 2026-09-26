@@ -12,19 +12,38 @@ export const metadata = {
   title: "Home Dehumidifiers for Indian Homes | AMFAH",
   description: "Quiet home dehumidifiers for bedrooms, wardrobes and basements. Stop mould, damp walls and musty smells through the monsoon. Premium and economy series.",
   alternates: {
-    canonical: "https://amfah.com/home-dehumidifiers",
+    canonical: "https://amfah.com/home-dehumidifiers/",
   },
   openGraph: {
     title: "Home Dehumidifiers for Indian Homes | AMFAH",
     description: "Quiet home dehumidifiers for bedrooms, wardrobes and basements. Stop mould, damp walls and musty smells through the monsoon. Premium and economy series.",
-    url: "https://amfah.com/home-dehumidifiers",
+    url: "https://amfah.com/home-dehumidifiers/",
     images: [
       {
-        url: "/products/amf-50d-a (3).png",
+        url: "https://amfah.com/products/amf-50d-a%20(3).png",
         alt: "Home Dehumidifiers AMFAH",
       },
     ],
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://amfah.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Home Dehumidifiers",
+      "item": "https://amfah.com/home-dehumidifiers/"
+    }
+  ]
 };
 
 export default async function HomeDehumidifiersPage() {
@@ -56,6 +75,10 @@ export default async function HomeDehumidifiersPage() {
 
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Category Hero */}
       <Suspense fallback={<div className="h-[250px] bg-brand-gray-light animate-pulse" />}>
         <HomeDehumidifierHero />

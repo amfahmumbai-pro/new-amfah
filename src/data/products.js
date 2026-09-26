@@ -1374,7 +1374,7 @@ export const products = [
     features: [
       "Ceiling Mounted Space-Saving Design",
       "High Moisture Removal Efficiency",
-      "Quiet Operation (35 dB)",
+      "Quiet Operation (56 dB)",
       "Energy Efficient Performance",
       "Suitable for Residential & Commercial Use",
       "Durable & Reliable Construction"
@@ -1394,13 +1394,14 @@ export const products = [
       "Controllable Humidity Range": "RH 30% ~ 95%",
       "Adjustable Humidity Range": "RH 5% ~ 95%",
       "Air Volume": "600 m³/h",
-      "Noise Level": "35 dB(A)",
+      "Noise Level": "56 dB(A)",
       "Refrigerant": "R410A",
       "Diameter of Drainage Pipe": "16 mm",
       "3m Floor Height Applying Area": "80 m²",
       "Applying Volume": "240 m³",
       "Dimensions (W x D x H)": "900 x 502 x 354 mm",
-      "Net Weight": "30 kg"
+      "Net Weight": "30 kg",
+      "Warranty": "1 yr Warranty + 2 yrs Compressor"
     },
     image: "/products/dehumidifier.png"
   },

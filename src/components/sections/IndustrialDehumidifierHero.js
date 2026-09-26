@@ -3,15 +3,20 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
-export default function IndustrialDehumidifierHero() {
-  const [filter, setFilter] = useState(null);
+export default function IndustrialDehumidifierHero({ defaultFilter = null }) {
+  const [filter, setFilter] = useState(defaultFilter);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
-      setFilter(params.get("filter"));
+      const paramFilter = params.get("filter");
+      if (paramFilter) {
+        setFilter(paramFilter);
+      } else if (defaultFilter) {
+        setFilter(defaultFilter);
+      }
     }
-  }, []);
+  }, [defaultFilter]);
 
   const isEconomy = filter === "economy";
   const isPremium = filter === "premium";

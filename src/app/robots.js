@@ -5,7 +5,13 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/private/", "/search"],
+      disallow: [
+        "/private/",
+        "/feed/",
+        "*/feed/",
+        "/author/",
+        "/wp-admin/",
+      ],
     },
     sitemap: "https://amfah.com/sitemap.xml",
   };

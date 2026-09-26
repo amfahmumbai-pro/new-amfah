@@ -38,7 +38,8 @@ export async function generateMetadata({ params }) {
 
   const productImages = defaultProductImages[product.slug] || ["/images/amfah-logo.png"];
   const primaryImage = productImages[0] || "/images/amfah-logo.png";
-  const productUrl = `https://amfah.com/products/${product.slug}`;
+  const ogImage = primaryImage.startsWith("http") ? primaryImage : `https://amfah.com${primaryImage}`;
+  const productUrl = `https://amfah.com/products/${product.slug}/`;
 
   return {
     title: `${nameToUse} | Premium ${product.category}`,
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }) {
       url: productUrl,
       images: [
         {
-          url: primaryImage,
+          url: ogImage,
           alt: nameToUse,
         },
       ],
@@ -61,7 +62,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: `${nameToUse} | Dehumidifier Specifications`,
       description: product.tech,
-      images: [primaryImage],
+      images: [ogImage],
     },
   };
 }
@@ -109,19 +110,57 @@ export default async function ProductDetailPage({ params }) {
   const productImages = defaultProductImages[product.slug] || [product.image];
   const primaryImage = productImages[0] || "/image1.jpg";
 
-  // Pre-fill rich technical schema JSON-LD for Search Crawlers
+  const brandName = (product.name.includes("Olimpia Splendid") || product.specifications?.Brand?.includes("Olimpia"))
+    ? "AMFAH Olimpia Splendid"
+    : (product.name.includes("FRAL") || product.slug.includes("fral"))
+      ? "AMFAH FRAL"
+      : "AMFAH";
+
+  const productCanonicalUrl = `https://amfah.com/products/${product.slug}/`;
+  const productImage = (product.image && product.image.startsWith("http"))
+    ? product.image
+    : `https://amfah.com${product.image || primaryImage}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": nameToUse,
-    "image": `https://amfah.com${product.image}`,
-    "description": product.tech,
-    "brand": {
-      "@type": "Brand",
-      "name": "AMFAH"
-    },
-    "category": product.category,
-    "model": product.slug,
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": nameToUse,
+        "image": productImage,
+        "description": product.tech,
+        "brand": {
+          "@type": "Brand",
+          "name": brandName
+        },
+        "category": product.category,
+        "model": product.specifications?.["Model Name"] || product.slug,
+        "url": productCanonicalUrl
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://amfah.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://amfah.com/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": nameToUse,
+            "item": productCanonicalUrl
+          }
+        ]
+      }
+    ]
   };
 
   // Find related products (same category but not current product)
@@ -327,8 +366,8 @@ export default async function ProductDetailPage({ params }) {
                     <span >Features</span>
                   </h3>
                   <ul className={`${product.features && product.features.length > 6
-                      ? "grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3"
-                      : "space-y-3"
+                    ? "grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3"
+                    : "space-y-3"
                     } text-sm text-brand-gray-dark font-medium`}>
                     {product.features && product.features.map((f, i) => (
                       <li key={i} className="flex gap-2 items-start">
@@ -380,7 +419,7 @@ export default async function ProductDetailPage({ params }) {
                   </div>
                   <div className="space-y-1">
                     <h4 className="font-display font-bold text-sm sm:text-base text-brand-navy">
-                      Product Brochure & Technical Datasheet
+                      Product Brochure & Technical Specifications
                     </h4>
                     <p className="text-xs text-brand-gray-medium leading-relaxed max-w-xl font-semibold">
                       Download the official PDF brochure for the {nameToUse}

@@ -10,19 +10,38 @@ export const metadata = {
   title: "Atmospheric Water Generators | Air to Water | AMFAH",
   description: "AMFAH air-to-water generators condense clean drinking water from humidity in the air. Capacities for homes, offices and remote sites across India.",
   alternates: {
-    canonical: "https://amfah.com/air-to-water",
+    canonical: "https://amfah.com/air-to-water/",
   },
   openGraph: {
     title: "Atmospheric Water Generators | Air to Water | AMFAH",
     description: "AMFAH air-to-water generators condense clean drinking water from humidity in the air. Capacities for homes, offices and remote sites across India.",
-    url: "https://amfah.com/air-to-water",
+    url: "https://amfah.com/air-to-water/",
     images: [
       {
-        url: "/Air-To-Water-300-×-206-px.png",
+        url: "https://amfah.com/Air-To-Water-300-%C3%97-206-px.png",
         alt: "Air to Water Generators AMFAH",
       },
     ],
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://amfah.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Air to Water",
+      "item": "https://amfah.com/air-to-water/"
+    }
+  ]
 };
 
 export default function AirToWaterPage() {
@@ -54,6 +73,10 @@ export default function AirToWaterPage() {
 
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Category Hero */}
       <section className="relative border-b border-brand-border/60 py-30 md:py-45 overflow-hidden">
         {/* Background Image */}

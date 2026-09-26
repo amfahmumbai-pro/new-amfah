@@ -10,19 +10,38 @@ export const metadata = {
   title: "Portable Air Conditioners in India | AMFAH",
   description: "Plug and play portable ACs with no outdoor unit, for rented flats, server rooms and site offices. 1.5 ton 4-in-1 models with fast cooling.",
   alternates: {
-    canonical: "https://amfah.com/portable-ac",
+    canonical: "https://amfah.com/portable-ac/",
   },
   openGraph: {
     title: "Portable Air Conditioners in India | AMFAH",
     description: "Plug and play portable ACs with no outdoor unit, for rented flats, server rooms and site offices. 1.5 ton 4-in-1 models with fast cooling.",
-    url: "https://amfah.com/portable-ac",
+    url: "https://amfah.com/portable-ac/",
     images: [
       {
-        url: "/products/portable-ac-new.png",
+        url: "https://amfah.com/products/portable-ac-new.png",
         alt: "Portable Air Conditioners AMFAH",
       },
     ],
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://amfah.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portable AC",
+      "item": "https://amfah.com/portable-ac/"
+    }
+  ]
 };
 
 export default function PortableACPage() {
@@ -43,10 +62,20 @@ export default function PortableACPage() {
     {
       icon: Droplets,
       title: "Dehumidifier Action",
-      desc: "Includes a dedicated dehumidifying mode to extract moisture and suppress sticky humidity during muggy summer seasons.",
+      desc: "Integrated high-efficiency moisture removal keeps indoor relative humidity comfortable while cooling your room.",
     },
     {
       icon: Sparkles,
+      title: "Clean Air Filtration",
+      desc: "Built-in washable high-density dust filter captures airborne particles, ensuring fresh, clean air circulation.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Smart Safety Systems",
+      desc: "Equipped with thermostatic cut-off, overheating protection, auto-diagnosis, and an anti-bacterial water tank.",
+    },
+    {
+      icon: Heart,
       title: "Plug & Play Portability",
       desc: "Features rolling caster wheels and an easy-to-install window exhaust slider kit, requiring no permanent masonry wall cuts.",
     },
@@ -54,6 +83,10 @@ export default function PortableACPage() {
 
   return (
     <div className="flex flex-col bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative border-b border-brand-border/60 py-20 md:py-45 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">

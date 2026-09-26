@@ -54,12 +54,83 @@ export const metadata = {
     siteName: "AMFAH",
     locale: "en_US",
     type: "website",
+    url: "https://amfah.com/",
+    images: [
+      {
+        url: "https://amfah.com/images/amfah-logo.png",
+        width: 800,
+        height: 600,
+        alt: "AMFAH India Logo",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://amfah.com/",
   },
   twitter: {
     card: "summary_large_image",
     title: "AMFAH Dehumidifiers | Premium Industrial & Home Moisture Control",
     description: "Discover our premium high-capacity industrial systems and ultra-quiet home dehumidifiers.",
+    images: ["https://amfah.com/images/amfah-logo.png"],
   },
+};
+
+const globalSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://amfah.com/#organization",
+      name: "AMFAH India",
+      legalName: "AMFAH INDIA TRADING PVT LTD",
+      url: "https://amfah.com/",
+      logo: {
+        "@type": "ImageObject",
+        "@id": "https://amfah.com/#logo",
+        url: "https://amfah.com/New-Logo-3.png",
+        contentUrl: "https://amfah.com/New-Logo-3.png",
+        caption: "AMFAH India",
+      },
+      image: "https://amfah.com/New-Logo-3.png",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+91-9321991812",
+          contactType: "customer service",
+          areaServed: "IN",
+          availableLanguage: ["English", "Hindi"],
+        },
+      ],
+      sameAs: [
+        "https://www.facebook.com/officialamfahindia/",
+        "https://www.instagram.com/amfah_airquality/",
+        "https://www.linkedin.com/company/amfah-india-trading-pvt-ltd/",
+        "https://x.com/amfahindia",
+        "https://www.youtube.com/@AMFAHINDIA",
+        "https://in.pinterest.com/amfahhumiditysolutions/",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://amfah.com/#website",
+      url: "https://amfah.com/",
+      name: "AMFAH",
+      description: "Patented Dehumidifiers, Humidifiers, Air Purifiers & Portable ACs in India",
+      publisher: {
+        "@id": "https://amfah.com/#organization",
+      },
+      potentialAction: [
+        {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: "https://amfah.com/search/?q={search_term_string}",
+          },
+          "query-input": "required name=search_term_string",
+        },
+      ],
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
@@ -68,6 +139,12 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-white text-brand-gray-dark font-sans">
         {/* Google Analytics (gtag.js) */}
         <Script

@@ -122,7 +122,7 @@ export default function Navbar() {
       dropdown: [
         { name: "Premium Series", href: "/industrial-dehumidifiers?filter=premium" },
         { name: "Economy Series", href: "/industrial-dehumidifiers?filter=economy" },
-        { name: "Ceiling Dehumidifier", href: "/industrial-dehumidifiers?filter=ceiling" },
+        { name: "Ceiling Dehumidifier", href: "/ceiling-dehumidifiers" },
       ],
     },
     { name: "Portable AC", href: "/portable-ac" },
@@ -131,7 +131,7 @@ export default function Navbar() {
       href: "/products",
       dropdown: [
         { name: "Dehumidifiers", href: "/products" },
-        { name: "Ceiling Dehumidifier", href: "/industrial-dehumidifiers?filter=ceiling" },
+        { name: "Ceiling Dehumidifier", href: "/ceiling-dehumidifiers" },
         { name: "Dehumidifiers (Desiccant / Hetro)", href: "https://www.dewteq.com/" },
         { name: "Air Purifiers", href: "/air-purifiers" },
         { name: "Humidifiers", href: "/humidifiers" },
