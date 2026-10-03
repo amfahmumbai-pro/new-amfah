@@ -1,22 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 export default function IndustrialDehumidifierHero({ defaultFilter = null }) {
-  const [filter, setFilter] = useState(defaultFilter);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const paramFilter = params.get("filter");
-      if (paramFilter) {
-        setFilter(paramFilter);
-      } else if (defaultFilter) {
-        setFilter(defaultFilter);
-      }
-    }
-  }, [defaultFilter]);
+  const searchParams = useSearchParams();
+  const filter = searchParams?.get("filter") || defaultFilter;
 
   const isEconomy = filter === "economy";
   const isPremium = filter === "premium";

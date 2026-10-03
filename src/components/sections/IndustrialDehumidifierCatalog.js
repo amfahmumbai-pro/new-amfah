@@ -372,8 +372,8 @@ export default function IndustrialDehumidifierCatalog({ initialProducts, default
                         setIsSortOpen(false);
                       }}
                       className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
-                          ? "bg-brand-blue-light/70 text-brand-blue"
-                          : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
+                        ? "bg-brand-blue-light/70 text-brand-blue"
+                        : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
                         }`}
                     >
                       <div className="flex items-center gap-2">
@@ -460,8 +460,8 @@ export default function IndustrialDehumidifierCatalog({ initialProducts, default
                               key={opt.id}
                               onClick={() => setSelectedBrand(opt.id)}
                               className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
-                                  ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
-                                  : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
+                                ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
+                                : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
                                 }`}
                             >
                               <span>{opt.label}</span>
@@ -487,8 +487,8 @@ export default function IndustrialDehumidifierCatalog({ initialProducts, default
                               key={opt.id}
                               onClick={() => setSelectedSize(opt.id)}
                               className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
-                                  ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
-                                  : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
+                                ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
+                                : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
                                 }`}
                             >
                               <span>{opt.label}</span>
@@ -514,8 +514,8 @@ export default function IndustrialDehumidifierCatalog({ initialProducts, default
                               key={opt.id}
                               onClick={() => setSelectedCapacity(opt.id)}
                               className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
-                                  ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
-                                  : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
+                                ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
+                                : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
                                 }`}
                             >
                               <span>{opt.label}</span>
@@ -541,8 +541,8 @@ export default function IndustrialDehumidifierCatalog({ initialProducts, default
                               key={opt.id}
                               onClick={() => setSelectedTank(opt.id)}
                               className={`flex items-center justify-between px-4 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${active
-                                  ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
-                                  : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
+                                ? "bg-brand-blue-light/70 border-brand-blue text-brand-navy"
+                                : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
                                 }`}
                             >
                               <span>{opt.label}</span>
@@ -631,8 +631,8 @@ export default function IndustrialDehumidifierCatalog({ initialProducts, default
                           setIsSortOpen(false);
                         }}
                         className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-between transition-colors cursor-pointer ${isSelected
-                            ? "bg-brand-blue-light/70 text-brand-blue"
-                            : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
+                          ? "bg-brand-blue-light/70 text-brand-blue"
+                          : "text-brand-gray-dark hover:bg-slate-50 hover:text-brand-blue"
                           }`}
                       >
                         <div className="flex items-center gap-2">

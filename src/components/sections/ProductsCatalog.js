@@ -8,7 +8,6 @@ import { products } from "@/data/products";
 import { sortByCoverageArea } from "@/utils/productUtils";
 
 const categories = [
-  { name: "All Equipment", id: "all" },
   { name: "Commercial & Industrial", id: "industrial" },
   { name: "Home & Retail", id: "residential" },
   { name: "Air Purifiers", id: "purifier" },
@@ -21,7 +20,7 @@ export default function ProductsCatalog() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const catParam = searchParams.get("cat") || "all";
+  const catParam = searchParams.get("cat") || "industrial";
   const [prevCatParam, setPrevCatParam] = useState(catParam);
   const [activeCategory, setActiveCategory] = useState(catParam);
 
@@ -33,6 +32,27 @@ export default function ProductsCatalog() {
   const [stickyTopOffset, setStickyTopOffset] = useState("130px");
   const isScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef(null);
+  const tabContainerRef = useRef(null);
+  const activeTabRef = useRef(null);
+
+  // Auto-scroll active tab into horizontal view on mobile when activeCategory changes
+  useEffect(() => {
+    if (activeTabRef.current && tabContainerRef.current) {
+      const container = tabContainerRef.current;
+      const tab = activeTabRef.current;
+
+      const containerWidth = container.offsetWidth;
+      const tabLeft = tab.offsetLeft;
+      const tabWidth = tab.offsetWidth;
+
+      // Center the active tab in the scroll container
+      const targetScrollLeft = tabLeft - containerWidth / 2 + tabWidth / 2;
+      container.scrollTo({
+        left: Math.max(0, targetScrollLeft),
+        behavior: "smooth",
+      });
+    }
+  }, [activeCategory]);
 
   // Dynamic sticky top offset calculation to match header state
   useEffect(() => {
@@ -71,7 +91,7 @@ export default function ProductsCatalog() {
 
   // Intersection Observer for scroll-spy active state tracking
   useEffect(() => {
-    const sectionIds = categories.filter((c) => c.id !== "all").map((c) => c.id);
+    const sectionIds = categories.map((c) => c.id);
 
     const observerOptions = {
       root: null,
@@ -95,20 +115,8 @@ export default function ProductsCatalog() {
       if (el) observer.observe(el);
     });
 
-    // Reset to "all" when scrolled to the very top
-    const handleScrollTop = () => {
-      if (window.scrollY < 200) {
-        if (!isScrollingRef.current) {
-          setActiveCategory("all");
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScrollTop, { passive: true });
-
     return () => {
       observer.disconnect();
-      window.removeEventListener("scroll", handleScrollTop);
       if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
     };
   }, []);
@@ -121,7 +129,7 @@ export default function ProductsCatalog() {
     if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
 
     const params = new URLSearchParams(searchParams.toString());
-    if (catId === "all") {
+    if (catId === "industrial") {
       params.delete("cat");
     } else {
       params.set("cat", catId);
@@ -132,22 +140,18 @@ export default function ProductsCatalog() {
     });
 
     // Perform smooth scroll
-    if (catId === "all") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const element = document.getElementById(catId);
-      if (element) {
-        const header = document.querySelector("header");
-        // Header height + sub-nav height + safe spacing offset
-        const navbarHeight = (header?.offsetHeight || 130) + 70;
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - navbarHeight;
+    const element = document.getElementById(catId);
+    if (element) {
+      const header = document.querySelector("header");
+      // Header height + sub-nav height + safe spacing offset
+      const navbarHeight = (header?.offsetHeight || 130) + 70;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarHeight;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
+      window.scrollTo({
+        top: Math.max(0, offsetPosition),
+        behavior: "smooth",
+      });
     }
 
     // Release observer lock once scroll animation ends
@@ -160,23 +164,31 @@ export default function ProductsCatalog() {
     <section className="bg-white pb-16 md:pb-24 relative">
       {/* Sticky Category Tab Navigation Bar */}
       <div
-        className="sticky transition-[top] duration-300 z-30 bg-white border-b border-brand-border/60 py-3 mb-8 md:mb-12 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden shadow-sm"
+        className="sticky transition-[top] duration-300 z-30 bg-white/95 backdrop-blur-md border-b border-brand-border/60 py-2.5 sm:py-3 mb-8 md:mb-12 shadow-sm"
         style={{ top: stickyTopOffset }}
       >
-        <div className="max-w-7xl mx-auto px-3 md:px-8">
-          <div className="flex flex-nowrap gap-2 justify-start md:justify-center bg-brand-gray-light border border-brand-border p-1.5 rounded-xl w-max md:w-full mx-auto">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => handleFilter(cat.id)}
-                className={`whitespace-nowrap px-4 py-2 md:px-5 md:py-2.5 rounded-lg font-display text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer flex-shrink-0 ${activeCategory === cat.id
-                    ? "bg-brand-navy text-white shadow-md"
-                    : "text-brand-gray-medium hover:text-brand-blue"
+        <div
+          ref={tabContainerRef}
+          className="max-w-7xl mx-auto px-3 md:px-8 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden scroll-smooth"
+        >
+          <div className="flex flex-nowrap gap-1.5 sm:gap-2 justify-start md:justify-center bg-brand-gray-light border border-brand-border p-1.5 rounded-xl w-max md:w-full mx-auto">
+            {categories.map((cat) => {
+              const isActive = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  ref={isActive ? activeTabRef : null}
+                  onClick={() => handleFilter(cat.id)}
+                  className={`whitespace-nowrap px-3.5 py-2 md:px-5 md:py-2.5 rounded-lg font-display text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer flex-shrink-0 ${
+                    isActive
+                      ? "bg-brand-navy text-white shadow-md scale-[1.02]"
+                      : "text-brand-gray-medium hover:text-brand-blue hover:bg-white/60"
                   }`}
-              >
-                {cat.name}
-              </button>
-            ))}
+                >
+                  {cat.name}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -184,9 +196,7 @@ export default function ProductsCatalog() {
       {/* Categories Content Sections */}
       <div className="max-w-7xl mx-auto px-3 md:px-8">
         <div className="space-y-16 md:space-y-24">
-          {categories
-            .filter((cat) => cat.id !== "all")
-            .map((cat) => {
+          {categories.map((cat) => {
               const catProducts = sortByCoverageArea(
                 products.filter((product) => product.categoryId === cat.id)
               );

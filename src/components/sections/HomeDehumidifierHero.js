@@ -1,17 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 export default function HomeDehumidifierHero() {
-  const [filter, setFilter] = useState(null);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      setFilter(params.get("filter"));
-    }
-  }, []);
+  const searchParams = useSearchParams();
+  const filter = searchParams?.get("filter");
 
   const isEconomy = filter === "economy";
   const isPremium = filter === "premium";
