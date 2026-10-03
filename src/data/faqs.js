@@ -14,7 +14,7 @@ export const whatIsDehumidifier = {
   title: "What is an indoor air dehumidifier?",
   subtitle: "An easy-to-use home appliance that removes excess moisture for healthier, fresher air.",
   paragraphs: [
-    "A dehumidifier is an electrical appliance that removes excess moisture from indoor air to maintain a healthy humidity level (40%–60% RH). Portable models come with wheels, making it easy to move them between bedrooms, living rooms, and closets.",
+    "A dehumidifier is an electrical appliance that removes excess moisture from indoor air to maintain a healthy humidity level (40% to 60% RH). Portable models come with wheels, making it easy to move them between bedrooms, living rooms, and closets.",
     "It prevents mold, dust mites, and musty odors while protecting your health, furniture, clothes, and electronics from dampness and humidity damage.",
   ],
   keyFeatures: [
