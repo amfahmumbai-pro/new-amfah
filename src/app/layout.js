@@ -73,6 +73,9 @@ export const metadata = {
     description: "Discover our premium high-capacity industrial systems and ultra-quiet home dehumidifiers.",
     images: ["https://amfah.com/images/amfah-logo.png"],
   },
+  verification: {
+    google: "google11afda12638ec6bd",
+  },
 };
 
 const globalSchema = {
