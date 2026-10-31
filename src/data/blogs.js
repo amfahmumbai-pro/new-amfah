@@ -1,5 +1,247 @@
 export const blogs = [
   {
+    slug: "mumbai-air-pollution-humidity-control",
+    title: "Mumbai's Air Is at Its Worst: Why Your Home Needs Air Purification and Humidity Control Together",
+    metaTitle: "Mumbai Air Pollution & Humidity Control | AMFAH",
+    metaDescription: "Mumbai faces pollution and high humidity. Discover how AMFAH air purifier and dehumidifier solutions help improve indoor air quality and control excess moisture.",
+    summary: "Mumbai faces two indoor air-quality challenges: rising air pollution and high humidity. Discover how combining triple-layer HEPA air purification and dehumidification helps maintain clean, dry, and healthy indoor air.",
+    date: "October 24, 2026",
+    image: "/blogs/Mumbai_Before_and_After.png",
+    readTime: "6 min read",
+    category: "Residential Solutions",
+    content: `
+      <p class="lead text-lg text-brand-gray-dark font-medium mb-6">
+        Mumbai faces two indoor air-quality challenges: rising air pollution and high humidity. While outdoor pollution introduces dust and fine particles into homes, excess moisture can encourage mould, unpleasant odours and damage to household belongings.
+      </p>
+
+      <p class="mb-4">
+        An air purifier and dehumidifier can help address these two problems together. AMFAH's <a href="/home-dehumidifiers" class="text-brand-blue font-semibold hover:underline">Air Purifier + Dehumidifier range</a> combines triple-layer HEPA filtration with dehumidification to help maintain cleaner, drier indoor air.
+      </p>
+
+      <div class="my-8 rounded-2xl overflow-hidden border border-brand-border shadow-md">
+        <img src="/blogs/Mumbai_Before_and_After.png" alt="Mumbai Air Pollution vs Clean Air - Marine Drive Before and After" class="w-full h-auto object-cover" />
+        <p class="text-xs sm:text-sm text-center text-brand-gray-medium italic py-2.5 bg-slate-50 border-t border-brand-border">
+          Mumbai's coastal skyline during severe air pollution (AQI 322+) vs clear coastal atmospheric conditions.
+        </p>
+      </div>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Understanding Mumbai's Air Quality Problem</h3>
+      <p class="mb-4">
+        On 24 October 2026, Mumbai's AQI reportedly reached 322, placing it in the &ldquo;Very Poor&rdquo; category.
+      </p>
+      <p class="mb-4">Some contributing factors include:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Dust from construction and building activities.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Low wind speeds that allow pollutants to remain in the air.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Open garbage burning.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Smoke from crop burning and firecrackers.</li>
+      </ul>
+      <p class="mb-4">
+        Fine dust and airborne particles can enter homes through windows, doors and ventilation openings. This means indoor air quality also deserves attention, particularly when outdoor pollution levels are high.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">The Other Challenge: High Humidity</h3>
+      <p class="mb-4">
+        Mumbai's coastal climate makes humidity a concern throughout the year, not just during the monsoon.
+      </p>
+      <p class="mb-4">Excess indoor moisture can contribute to:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Mould growth on walls, ceilings and inside cupboards.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Musty smells in clothes, bedsheets, curtains and sofas.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Damage to leather products, books, documents and wooden furniture.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Moisture-related problems with electronic equipment.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Uncomfortable, sticky indoor conditions.</li>
+      </ul>
+      <p class="mb-4">
+        Managing indoor humidity helps protect your home, belongings and indoor environment.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why You Need Both an Air Purifier and a Dehumidifier</h3>
+      <p class="mb-4">
+        An air purifier filters airborne particles, but it does not necessarily remove excess moisture. A dehumidifier reduces moisture in the air, but it does not necessarily remove fine airborne pollutants.
+      </p>
+
+      <div class="my-8 overflow-x-auto border border-brand-border rounded-xl shadow-xs">
+        <table class="w-full text-left text-sm border-collapse min-w-[550px]">
+          <thead>
+            <tr class="bg-brand-gray-light border-b border-brand-border font-display font-bold text-brand-navy text-xs uppercase tracking-wider">
+              <th class="px-5 py-4">Indoor Air Problem</th>
+              <th class="px-5 py-4 text-brand-blue">Recommended Solution</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-brand-border/50 text-brand-gray-dark font-medium text-xs sm:text-sm">
+            <tr>
+              <td class="px-5 py-3.5 font-bold text-brand-navy">Dust and fine airborne particles</td>
+              <td class="px-5 py-3.5">Air purifier with HEPA filtration</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3.5 font-bold text-brand-navy">Excess humidity</td>
+              <td class="px-5 py-3.5">Dehumidifier</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3.5 font-bold text-brand-navy">Musty smells and mould-related moisture problems</td>
+              <td class="px-5 py-3.5">Dehumidification and moisture control</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3.5 font-bold text-brand-navy">Combined pollution and humidity concerns</td>
+              <td class="px-5 py-3.5 text-brand-blue font-semibold">Air purification + dehumidification</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">
+        For homes experiencing both pollution and humidity problems, a combined air purifier and dehumidifier can offer a practical solution in one machine.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">AMFAH Air Purifier + Dehumidifier Range</h3>
+      <p class="mb-4">
+        AMFAH's Air Purifier + Dehumidifier range is designed to address airborne particles and excess indoor moisture together.
+      </p>
+      <p class="mb-4">
+        The range combines triple-layer HEPA filtration with dehumidification, with different models available for different room sizes and requirements.
+      </p>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">What Is Triple-Layer HEPA Filtration?</h4>
+      <p class="mb-4">
+        Triple-layer HEPA filtration uses multiple filtration stages to capture dust, pollen and fine airborne particles as room air passes through the machine.
+      </p>
+      <p class="mb-4">
+        This filtration helps reduce airborne particle levels indoors. Combined with dehumidification, it addresses both air cleanliness and excess moisture.
+      </p>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">How Does the Machine Work?</h4>
+      <p class="mb-4">The process involves three basic steps:</p>
+      <ol class="list-decimal pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Air intake:</strong> A fan draws indoor air into the machine.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Air filtration:</strong> The triple-layer HEPA filtration system captures dust and fine airborne particles.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90"><strong>Dehumidification:</strong> A cooling coil removes excess moisture, which collects in a water tank or drains through an outlet.</li>
+      </ol>
+      <p class="mb-4">The treated air is then circulated back into the room.</p>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">Key Features</h4>
+      <p class="mb-4">Depending on the model, the range offers:</p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Triple-layer HEPA filtration.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Dehumidification to manage excess indoor moisture.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Easy-to-use controls.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Live air-quality displays on selected models.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Air-purifier-only mode on selected models.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Different capacities for bedrooms, living rooms, offices and larger spaces.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Where Can Air Purifier + Dehumidifier Solutions Be Used?</h3>
+      <p class="mb-4">These solutions can be useful across different environments:</p>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">Residential spaces</h4>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Bedrooms and living rooms.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Wardrobes and storage rooms.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Homes affected by dampness and musty smells.</li>
+      </ul>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">Healthcare environments</h4>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Clinics and hospitals.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Laboratories.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Other controlled indoor environments.</li>
+      </ul>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">Commercial spaces</h4>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Offices and hotels.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Restaurants and retail spaces.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Business premises.</li>
+      </ul>
+
+      <h4 class="text-lg font-bold font-display text-brand-navy mt-6 mb-3">Storage and industrial environments</h4>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Libraries and archives.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Server rooms and warehouses.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Pharmaceutical, food and packaging facilities.</li>
+      </ul>
+
+      <p class="mb-4">
+        The appropriate equipment depends on room size, moisture levels, application requirements and the desired air-quality conditions.
+      </p>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Why Choose AMFAH?</h3>
+      <p class="mb-4">
+        AMFAH has been working in air-quality and humidity-control solutions since 2008.
+      </p>
+      <p class="mb-4">
+        The company offers solutions for residential, commercial and industrial applications, supported by:
+      </p>
+      <ul class="list-disc pl-6 my-6 space-y-2.5">
+        <li class="leading-relaxed text-brand-gray-dark/90">Technology backed by a Government of India patent, as stated by AMFAH.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">GeM Preferred Brand presence.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Delivery and service support across India.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Offices in Mumbai, Delhi and Dubai.</li>
+        <li class="leading-relaxed text-brand-gray-dark/90">Solutions for homes, hotels, pharmaceutical facilities and other specialised environments.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Frequently Asked Questions</h3>
+
+      <div class="space-y-4 my-8">
+        <div class="p-5 rounded-xl border border-brand-border bg-slate-50/60">
+          <h4 class="font-bold text-base sm:text-lg text-brand-navy mb-2">1. Do I need an air purifier or a dehumidifier in Mumbai?</h4>
+          <p class="text-sm sm:text-base text-brand-gray-dark/90 leading-relaxed">
+            It depends on your indoor environment. An air purifier helps reduce airborne particles, while a dehumidifier controls excess moisture. If your home experiences both pollution and high humidity, a combined solution may be suitable.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-brand-border bg-slate-50/60">
+          <h4 class="font-bold text-base sm:text-lg text-brand-navy mb-2">2. Can a dehumidifier clean the air?</h4>
+          <p class="text-sm sm:text-base text-brand-gray-dark/90 leading-relaxed">
+            A standard dehumidifier primarily removes moisture. A model equipped with an appropriate air-filtration system can also help filter airborne particles.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-brand-border bg-slate-50/60">
+          <h4 class="font-bold text-base sm:text-lg text-brand-navy mb-2">3. Can I use the machine only as an air purifier?</h4>
+          <p class="text-sm sm:text-base text-brand-gray-dark/90 leading-relaxed">
+            Selected AMFAH models offer an air-purifier-only mode. Check the specifications of the individual model.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-brand-border bg-slate-50/60">
+          <h4 class="font-bold text-base sm:text-lg text-brand-navy mb-2">4. Which size should I choose?</h4>
+          <p class="text-sm sm:text-base text-brand-gray-dark/90 leading-relaxed">
+            The right model depends on your room size, humidity levels and intended application. Contact AMFAH with your room dimensions to get a suitable recommendation.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-brand-border bg-slate-50/60">
+          <h4 class="font-bold text-base sm:text-lg text-brand-navy mb-2">5. Is the machine suitable for bedrooms and offices?</h4>
+          <p class="text-sm sm:text-base text-brand-gray-dark/90 leading-relaxed">
+            The range includes models designed for different indoor spaces. Check the individual product specifications for noise levels and operating capacity.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-brand-border bg-slate-50/60">
+          <h4 class="font-bold text-base sm:text-lg text-brand-navy mb-2">6. How do I remove the collected water?</h4>
+          <p class="text-sm sm:text-base text-brand-gray-dark/90 leading-relaxed">
+            Empty the water tank when it is full. Models with a continuous drainage outlet can also be connected to a drain pipe.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold font-display text-brand-navy mt-8 mb-4">Improve Your Indoor Air Quality with AMFAH</h3>
+      <p class="mb-4">
+        Outdoor air pollution and excess humidity can affect indoor comfort and the condition of your belongings. Managing both is an important part of maintaining a better indoor environment.
+      </p>
+      <p class="mb-4">
+        AMFAH's Air Purifier + Dehumidifier range combines triple-layer HEPA filtration and moisture control in one solution.
+      </p>
+      <blockquote class="bg-[#FAF7F2] border-l-4 border-brand-accent p-6 rounded-r-xl italic text-brand-navy my-8 font-sans">
+        <strong>Contact AMFAH for a product recommendation or free quotation.</strong> Share your room size and application requirements with our team to find a suitable model.
+      </blockquote>
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a href="/contact" class="inline-block px-6 py-3 rounded-full bg-[#d41124] text-white font-medium hover:bg-[#1251a0] transition-colors">
+          Contact AMFAH Experts
+        </a>
+        <a href="/home-dehumidifiers" class="inline-block px-6 py-3 rounded-full border border-[#1251a0] text-[#1251a0] font-medium hover:bg-[#1251a0] hover:!text-white transition-colors">
+          Explore Home Air Purifiers & Dehumidifiers
+        </a>
+      </div>
+    `,
+  },
+  {
     slug: "ceiling-dehumidifier-guide",
     title: "Ceiling Dehumidifier: The Complete Guide for Better Indoor Humidity Control",
     metaTitle: "Ceiling Dehumidifier: Complete Guide to Indoor Humidity Control | AMFAH",

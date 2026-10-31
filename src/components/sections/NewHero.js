@@ -8,6 +8,15 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const slides = [
   {
+    type: "banner_products",
+    title: "Air Purifier with dehumidifier",
+    subtitle: "Combat Mumbai’s AQI and Humidity with Our Air Purifier + Dehumidifier Range, Featuring Triple-Layer HEPA Filtration",
+    bgImage: "/banner/banner_products.png",
+    buttonText: "know more",
+    buttonLink: "/home-dehumidifiers",
+    align: "left",
+  },
+  {
     title: "HOME DEHUMIDIFIERS",
     specification: "Amfah Domestic Dehumidifier + Air\nPurification With Triple Layer Hepa Filter",
     subtitle: "Protect Your Family from Excess Humidity and Indoor Air Discomfort",
@@ -136,7 +145,7 @@ export default function NewHero() {
           {slides.map((slide, idx) => (
             <Image
               key={`preload-static-${idx}`}
-              src={slide.type === "advocacy" ? slide.bgImage : slide.image}
+              src={slide.bgImage || slide.image}
               alt="preload"
               width={10}
               height={10}
@@ -144,57 +153,105 @@ export default function NewHero() {
             />
           ))}
         </div>
-        <div className="max-w-8xl px-4 md:px-6 lg:px-8 xl:px-12 pt-14 py-6 md:py-8 mx-auto relative min-h-[280px] sm:min-h-[360px] md:min-h-[440px] lg:min-h-[500px] flex items-center">
-          <div className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center">
-            <div
-              className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${slides[0].align === "right"
-                ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2"
-                : "lg:col-span-5 lg:order-1 order-1 pl-4"
-                }`}
-            >
-              <h2 className="font-display font-bold text-xl sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
-                {slides[0].title}
-              </h2>
-              {slides[0].specification && (
-                <p className="font-sans font-bold text-xs sm:text-sm md:text-xl lg:text-2xl text-[#d41124] leading-snug select-none">
-                  {slides[0].specification.split("\n").map((line, idx) => (
-                    <span key={idx} className="inline md:block">
-                      {idx > 0 ? <><span className="md:hidden"> </span>{line.trim()}</> : line}
-                    </span>
-                  ))}
-                </p>
-              )}
-              <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none">
-                {slides[0].subtitle}
-              </p>
-              <div className="pt-1 sm:pt-2">
-                <Link
-                  href={slides[0].buttonLink}
-                  prefetch={false}
-                  className="inline-block px-4 py-1.5 sm:px-8 sm:py-3 bg-[#d41124] text-white font-sans text-[10px] sm:text-sm font-medium rounded-full shadow-sm hover:bg-[#1251a0] transition-all duration-300"
-                >
-                  {slides[0].buttonText}
-                </Link>
-              </div>
-            </div>
-            <div
-              className={`col-span-5 flex items-center w-full ${slides[0].align === "right"
-                ? "lg:col-span-5 lg:order-1 order-1 justify-start"
-                : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
-                }`}
-            >
-              <div className="relative w-full max-w-[260px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-square sm:aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
+        <div className="max-w-8xl px-4 md:px-6 lg:px-8 xl:px-12 pt-10 md:pt-14 pb-8 sm:pb-8 mx-auto relative min-h-[310px] sm:min-h-[360px] md:min-h-[440px] lg:min-h-[500px] flex items-center">
+          {slides[0].type === "banner_products" ? (
+            <div className="w-full relative flex items-center">
+              {/* Background image covering exact section bounds */}
+              <div
+                className="absolute z-0 pointer-events-none select-none -top-10 md:-top-14 -bottom-8 w-screen"
+                style={{
+                  left: "calc(-50vw + 50%)",
+                }}
+              >
                 <Image
-                  src={slides[0].image}
+                  src={slides[0].bgImage}
                   alt={slides[0].title}
                   fill
                   priority
-                  className="object-contain scale-125 sm:scale-100 drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
-                  sizes="(max-width: 768px) 100vw, 600px"
+                  className="object-cover object-right-bottom sm:object-[80%_bottom] md:object-bottom"
+                  sizes="100vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent sm:from-white/90 sm:via-white/60 sm:to-transparent lg:from-white/80 lg:via-white/35 lg:to-transparent z-10 w-full sm:w-[75%] md:w-[65%] lg:w-[55%]" />
+              </div>
+
+              {/* Grid content matching exact proportions and sizing of other banners */}
+              <div className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center relative z-20">
+                <div className="col-span-7 lg:col-span-5 lg:order-1 order-1 pl-1 sm:pl-4 flex flex-col justify-center text-left space-y-1.5 sm:space-y-4 md:space-y-6">
+                  <h2 className="font-display font-bold text-lg sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
+                    {slides[0].title}
+                  </h2>
+                  <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none max-w-xl">
+                    {slides[0].subtitle}
+                  </p>
+                  <div className="pt-0.5 sm:pt-2">
+                    <Link
+                      href={slides[0].buttonLink}
+                      prefetch={false}
+                      className="inline-block px-3.5 py-1 sm:px-8 sm:py-3 font-sans text-[10px] sm:text-sm rounded-full shadow-sm active:scale-[0.98] transition-all duration-300 cursor-pointer bg-[#d41124] text-white font-medium hover:bg-[#1251a0]"
+                    >
+                      {slides[0].buttonText}
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Right sizing anchor identical to other banners to guarantee identical slide height */}
+                <div className="col-span-5 lg:col-span-5 lg:col-start-8 lg:order-2 order-2 flex flex-col items-center justify-center w-full pointer-events-none select-none">
+                  <div className="relative w-full max-w-[180px] sm:max-w-[300px] md:max-w-[440px] lg:max-w-[620px] aspect-square sm:aspect-[4/3] flex items-center justify-center" />
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            <div className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center">
+              <div
+                className={`col-span-7 flex flex-col justify-center text-left space-y-2 sm:space-y-4 md:space-y-6 ${slides[0].align === "right"
+                  ? "lg:col-span-5 lg:col-start-8 lg:order-2 order-2"
+                  : "lg:col-span-5 lg:order-1 order-1 pl-4"
+                  }`}
+              >
+                <h2 className="font-display font-bold text-xl sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
+                  {slides[0].title}
+                </h2>
+                {slides[0].specification && (
+                  <p className="font-sans font-bold text-xs sm:text-sm md:text-xl lg:text-2xl text-[#d41124] leading-snug select-none">
+                    {slides[0].specification.split("\n").map((line, idx) => (
+                      <span key={idx} className="inline md:block">
+                        {idx > 0 ? <><span className="md:hidden"> </span>{line.trim()}</> : line}
+                      </span>
+                    ))}
+                  </p>
+                )}
+                <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none">
+                  {slides[0].subtitle}
+                </p>
+                <div className="pt-1 sm:pt-2">
+                  <Link
+                    href={slides[0].buttonLink}
+                    prefetch={false}
+                    className="inline-block px-4 py-1.5 sm:px-8 sm:py-3 bg-[#d41124] text-white font-sans text-[10px] sm:text-sm font-medium rounded-full shadow-sm hover:bg-[#1251a0] transition-all duration-300"
+                  >
+                    {slides[0].buttonText}
+                  </Link>
+                </div>
+              </div>
+              <div
+                className={`col-span-5 flex items-center w-full ${slides[0].align === "right"
+                  ? "lg:col-span-5 lg:order-1 order-1 justify-start"
+                  : "lg:col-span-5 lg:col-start-8 lg:order-2 order-2 justify-end"
+                  }`}
+              >
+                <div className="relative w-full max-w-[260px] sm:max-w-[270px] md:max-w-[390px] lg:max-w-[580px] aspect-square sm:aspect-[4/3] flex items-center justify-center pointer-events-none select-none">
+                  <Image
+                    src={slides[0].image}
+                    alt={slides[0].title}
+                    fill
+                    priority
+                    className="object-contain scale-125 sm:scale-100 drop-shadow-[0_10px_20px_rgba(0,0,0,0.06)]"
+                    sizes="(max-width: 768px) 100vw, 600px"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     );
@@ -235,7 +292,7 @@ export default function NewHero() {
         {slides.map((slide, idx) => (
           <Image
             key={`preload-${idx}`}
-            src={slide.type === "advocacy" ? slide.bgImage : slide.image}
+            src={slide.bgImage || slide.image}
             alt="preload"
             width={10}
             height={10}
@@ -245,7 +302,61 @@ export default function NewHero() {
       </div>
       <div className="max-w-8xl px-4 md:px-6 lg:px-8 xl:px-12 pt-10 md:pt-14 pb-8 sm:pb-8 mx-auto relative min-h-[310px] sm:min-h-[360px] md:min-h-[440px] lg:min-h-[500px] flex items-center">
         <AnimatePresence initial={false} custom={direction} mode="wait">
-          {slides[currentIndex].type === "advocacy" ? (
+          {slides[currentIndex].type === "banner_products" ? (
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              className="w-full relative flex items-center"
+            >
+              {/* Background image covering exact section bounds */}
+              <div
+                className="absolute z-0 pointer-events-none select-none -top-10 md:-top-14 -bottom-8 w-screen"
+                style={{
+                  left: "calc(-50vw + 50%)",
+                }}
+              >
+                <Image
+                  src={slides[currentIndex].bgImage}
+                  alt={slides[currentIndex].title}
+                  fill
+                  priority
+                  className="object-cover object-right-bottom sm:object-[80%_bottom] md:object-bottom"
+                  sizes="100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent sm:from-white/90 sm:via-white/60 sm:to-transparent lg:from-white/80 lg:via-white/35 lg:to-transparent z-10 w-full sm:w-[75%] md:w-[65%] lg:w-[55%]" />
+              </div>
+
+              {/* Grid content matching exact proportions and sizing of other banners */}
+              <div className="w-full grid grid-cols-12 gap-4 lg:gap-0 items-center relative z-20">
+                <div className="col-span-7 lg:col-span-5 lg:order-1 order-1 pl-1 sm:pl-4 flex flex-col justify-center text-left space-y-1.5 sm:space-y-4 md:space-y-6">
+                  <h2 className="font-display font-bold text-lg sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#1251a0] leading-tight select-none">
+                    {slides[currentIndex].title}
+                  </h2>
+                  <p className="font-sans italic text-[10px] sm:text-xs md:text-sm lg:text-lg text-[#475569]/80 select-none max-w-xl">
+                    {slides[currentIndex].subtitle}
+                  </p>
+                  <div className="pt-0.5 sm:pt-2">
+                    <Link
+                      href={slides[currentIndex].buttonLink}
+                      prefetch={false}
+                      className="inline-block px-3.5 py-1 sm:px-8 sm:py-3 font-sans text-[10px] sm:text-sm rounded-full shadow-sm active:scale-[0.98] transition-all duration-300 cursor-pointer bg-[#d41124] text-white font-medium hover:bg-[#1251a0]"
+                    >
+                      {slides[currentIndex].buttonText}
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Right sizing anchor identical to other banners to guarantee identical slide height */}
+                <div className="col-span-5 lg:col-span-5 lg:col-start-8 lg:order-2 order-2 flex flex-col items-center justify-center w-full pointer-events-none select-none">
+                  <div className="relative w-full max-w-[180px] sm:max-w-[300px] md:max-w-[440px] lg:max-w-[620px] aspect-square sm:aspect-[4/3] flex items-center justify-center" />
+                </div>
+              </div>
+            </motion.div>
+          ) : slides[currentIndex].type === "advocacy" ? (
             <motion.div
               key={currentIndex}
               custom={direction}
