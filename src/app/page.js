@@ -8,7 +8,6 @@ import ProductCard from "@/components/cards/ProductCard";
 import IndustryCard from "@/components/cards/IndustryCard";
 import HeroImageSlider from "@/components/sections/HeroImageSlider";
 import NewHero from "@/components/sections/NewHero";
-import MonsoonPromoBanner from "@/components/sections/MonsoonPromoBanner";
 import HumidityTrackerCard from "@/components/sections/HumidityTrackerCard";
 import DehumidifierBuyingGuide from "@/components/sections/DehumidifierBuyingGuide";
 import dynamic from "next/dynamic";
@@ -154,9 +153,6 @@ export default function Home() {
         </div>
       </section>
       */}
-
-      {/* Monsoon Promo Banner */}
-      <MonsoonPromoBanner />
 
       {/* New Sliding Hero Section */}
       <NewHero />
