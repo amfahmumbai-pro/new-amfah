@@ -1,4 +1,6 @@
 const nextConfig = {
+  output: "export",
+
   reactCompiler: true,
 
   trailingSlash: true,
@@ -14,4 +16,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
