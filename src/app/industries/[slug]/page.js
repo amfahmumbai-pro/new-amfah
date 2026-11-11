@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { industries } from "@/data/industries";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return industries.map((ind) => ({
     slug: ind.slug,

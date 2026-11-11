@@ -53,6 +53,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export const dynamicParams = false;
+
 // Generate static params for fast loads
 export async function generateStaticParams() {
   return applications

@@ -67,6 +67,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export const dynamicParams = false;
+
 // Generate static routes for the products to optimize LCP & Performance
 export async function generateStaticParams() {
   return products.map((product) => ({

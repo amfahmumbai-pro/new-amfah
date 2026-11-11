@@ -183,6 +183,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export const dynamicParams = false;
+
 // Generate static routes for maximum server performance
 export async function generateStaticParams() {
   return blogs.map((b) => ({

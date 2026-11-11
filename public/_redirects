@@ -1,0 +1,38 @@
+# ----------------------------------------------------------------------
+# AMFAH - Cloudflare Static Assets 301 Permanent Redirects
+# ----------------------------------------------------------------------
+
+# 1. 301 Redirects for Pruned Dead Blogs & Slug Aliases (Preserve SEO & Prevent 404s)
+/blogs/delhi-aqi-today-post-diwali-air-pollution/* /blogs/delhi-aqi-today-air-pollution/ 301
+/blogs/delhi-aqi-today-post-diwali-air-pollution /blogs/delhi-aqi-today-air-pollution/ 301
+
+/blogs/why-dehumidifiers-are-needed-in-farsaan-shops-and-sweet-shops/* /industrial-dehumidifiers/ 301
+/blogs/why-dehumidifiers-are-needed-in-farsaan-shops-and-sweet-shops /industrial-dehumidifiers/ 301
+
+/blogs/humidity-control-solutions-for-diagnostic-centres/* /industrial-uses/hospitals-clinics/ 301
+/blogs/humidity-control-solutions-for-diagnostic-centres /industrial-uses/hospitals-clinics/ 301
+
+/blogs/why-ceiling-dehumidifiers-are-essential-for-commercial-and-industrial-spaces-in-mumbai-during-the-monsoon/* /ceiling-dehumidifiers/ 301
+/blogs/why-ceiling-dehumidifiers-are-essential-for-commercial-and-industrial-spaces-in-mumbai-during-the-monsoon /ceiling-dehumidifiers/ 301
+
+/blogs/why-luxury-homes-need-a-dehumidifier/* /home-dehumidifiers/ 301
+/blogs/why-luxury-homes-need-a-dehumidifier /home-dehumidifiers/ 301
+
+/blogs/why-eye-hospitals-need-dehumidifiers/* /industrial-uses/hospitals-clinics/ 301
+/blogs/why-eye-hospitals-need-dehumidifiers /industrial-uses/hospitals-clinics/ 301
+
+/blogs/why-every-gym-and-spa-needs-commercial-dehumidifier/* /industrial-dehumidifiers/ 301
+/blogs/why-every-gym-and-spa-needs-commercial-dehumidifier /industrial-dehumidifiers/ 301
+
+/blogs/what-does-monsoon-humidity-actually-do-to-wooden-furniture/* /home-dehumidifiers/ 301
+/blogs/what-does-monsoon-humidity-actually-do-to-wooden-furniture /home-dehumidifiers/ 301
+
+/blogs/why-dehumidifiers-are-essential-in-food-powder-and-masala-manufacturing-facilities/* /industrial-dehumidifiers/ 301
+/blogs/why-dehumidifiers-are-essential-in-food-powder-and-masala-manufacturing-facilities /industrial-dehumidifiers/ 301
+
+/blogs/why-dehumidifiers-are-essential-in-the-freeze-dried-fruit-industry/* /industrial-dehumidifiers/ 301
+/blogs/why-dehumidifiers-are-essential-in-the-freeze-dried-fruit-industry /industrial-dehumidifiers/ 301
+
+# 2. Legacy Shopify Blog URL Migration (Recover Lost Googlebot Crawls)
+/blogs/news/* /blogs/:splat 301
+
