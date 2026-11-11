@@ -13,7 +13,7 @@ const slides = [
     subtitle: "Combat Mumbai’s AQI and Humidity with Our Air Purifier + Dehumidifier Range, Featuring Triple-Layer HEPA Filtration",
     bgImage: "/banner/banner_products.png",
     buttonText: "know more",
-    buttonLink: "/home-dehumidifiers",
+    buttonLink: "/air-purifiers",
     align: "left",
   },
   {
