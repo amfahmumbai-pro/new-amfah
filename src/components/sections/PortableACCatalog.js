@@ -13,6 +13,7 @@ import {
   X,
   TrendingUp,
   Flame,
+  Snowflake,
   Wind,
   SortAsc,
   SortDesc
@@ -89,7 +90,10 @@ export default function PortableACCatalog({ initialProducts }) {
 
   // Filter products
   const filteredProducts = initialProducts.filter((product) => {
+    const status = product.specifications?.["Status"] || "";
     const matchesStatus = selectedStatus === "all" ||
+      (selectedStatus === "hot-cold" && status.toLowerCase().includes("hot")) ||
+      (selectedStatus === "only-cool" && status.toLowerCase().includes("cool")) ||
       (selectedStatus === "best-seller" && product.specifications?.["Best Selling"] === "Yes") ||
       (selectedStatus === "standard" && product.specifications?.["Best Selling"] !== "Yes");
     return matchesStatus;
@@ -272,16 +276,16 @@ export default function PortableACCatalog({ initialProducts }) {
 
                   {/* Scrollable Filters Content */}
                   <div className="flex-1 overflow-y-auto px-6 py-5 space-y-6">
-                    {/* Status / Popularity Section */}
+                    {/* Status / Operating Mode Section */}
                     <div className="space-y-3">
                       <h4 className="text-[10px] font-extrabold uppercase tracking-widest text-brand-navy">
-                        Popularity Status
+                        Operating Mode
                       </h4>
                       <div className="flex flex-col gap-1.5">
                         {[
-                          { id: "all", label: "Show All Models" },
-                          { id: "best-seller", label: "Best Sellers Only" },
-                          { id: "standard", label: "Standard Models" }
+                          { id: "all", label: "Show All Models", icon: null },
+                          { id: "hot-cold", label: "Hot & Cold (All-Season)", icon: "hot-cold" },
+                          { id: "only-cool", label: "Only Cool", icon: "only-cool" }
                         ].map((opt) => {
                           const active = selectedStatus === opt.id;
                           return (
@@ -293,7 +297,18 @@ export default function PortableACCatalog({ initialProducts }) {
                                   : "bg-white border-brand-border text-brand-gray-dark hover:border-brand-blue/30"
                                 }`}
                             >
-                              <span>{opt.label}</span>
+                              <div className="flex items-center gap-2">
+                                {opt.icon === "hot-cold" && (
+                                  <div className="flex items-center gap-0.5">
+                                    <Flame className="h-3.5 w-3.5 text-amber-500" />
+                                    <Snowflake className="h-3.5 w-3.5 text-sky-500" />
+                                  </div>
+                                )}
+                                {opt.icon === "only-cool" && (
+                                  <Snowflake className="h-3.5 w-3.5 text-sky-500" />
+                                )}
+                                <span>{opt.label}</span>
+                              </div>
                               {active && <Check className="h-4 w-4 text-brand-blue shrink-0" />}
                             </button>
                           );

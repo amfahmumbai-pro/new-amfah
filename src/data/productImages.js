@@ -46,7 +46,7 @@ export const defaultProductImages = {
   "amf-24hm": ["/products/amf-24hm.png"],
   "amf-p18dac": ["/products/amf-p18dac.png", "/products/amf-p18dac (2).png", "/products/amf-p18dac (3).png", "/products/amf-p18dac (4).png"],
   "amf-pdac18": ["/products/amf-pdac18.png", "/products/amf-pdac18 (2).png", "/products/amf-pdac18 (2).jpeg", "/products/amf-pdac18.jpeg"],
-  "amf-pdac-18hc": ["/products/AMF-pdac-18HC(1).png", "/products/AMF-pdac-18HC(2).png", "/products/AMF-pdac-18HC(3).png"],
+  "amf-pdac-18hc": ["/products/AMF-pdac-18HC(1).png", "/products/AMF-pdac-18HC(2).png", "/products/amf-pdac18 (2).jpeg", "/products/AMF-pdac-18HC(3).png"],
   "amf-50-dmc": ["/products/AMF-50 DMC.png", "/products/AMF-50 DMC (2).png", "/products/AMF-50 DMC (3).png"],
   "amf-50-dmc-ss": ["/products/amfah-50-dmc-ss(1).png", "/products/amfah-50-dmc-ss(2).png", "/products/amfah-50-dmc-ss(3).png"],
 };

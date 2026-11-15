@@ -52,7 +52,7 @@ export default function PortableACPage() {
     {
       icon: Snowflake,
       title: "Rapid Room Cooling",
-      desc: "Delivers powerful 1.5 Ton cooling capacity, rapidly lowering ambient temperature in areas up to 120 sq ft.",
+      desc: "Delivers powerful 1.5 Ton cooling capacity, rapidly lowering ambient temperature in areas up to 130 sq ft.",
     },
     {
       icon: Wind,

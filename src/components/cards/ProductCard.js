@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "@/components/ui/AppLink";
-import { Droplets, Droplet, Home, ChevronLeft, ChevronRight } from "lucide-react";
+import { Droplets, Droplet, Home, ChevronLeft, ChevronRight, Snowflake, Flame } from "lucide-react";
 
 import { defaultProductImages } from "@/data/productImages";
 
@@ -211,9 +211,32 @@ export default function ProductCard({ product }) {
                 <span className="text-[8px] sm:text-[9px] font-bold text-brand-navy leading-tight">{product.specifications?.["Cooling Capacity"] || "1.5 TON"}</span>
                 <span className="text-[7px] sm:text-[8px] text-brand-gray-medium uppercase tracking-wider font-semibold">Capacity</span>
               </div>
-              <div className="flex flex-col items-center text-center p-0.5 sm:p-1.5 rounded-lg bg-brand-gray-light">
-                <Droplet className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-brand-blue mb-0.5 sm:mb-1" />
-                <span className="text-[8px] sm:text-[9px] font-bold text-brand-navy leading-tight">{product.specifications?.["Best Selling"] === "Yes" ? "Best Seller" : "Standard"}</span>
+              <div className={`flex flex-col items-center text-center p-0.5 sm:p-1.5 rounded-lg transition-colors ${
+                product.specifications?.["Status"] === "Hot & Cold"
+                  ? "bg-gradient-to-br from-amber-50 to-sky-50 border border-amber-200/60"
+                  : product.specifications?.["Status"] === "Only Cool"
+                    ? "bg-sky-50 border border-sky-200/60"
+                    : "bg-brand-gray-light"
+              }`}>
+                {product.specifications?.["Status"] === "Hot & Cold" ? (
+                  <div className="flex items-center gap-0.5 mb-0.5 sm:mb-1">
+                    <Flame className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-amber-500" />
+                    <Snowflake className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-sky-500" />
+                  </div>
+                ) : product.specifications?.["Status"] === "Only Cool" ? (
+                  <Snowflake className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-sky-500 mb-0.5 sm:mb-1" />
+                ) : (
+                  <Droplet className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-brand-blue mb-0.5 sm:mb-1" />
+                )}
+                <span className={`text-[8px] sm:text-[9px] font-bold leading-tight ${
+                  product.specifications?.["Status"] === "Hot & Cold"
+                    ? "text-amber-800"
+                    : product.specifications?.["Status"] === "Only Cool"
+                      ? "text-sky-800"
+                      : "text-brand-navy"
+                }`}>
+                  {product.specifications?.["Status"] || (product.specifications?.["Best Selling"] === "Yes" ? "Best Seller" : "Standard")}
+                </span>
                 <span className="text-[7px] sm:text-[8px] text-brand-gray-medium uppercase tracking-wider font-semibold">Status</span>
               </div>
             </>

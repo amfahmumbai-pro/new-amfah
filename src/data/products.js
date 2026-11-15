@@ -8,7 +8,7 @@ export const products = [
     subtitle: "1.5 Ton Hot & Cold Portable AC with Dehumidifier & Air Purification",
     extraction: "1.5 TON",
     airflow: "460 m³/h",
-    coverage: "100-150 Sq feet",
+    coverage: "100-130 Sq feet",
     tech: "INDIA'S ONLY TRUSTED GOVERNMENT-APPROVED, PATENTED & LICENSED BRAND SPECIALIZING IN AIR QUALITY AND HUMIDITY SOLUTIONS. In collaboration with leading technology partners worldwide. The AMFAH AMF-PDAC-18HC is a versatile 4-in-1 portable air conditioner designed for year-round climate comfort, operating as an efficient air conditioner for hot summers and a built-in heater for cold winters, combined with powerful dehumidification and air purification. Equipped with a rotary compressor, unique evaporation booster, overheating protection, auto diagnosis, electronic panel display, and an included window slide kit with flexible exhaust hose.",
     features: [
       "1.5 Ton Portable / Mobile AC (Hot & Cold)",
@@ -35,9 +35,10 @@ export const products = [
     specifications: {
       "Model Name": "AMF-PDAC-18HC",
       "Capacity": "1.5 Ton",
-      "Coverage Area": "100 - 150 Sq.Ft.",
+      "Coverage Area": "100 - 130 Sq.Ft.",
       "Product Type": "Portable AC (Hot & Cold)",
       "Functions": "Cooling, Heating, Dehumidification, Air Purification",
+      "Status": "Hot & Cold",
       "Best Selling": "Yes",
       "Rated Voltage": "220-240V~",
       "Rated Frequency": "50Hz",
@@ -74,7 +75,7 @@ export const products = [
     },
     extraction: "1.5 TON",
     airflow: "460 m³/h",
-    coverage: "100-120 Sq feet",
+    coverage: "100-130 Sq feet",
     tech: "INDIA'S ONLY BRAND HAVING PATENT LICENCE FOR AIR QUALITY AND HUMIDITY SOLUTIONS. A premium 3-in-1 portable air conditioner, fan, and dehumidifier. Features thermostatic cut-off, auto diagnosis, overheating protection, and an anti-bacterial water tank, ideal for spot cooling where window/split AC is not feasible.",
     features: [
       "1.5 Ton Portable AC",
@@ -99,6 +100,7 @@ export const products = [
       "Capacity": "1.5 Ton",
       "Coverage Area": "100 - 120 Sq.Ft.",
       "Product Type": "Portable AC",
+      "Status": "Only Cool",
       "Rated Voltage": "220-240V~",
       "Rated Frequency": "50Hz",
       "Material (Body)": "ABS",

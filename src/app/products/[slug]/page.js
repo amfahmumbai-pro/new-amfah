@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "@/components/ui/AppLink";
 import Image from "next/image";
-import { ArrowLeft, Check, Compass, Cpu, Settings, Award, FileDown } from "lucide-react";
+import { ArrowLeft, Check, Compass, Cpu, Settings, Award, FileDown, Snowflake, Flame } from "lucide-react";
 import Button from "@/components/ui/Button";
 // import InquiryForm from "@/components/forms/InquiryForm";
 import ContactForm from "@/components/forms/ContactForm";
@@ -340,9 +340,24 @@ export default async function ProductDetailPage({ params }) {
                 {/* <span className="text-[10px] font-bold text-brand-blue bg-brand-blue-light border border-brand-blue/15 px-3 py-1 rounded-full uppercase tracking-wider font-display">
                   {product.category}
                 </span> */}
-                <span className="inline-block pt-1 text-2xl border rounded-lg p-2 bg-red-100 font-bold text-brand-accent">
-                  {product.subtitle}
-                </span>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="inline-block pt-1 text-2xl border rounded-lg p-2 bg-red-100 font-bold text-brand-accent">
+                    {product.subtitle}
+                  </span>
+                  {/* {product.specifications?.["Status"] === "Hot & Cold" && (
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-extrabold bg-gradient-to-r from-amber-50 to-sky-50 text-amber-900 border border-amber-300 shadow-xs uppercase tracking-wide">
+                      <Flame className="h-4 w-4 text-amber-500" />
+                      <Snowflake className="h-4 w-4 text-sky-500" />
+                      <span>Hot & Cold</span>
+                    </span>
+                  )} */}
+                  {/* {product.specifications?.["Status"] === "Only Cool" && (
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-extrabold bg-sky-50 text-sky-900 border border-sky-300 shadow-xs uppercase tracking-wide">
+                      <Snowflake className="h-4 w-4 text-sky-500" />
+                      <span>Only Cool</span>
+                    </span>
+                  )} */}
+                </div>
                 <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-4 mb-2">
                   <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">
                     {nameToUse}
@@ -403,7 +418,22 @@ export default async function ProductDetailPage({ params }) {
                   {Object.entries(product.specifications).map(([key, val]) => (
                     <tr key={key} className="hover:bg-brand-gray-light/35 transition-colors">
                       <td className="px-6 py-3.5 font-semibold text-brand-navy">{key}</td>
-                      <td className="px-6 py-3.5">{val}</td>
+                      <td className="px-6 py-3.5">
+                        {key === "Status" && val === "Hot & Cold" ? (
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold bg-gradient-to-r from-amber-50 to-sky-50 text-amber-900 border border-amber-300 shadow-xs">
+                            <Flame className="h-3.5 w-3.5 text-amber-500" />
+                            <Snowflake className="h-3.5 w-3.5 text-sky-500" />
+                            <span>Hot & Cold (All-Season Heating & Cooling)</span>
+                          </span>
+                        ) : key === "Status" && val === "Only Cool" ? (
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold bg-sky-50 text-sky-900 border border-sky-300 shadow-xs">
+                            <Snowflake className="h-3.5 w-3.5 text-sky-500" />
+                            <span>Only Cool (High-Efficiency Cooling)</span>
+                          </span>
+                        ) : (
+                          val
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
