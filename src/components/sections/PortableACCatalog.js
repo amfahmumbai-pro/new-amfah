@@ -78,8 +78,9 @@ export default function PortableACCatalog({ initialProducts }) {
 
   // Virtual product attributes for realistic sorting
   const virtualMetadata = {
-    "amf-p18dac": { price: 34500, date: new Date("2026-05-10"), sales: 90, relevance: 92, featured: 2 },
-    "amf-pdac18": { price: 37800, date: new Date("2026-05-15"), sales: 180, relevance: 98, featured: 1 }
+    "amf-pdac-18hc": { price: 39800, date: new Date("2026-11-15"), sales: 210, relevance: 99, featured: 1 },
+    "amf-pdac18": { price: 37800, date: new Date("2026-05-15"), sales: 180, relevance: 98, featured: 2 },
+    "amf-p18dac": { price: 34500, date: new Date("2026-05-10"), sales: 90, relevance: 92, featured: 3 }
   };
 
   const getMeta = (slug) => {

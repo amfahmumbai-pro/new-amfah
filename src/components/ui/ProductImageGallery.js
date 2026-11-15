@@ -16,7 +16,7 @@ export default function ProductImageGallery({ images, productName, badge, amazon
           {badge && (
             <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-20 pointer-events-auto select-none">
               <div className="bg-[#0F1111] text-white text-[10px] sm:text-xs font-sans font-bold px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-sm shadow-md flex items-center gap-1 border border-white/10 tracking-wide whitespace-nowrap">
-                <span>Amazon&apos;s Choice</span>
+                <span>{badge}</span>
               </div>
             </div>
           )}
