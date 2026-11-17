@@ -214,6 +214,7 @@ export default async function NewsDetailPage({ params }) {
     "description": item.summary,
     "image": imageUrl,
     "datePublished": item.date,
+    "dateModified": item.lastModified || item.date,
     "author": {
       "@type": "Person",
       "name": item.author

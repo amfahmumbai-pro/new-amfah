@@ -24,7 +24,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Dehumidifiers & Air Quality Solutions India | AMFAH",
+  title: "Dehumidifier India Buy Dehumidifiers Online | Amfah",
   description: "India's patented, GeM-preferred brand for dehumidifiers, air purifiers, humidifiers and portable ACs. Trusted by AIIMS, ISRO and Taj since 2008.",
   metadataBase: new URL("https://amfah.com"),
   keywords: [
@@ -52,7 +52,7 @@ export const metadata = {
     title: "AMFAH Dehumidifiers | Premium Industrial & Home Moisture Control",
     description: "AMFAH is an industry pioneer in indoor air quality and humidity control. Discover our premium high-capacity industrial systems and ultra-quiet home dehumidifiers.",
     siteName: "AMFAH",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
     url: "https://amfah.com/",
     images: [
@@ -63,9 +63,6 @@ export const metadata = {
         alt: "AMFAH India Logo",
       },
     ],
-  },
-  alternates: {
-    canonical: "https://amfah.com/",
   },
   twitter: {
     card: "summary_large_image",
@@ -139,7 +136,7 @@ const globalSchema = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
       <head>

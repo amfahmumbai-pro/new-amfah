@@ -217,6 +217,7 @@ export default async function BlogDetailPage({ params }) {
     "description": blog.summary,
     "image": imageUrl,
     "datePublished": blog.date,
+    "dateModified": blog.lastModified || blog.date,
     "author": {
       "@type": "Organization",
       "name": blog.author || "AMFAH India"

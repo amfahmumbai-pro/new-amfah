@@ -23,17 +23,17 @@ import { sortByCoverageArea } from "@/utils/productUtils";
 import { industries } from "@/data/industries";
 
 export const metadata = {
-  title: "Dehumidifiers & Air Quality Solutions India | AMFAH",
+  title: "Dehumidifier India Buy Dehumidifiers Online | Amfah",
   description: "India's patented, GeM-preferred brand for dehumidifiers, air purifiers, humidifiers and portable ACs. Trusted by AIIMS, ISRO and Taj since 2008.",
   alternates: {
     canonical: "https://amfah.com/",
   },
   openGraph: {
-    title: "Dehumidifiers & Air Quality Solutions India | AMFAH",
+    title: "Dehumidifier India Buy Dehumidifiers Online | Amfah",
     description: "India's patented, GeM-preferred brand for dehumidifiers, air purifiers, humidifiers and portable ACs. Trusted by AIIMS, ISRO and Taj since 2008.",
     url: "https://amfah.com/",
     siteName: "AMFAH",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
     images: [
       {

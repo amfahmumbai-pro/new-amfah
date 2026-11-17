@@ -50,7 +50,7 @@ export const blogs = [
   {
     "slug": "industrial-dehumidifiers",
     "title": "Industrial Dehumidifiers: How They Control Humidity In Industries",
-    "metaTitle": "Industrial Dehumidifiers | Applications, Benefits & Uses",
+    "metaTitle": "How Industrial Dehumidifiers Work",
     "metaDescription": "Industrial dehumidifiers help control moisture in industrial settings. They protect equipment and materials from damage caused by humidity.",
     "summary": "Industrial dehumidifiers help control moisture in industrial settings. They protect equipment and materials from damage caused by humidity. These systems keep humidity levels stable, across environments.",
     "date": "September 12, 2026",
