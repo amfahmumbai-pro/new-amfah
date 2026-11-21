@@ -10,12 +10,27 @@ import { products } from "@/data/products";
 export const metadata = {
   title: "Portable Air Conditioners in India | AMFAH",
   description: "Plug and play portable ACs with no outdoor unit, for rented flats, server rooms and site offices. 1.5 ton 4-in-1 models with fast cooling.",
+  keywords: [
+    "portable ac",
+    "portable air conditioner",
+    "portable ac in india",
+    "1.5 ton portable ac",
+    "hot and cold portable ac",
+    "mobile ac",
+    "portable ac without outdoor unit",
+    "plug and play portable ac",
+    "portable air conditioner for rented house",
+    "portable ac for server room",
+    "AMFAH portable ac",
+    "AMF-PDAC-18HC",
+    "AMF-PDAC18"
+  ],
   alternates: {
     canonical: "https://amfah.com/portable-ac/",
   },
   openGraph: {
-    title: "Portable Air Conditioners in India | AMFAH",
-    description: "Plug and play portable ACs with no outdoor unit, for rented flats, server rooms and site offices. 1.5 ton 4-in-1 models with fast cooling.",
+    title: "Portable AC & Mobile AC Price in India 2026 | 1 & 1.5 Ton | AMFAH",
+    description: "Buy portable ACs (mobile ACs) with no outdoor unit or wall drilling. 1 & 1.5 ton models with dehumidifier, auto-evaporation, pan-India delivery and service.",
     url: "https://amfah.com/portable-ac/",
     images: [
       {
@@ -23,6 +38,12 @@ export const metadata = {
         alt: "Portable Air Conditioners AMFAH",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portable AC & Mobile AC Price in India 2026 | 1 & 1.5 Ton | AMFAH",
+    description: "Buy portable ACs (mobile ACs) with no outdoor unit or wall drilling. 1 & 1.5 ton models with dehumidifier, auto-evaporation, pan-India delivery and service.",
+    images: ["https://amfah.com/products/portable-ac-new.png"],
   },
 };
 
