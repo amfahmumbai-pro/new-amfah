@@ -3,6 +3,9 @@
 # ----------------------------------------------------------------------
 
 # 1. 301 Redirects for Pruned Dead Blogs & Slug Aliases (Preserve SEO & Prevent 404s)
+/blogs/amfah-hot-cold-portable-ac-winter/* /blogs/portable-ac-hot-cold-winter/ 301
+/blogs/amfah-hot-cold-portable-ac-winter /blogs/portable-ac-hot-cold-winter/ 301
+
 /blogs/delhi-aqi-today-post-diwali-air-pollution/* /blogs/delhi-aqi-today-air-pollution/ 301
 /blogs/delhi-aqi-today-post-diwali-air-pollution /blogs/delhi-aqi-today-air-pollution/ 301
 

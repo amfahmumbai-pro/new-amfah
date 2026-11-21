@@ -257,36 +257,45 @@ export default async function BlogDetailPage({ params }) {
     ]
   };
 
-  // Find relevant reading suggestions based on category & topic keywords (3 items for identical 3-column layout)
-  const currentKeywords = new Set(
-    (blog.title + " " + (blog.summary || ""))
-      .toLowerCase()
-      .replace(/[^a-z0-9\s]/g, "")
-      .split(/\s+/)
-      .filter(w => w.length > 3)
-  );
+  // Find relevant reading suggestions: check for explicit relatedSlugs first, otherwise calculate by keywords & category
+  let relatedBlogs = [];
+  if (Array.isArray(blog.relatedSlugs) && blog.relatedSlugs.length > 0) {
+    relatedBlogs = blog.relatedSlugs
+      .map((s) => blogs.find((b) => b.slug === s))
+      .filter(Boolean);
+  }
 
-  const relatedBlogs = blogs
-    .filter((b) => b.slug !== blog.slug)
-    .map((b) => {
-      let score = 0;
-      if (b.category && blog.category && b.category === blog.category) {
-        score += 5;
-      }
-      const bWords = (b.title + " " + (b.summary || ""))
+  if (relatedBlogs.length === 0) {
+    const currentKeywords = new Set(
+      (blog.title + " " + (blog.summary || ""))
         .toLowerCase()
         .replace(/[^a-z0-9\s]/g, "")
-        .split(/\s+/);
-      for (const w of bWords) {
-        if (w.length > 3 && currentKeywords.has(w)) {
-          score += 1;
+        .split(/\s+/)
+        .filter(w => w.length > 3)
+    );
+
+    relatedBlogs = blogs
+      .filter((b) => b.slug !== blog.slug)
+      .map((b) => {
+        let score = 0;
+        if (b.category && blog.category && b.category === blog.category) {
+          score += 5;
         }
-      }
-      return { b, score };
-    })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3)
-    .map(item => item.b);
+        const bWords = (b.title + " " + (b.summary || ""))
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, "")
+          .split(/\s+/);
+        for (const w of bWords) {
+          if (w.length > 3 && currentKeywords.has(w)) {
+            score += 1;
+          }
+        }
+        return { b, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map(item => item.b);
+  }
 
   return (
     <div className="flex flex-col bg-white min-h-screen font-sans">
@@ -362,7 +371,8 @@ export default async function BlogDetailPage({ params }) {
               className="text-brand-gray-dark/95 text-base sm:text-[18px] leading-[1.65] space-y-7 font-sans
                          [&_p]:leading-[1.65] [&_p]:mb-5 [&_p]:text-justify
                          [&_p.lead]:text-lg sm:[&_p.lead]:text-xl [&_p.lead]:font-medium [&_p.lead]:text-brand-navy [&_p.lead]:border-l-4 [&_p.lead]:border-brand-accent [&_p.lead]:pl-5 [&_p.lead]:my-8 [&_p.lead]:leading-relaxed
-                         [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-2xl sm:[&_h3]:text-3xl [&_h3]:text-brand-navy [&_h3]:mt-12 [&_h3]:mb-4 [&_h3]:tracking-tight
+                         [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-2xl sm:[&_h2]:text-3xl [&_h2]:text-brand-navy [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:tracking-tight
+                         [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-xl sm:[&_h3]:text-2xl [&_h3]:text-brand-navy [&_h3]:mt-8 [&_h3]:mb-3 [&_h3]:tracking-tight
                          [&_ul]:list-none [&_ul]:pl-6 [&_ul]:my-6 [&_ul]:space-y-2.5
                          [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:my-6 [&_ol]:space-y-2.5
                          [&_li]:leading-relaxed [&_li]:text-brand-gray-dark/90
@@ -397,7 +407,8 @@ export default async function BlogDetailPage({ params }) {
       </main>
 
       {/* Main Bottom B2B Consulting Call to Action */}
-      <section className="py-20 bg-brand-navy text-white text-center relative overflow-hidden">
+      {blog.slug !== "portable-ac-hot-cold-winter" && blog.slug !== "amfah-hot-cold-portable-ac-winter" && (
+        <section className="py-20 bg-brand-navy text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none" />
         <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-blue-light/5 rounded-full blur-[100px] pointer-events-none" />
 
@@ -422,6 +433,7 @@ export default async function BlogDetailPage({ params }) {
           </div>
         </ScrollReveal>
       </section>
+      )}
     </div>
   );
 }

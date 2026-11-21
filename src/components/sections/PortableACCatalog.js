@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
-import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   SlidersHorizontal,
@@ -22,7 +21,6 @@ import ProductCard from "@/components/cards/ProductCard";
 import { getCoverageSqFt } from "@/utils/productUtils";
 
 export default function PortableACCatalog({ initialProducts }) {
-  const searchParams = useSearchParams();
   const [selectedStatus, setSelectedStatus] = useState("all"); // "all", "best-seller", "standard"
   const [sortBy, setSortBy] = useState("featured"); // featured, relevance, sales, name-asc, name-desc
   const [isSortOpen, setIsSortOpen] = useState(false);
@@ -37,11 +35,14 @@ export default function PortableACCatalog({ initialProducts }) {
     setMounted(true);
   }, []);
 
-  // Sync state with URL search parameters on load/change
+  // Sync state with URL search parameters on client load
   useEffect(() => {
-    const statusParam = searchParams.get("status");
-    if (statusParam) setSelectedStatus(statusParam);
-  }, [searchParams]);
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const statusParam = params.get("status");
+      if (statusParam) setSelectedStatus(statusParam);
+    }
+  }, []);
 
   // Handle mobile detection dynamically
   useEffect(() => {

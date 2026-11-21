@@ -4,6 +4,7 @@ import { Snowflake, Sparkles, Droplets, Wind, ShieldCheck, Heart } from "lucide-
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import Button from "@/components/ui/Button";
 import PortableACCatalog from "@/components/sections/PortableACCatalog";
+import ProductCard from "@/components/cards/ProductCard";
 import { products } from "@/data/products";
 
 export const metadata = {
@@ -129,9 +130,7 @@ export default function PortableACPage() {
 
           {/* 1. Products Section */}
           <div className="space-y-12">
-            <Suspense fallback={<div className="text-center py-12 text-sm font-semibold text-brand-gray-medium">Loading Catalog...</div>}>
-              <PortableACCatalog initialProducts={acProducts} />
-            </Suspense>
+            <PortableACCatalog initialProducts={acProducts} />
           </div>
 
           {/* 2. Wellness/Comfort Benefits Grid */}
