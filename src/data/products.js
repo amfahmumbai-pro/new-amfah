@@ -2,6 +2,7 @@ export const products = [
   {
     slug: "amf-pdac-18hc",
     brochure: "/pdf/AMF-PDAC-18HC.pdf",
+    amazonLink: "https://www.amazon.in/AMFAH-AMF-PDAC-18HC-Dehumidifier-Purification-Protection/dp/B0HRVF9DZS/ref=sr_1_4?crid=3SQ2UQTY9HYBE&dib=eyJ2IjoiMSJ9.fLrygR7P7Py8yoG2uSxAUg0W_K1Vvwe_EmNq9i7Lx2wi5Qmgd0b_ihoM6jDDlB7HHjOgetw4bRTvFlpCPQ0fPyt2_Jyfy_EheBsELCXiwe7GbEEuKfZLsMjUGP53o6cTx965XJvFAzCw57oKJYsYFZBs3_QLmP-sPJ-3BndYXWYIF28uWw6f_FvyTs2cu8JDoZVAk-bvQPHicVHl8aDeRha0YKMX9zDb24gnfH674-w.vSAK8Yb5XD6cTqdv72Bb6V4hwqgYbcv0ztGgh0N6LMs&dib_tag=se&keywords=portable+ac+hot+and+cold&qid=1795265288&sprefix=portable+ac+hot+and+cold%2Caps%2C426&sr=8-4",
     name: "AMFAH AMF-PDAC-18HC (Hot & Cold)",
     category: "Portable AC",
     categoryId: "portable-ac",

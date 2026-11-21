@@ -17,6 +17,17 @@ const slides = [
     align: "left",
   },
   {
+    title: "PORTABLE AC (HOT & COLD)",
+    specification: "AMFAH AMF-PDAC-18HC, 1.5 Ton Hot & Cold Portable Air Conditioner | Heating & Cooling, Dehumidifier | Energy Efficient Mobile AC with Adjustable Vent,\n Auto Shut Off & Overheat Protection",
+    subtitle: "Stay Comfortable All Year Round with Summer Cooling & Winter Heating Without Permanent Installation",
+    image: "/products/AMF-pdac-18HC(1).png",
+    imageScale: "scale-100 sm:scale-100 md:scale-110 lg:scale-120",
+    buttonText: "View On Amazon",
+    buttonLink: "https://www.amazon.in/AMFAH-AMF-PDAC-18HC-Dehumidifier-Purification-Protection/dp/B0HRVF9DZS/ref=sr_1_4?crid=3SQ2UQTY9HYBE&dib=eyJ2IjoiMSJ9.fLrygR7P7Py8yoG2uSxAUg0W_K1Vvwe_EmNq9i7Lx2wi5Qmgd0b_ihoM6jDDlB7HHjOgetw4bRTvFlpCPQ0fPyt2_Jyfy_EheBsELCXiwe7GbEEuKfZLsMjUGP53o6cTx965XJvFAzCw57oKJYsYFZBs3_QLmP-sPJ-3BndYXWYIF28uWw6f_FvyTs2cu8JDoZVAk-bvQPHicVHl8aDeRha0YKMX9zDb24gnfH674-w.vSAK8Yb5XD6cTqdv72Bb6V4hwqgYbcv0ztGgh0N6LMs&dib_tag=se&keywords=portable+ac+hot+and+cold&qid=1795265288&sprefix=portable+ac+hot+and+cold%2Caps%2C426&sr=8-4",
+    buttonClass: "bg-[#FFCE12] text-slate-900 font-bold hover:bg-[#e5b80b]",
+    align: "left", // Text left, Image right
+  },
+  {
     title: "HOME DEHUMIDIFIERS",
     specification: "Amfah Domestic Dehumidifier + Air\nPurification With Triple Layer Hepa Filter",
     subtitle: "Protect Your Family from Excess Humidity and Indoor Air Discomfort",
@@ -42,22 +53,6 @@ const slides = [
     buttonText: "know more",
     buttonLink: "/industrial-dehumidifiers",
     align: "right", // Image left, Text right
-  },
-  {
-    title: "PORTABLE AC",
-    specification: "AMFAH AMF-PDAC-18, 1.5 Ton Portable Air Conditioner | 4-in-1 AC, Fan, Dehumidifier, Auto | Energy Efficient Mobile AC with Adustable Vent,\n Auto Shut Off, Overheat Protection, White ",
-    badge: "Amazon's Choice",
-    amazonReviews: {
-      rating: "4.1 out of 5",
-      totalRatings: "22 global ratings",
-    },
-    subtitle: "Stay Cool and Comfortable Anywhere Without Permanent Installation",
-    image: "/products/portable-ac-new.png",
-    imageScale: "scale-100 sm:scale-100 md:scale-110 lg:scale-120",
-    buttonText: "View On Amazon",
-    buttonLink: "https://www.amazon.in/AMFAH-AMF-PDAC-18-Conditioner-Dehumidifier-Adjustable/dp/B0F5GTXY4D/ref=sr_1_4?crid=2KSNAKP1UEGS0&dib=eyJ2IjoiMSJ9.1D49s_rzp88Mu4V8kGHo45JCaoTCFAY_bVQdw8wp95hc8kxoGne96oSLl-Vk4-Jzxy_Bk77hJZa7bdG3rmrWqXJtSjd0ZvSUM57HMT4T0UKNPVzzGHztMfLR4qESIvsraYqY4PJXvt7Z9HgQKQcApm9MJCJkz5ng34WmP_tbuN6to8I3-4TAzkqJ7zDX5Qr9uIi5xjdnlcfbsYyYCb6TsIODVbn9aFiX0SJ0Cg20YOI.16jNg54zXnkNcFUX9RsOwT6Zyai8XWFXBbAUw9d3IcA&dib_tag=se&keywords=portable+ac&qid=1787396803&sprefix=portable+ac%2Caps%2C316&sr=8-4",
-    buttonClass: "bg-[#FFCE12] text-slate-900 font-bold hover:bg-[#e5b80b]",
-    align: "left", // Text left, Image right
   },
   {
     title: "CEILING DEHUMIDIFIER",
